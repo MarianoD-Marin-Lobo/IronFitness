@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Iron Fitness</string>
+    <string name="credError1">Credenciales inválidas. </string>
+    <string name="credError2">Revisá los datos ingresados e intentá nuevamente.</string>
 </resources>
