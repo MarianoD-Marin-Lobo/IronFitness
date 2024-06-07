@@ -39,7 +39,8 @@
         app:layout_constraintEnd_toStartOf="@+id/image_low_menu_quad1"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_vector" />
+        app:layout_constraintTop_toBottomOf="@+id/image_vector"
+        app:layout_constraintVertical_bias="0.52" />
 
     <Button
         android:id="@+id/image_low_menu_quad1"
@@ -73,10 +74,11 @@
         android:id="@+id/image_vector"
         android:layout_width="360dp"
         android:layout_height="2dp"
-        android:layout_marginTop="513dp"
+        android:layout_marginTop="540dp"
         android:scaleType="centerInside"
         android:src="@drawable/image_vector"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image_rectangle_gris" />
 
@@ -103,14 +105,75 @@
 
     <ImageView
         android:id="@+id/image_icon_home"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="49.17dp"
+        android:layout_height="42dp"
         android:scaleType="centerInside"
-        android:src="@drawable/image_icon_home"
+        android:src="@drawable/iconmoney"
         app:layout_constraintBottom_toBottomOf="@+id/image_low_menu_quad"
         app:layout_constraintEnd_toEndOf="@+id/image_low_menu_quad"
         app:layout_constraintStart_toStartOf="@id/image_low_menu_quad"
         app:layout_constraintTop_toTopOf="@+id/image_low_menu_quad" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="0dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_rectangle_gris"
+        app:srcCompat="@drawable/imageafiliado" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="150dp"
+        android:layout_height="290dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:srcCompat="@drawable/imagecarnet" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="150dp"
+        android:layout_height="290dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:srcCompat="@drawable/imagecuenta" />
+
+    <TextView
+        android:id="@+id/carnets"
+        android:layout_width="127dp"
+        android:layout_height="33dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/texto_carnet"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton2"
+        app:layout_constraintStart_toStartOf="@+id/imageButton2"
+        app:layout_constraintTop_toTopOf="@+id/imageButton2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/texto_cuenta"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton3"
+        app:layout_constraintStart_toStartOf="@+id/imageButton3"
+        app:layout_constraintTop_toTopOf="@+id/imageButton3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
