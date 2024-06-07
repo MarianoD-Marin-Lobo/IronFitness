@@ -120,6 +120,10 @@
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\drawable\\image_vector.xml"
     },
     {
+        "merged": "ar.madmaimarramsaz.ironFitness.app-debug-31:/drawable_image_vector.xml.flat",
+        "source": "ar.madmaimarramsaz.ironFitness.app-main-33:/drawable/image_vector.xml"
+    },
+    {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
