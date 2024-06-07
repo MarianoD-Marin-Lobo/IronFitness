@@ -1,0 +1,146 @@
+[
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\drawable_login_boton_datoscompletos.xml.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\drawable\\login_boton_datoscompletos.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\drawable_menu_pagos_container_borde_button.xml.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\drawable\\menu_pagos_container_borde_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\layout_activity_menu_pagos.xml.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\layout\\activity_menu_pagos.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\drawable_logo_iron.png.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\drawable\\logo_iron.png"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\drawable_menu_pagos_image_rectangle.png.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\drawable\\menu_pagos_image_rectangle.png"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\drawable_image_back_button.png.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\drawable\\image_back_button.png"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\drawable_image_icon_person.png.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\drawable\\image_icon_person.png"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\drawable_image_rectangle_gris.png.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\drawable\\image_rectangle_gris.png"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\layout-land_activity_login.xml.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\layout-land\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\drawable_login_borde_inputs.xml.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\drawable\\login_borde_inputs.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\drawable_image_icon_home.png.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\drawable\\image_icon_home.png"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\drawable_menu_pagos_pagos_border_button.xml.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\drawable\\menu_pagos_pagos_border_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\drawable_low_menu_quad.png.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\drawable\\low_menu_quad.png"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\layout_activity_home.xml.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "ar.madmaimarramsaz.ironFitness.app-debug-31:/layout_activity_menu_pagos.xml.flat",
+        "source": "ar.madmaimarramsaz.ironFitness.app-main-33:/layout/activity_menu_pagos.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\drawable_image_filters_bar.png.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\drawable\\image_filters_bar.png"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\drawable_image_vector.xml.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\drawable\\image_vector.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\drawable_texto_ironhouse.png.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\drawable\\texto_ironhouse.png"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\drawable_login_boton_sindatos.xml.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\drawable\\login_boton_sindatos.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\mipmap-xxhdpi\\ic_launcher.webp"
+    }
+]

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBase">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Menu_PagosActivity">
+
+    <ImageView
+        android:id="@+id/menu_pagos_image_rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_pagos_image_rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_rectangle_gris" />
+
+    <ImageView
+        android:id="@+id/image_rectangle_gris"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/image_rectangle_gris"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_back_button"
+        android:layout_width="47dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/image_back_button"
+        app:layout_constraintStart_toStartOf="@+id/image_rectangle_gris"
+        app:layout_constraintTop_toTopOf="@+id/image_rectangle_gris" />
+
+    <Button
+        android:id="@+id/image_low_menu_quad"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/low_menu_quad"
+        android:scaleType="centerInside"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/image_low_menu_quad1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_vector" />
+
+    <Button
+        android:id="@+id/image_low_menu_quad1"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/low_menu_quad"
+        android:scaleType="centerInside"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/image_low_menu_quad2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/image_low_menu_quad"
+        app:layout_constraintTop_toBottomOf="@+id/image_vector" />
+
+    <Button
+        android:id="@+id/image_low_menu_quad2"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/low_menu_quad"
+        android:scaleType="centerInside"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/image_low_menu_quad1"
+        app:layout_constraintTop_toBottomOf="@+id/image_vector" />
+
+    <ImageView
+        android:id="@+id/image_vector"
+        android:layout_width="360dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/image_vector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_pagos_historial_pagos_button" />
+
+    <TextView
+        android:id="@+id/text_registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/texto_ironhouse"
+        app:layout_constraintStart_toEndOf="@+id/image_back_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_pagos"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="46dp"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="PAGOS"
+        android:textColor="#FF000000"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_rectangle_gris" />
+
+    <ImageView
+        android:id="@+id/image_icon_person"
+        android:layout_width="49.17dp"
+        android:layout_height="42dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/image_icon_person"
+        app:layout_constraintBottom_toBottomOf="@id/image_low_menu_quad2"
+        app:layout_constraintEnd_toEndOf="@id/image_low_menu_quad2"
+        app:layout_constraintStart_toStartOf="@+id/image_low_menu_quad2"
+        app:layout_constraintTop_toTopOf="@+id/image_low_menu_quad2" />
+
+    <ImageView
+        android:id="@+id/image_icon_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:src="@drawable/image_icon_home"
+        app:layout_constraintBottom_toBottomOf="@+id/image_low_menu_quad"
+        app:layout_constraintEnd_toEndOf="@+id/image_low_menu_quad"
+        app:layout_constraintStart_toStartOf="@id/image_low_menu_quad"
+        app:layout_constraintTop_toTopOf="@+id/image_low_menu_quad" />
+
+
+    <Button
+        android:id="@+id/menu_pagos_pago_cuota_mensual_socio_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/menu_pagos_pagos_border_button"
+        android:gravity="center_horizontal|top"
+        android:includeFontPadding="false"
+        android:text="PAGO  CUOTA  MENSUAL\n(Socios)"
+        android:textColor="#FF656363"
+        android:textSize="25dp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/container_pago_cuota_mensual_socio_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_pagos_image_rectangle" />
+
+    <Button
+        android:id="@+id/menu_pagos_pago_activ_diaria_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/menu_pagos_pagos_border_button"
+        android:gravity="center_horizontal|top"
+        android:text="PAGO\nACTIVIDAD  DIARIA\n(No Socios)"
+        android:textColor="#FF656363"
+        android:textSize="25dp"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_pagos_pago_cuota_mensual_socio_button" />
+
+
+    <Button
+        android:id="@+id/menu_pagos_historial_pagos_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/menu_pagos_pagos_border_button"
+        android:text="VER  HISTORIAL\nDE  PAGOS"
+        android:textColor="#FF656363"
+        android:textSize="20dp"
+        app:backgroundTint="@null"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_pagos_pago_activ_diaria_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
