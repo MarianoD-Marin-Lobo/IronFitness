@@ -12,14 +12,15 @@
         android:layout_height="wrap_content"
         tools:context=".Menu_PagosActivity">
 
-    <ImageView
-        android:id="@+id/menu_pagos_image_rectangle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/menu_pagos_image_rectangle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_rectangle_gris" />
+        <ImageView
+            android:id="@+id/menu_pagos_image_rectangle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="47dp"
+            android:background="@drawable/menu_pagos_image_rectangle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/image_rectangle_gris"
@@ -41,35 +42,36 @@
         app:layout_constraintStart_toStartOf="@+id/image_rectangle_gris"
         app:layout_constraintTop_toTopOf="@+id/image_rectangle_gris" />
 
-    <Button
-        android:id="@+id/image_low_menu_quad"
-        android:layout_width="120dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="14dp"
-        android:background="@drawable/low_menu_quad"
-        android:scaleType="centerInside"
-        app:backgroundTint="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/image_low_menu_quad1"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_vector" />
+        <Button
+            android:id="@+id/image_low_menu_quad"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/low_menu_quad"
+            android:scaleType="centerInside"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/image_low_menu_quad1"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_vector" />
 
-    <Button
-        android:id="@+id/image_low_menu_quad1"
-        android:layout_width="120dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="14dp"
-        android:background="@drawable/low_menu_quad"
-        android:scaleType="centerInside"
-        app:backgroundTint="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/image_low_menu_quad2"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/image_low_menu_quad"
-        app:layout_constraintTop_toBottomOf="@+id/image_vector" />
+        <Button
+            android:id="@+id/image_low_menu_quad1"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/low_menu_quad"
+            android:scaleType="centerInside"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/image_low_menu_quad2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/image_low_menu_quad"
+            app:layout_constraintTop_toBottomOf="@+id/image_vector"
+            app:layout_constraintVertical_bias="0.0" />
 
-    <Button
+        <Button
         android:id="@+id/image_low_menu_quad2"
         android:layout_width="120dp"
         android:layout_height="80dp"
@@ -89,7 +91,7 @@
         android:layout_height="2dp"
         android:layout_marginTop="20dp"
         android:scaleType="centerInside"
-        android:src="@drawable/image_vector"
+        android:background="@drawable/image_vector"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/menu_pagos_historial_pagos_button" />
