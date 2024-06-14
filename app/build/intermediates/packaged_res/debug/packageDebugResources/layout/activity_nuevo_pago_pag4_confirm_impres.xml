@@ -88,7 +88,6 @@
             android:id="@+id/image_vector"
             android:layout_width="match_parent"
             android:layout_height="2dp"
-
             android:layout_marginTop="40dp"
             android:background="@drawable/image_vector"
             android:scaleType="centerInside"

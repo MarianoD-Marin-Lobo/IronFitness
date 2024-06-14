@@ -1,0 +1,2 @@
+ar.madmaimarramsaz.ironFitness.test:style/WhiteBackgroundTheme = 0x7f010001
+ar.madmaimarramsaz.ironFitness.test:style/WhiteBackgroundDialogTheme = 0x7f010000

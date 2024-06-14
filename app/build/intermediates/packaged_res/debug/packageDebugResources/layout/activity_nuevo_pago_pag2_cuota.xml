@@ -1,10 +1,511 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Nuevo_Pago_Pag2_Cuota_Activity">
+    android:background="@color/colorBase">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/btn_siguiente"
+        app:layout_constraintStart_toStartOf="@+id/btn_siguiente"
+        tools:context=".Nuevo_Pago_Pag2_Cuota_Activity">
+
+        <ImageView
+            android:id="@+id/menu_pagos_image_rectangle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/menu_pagos_image_rectangle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image_rectangle_gris"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/image_rectangle_gris"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/container_agr_cuota"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image_back_button"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/image_back_button"
+            app:layout_constraintStart_toStartOf="@+id/image_rectangle_gris"
+            app:layout_constraintTop_toTopOf="@+id/image_rectangle_gris" />
+
+        <Button
+            android:id="@+id/image_low_menu_quad"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:background="@drawable/low_menu_quad"
+            android:scaleType="centerInside"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/image_low_menu_quad1"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_vector" />
+
+        <Button
+            android:id="@+id/image_low_menu_quad1"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:background="@drawable/low_menu_quad"
+            android:scaleType="centerInside"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/image_low_menu_quad2"
+            app:layout_constraintStart_toEndOf="@+id/image_low_menu_quad"
+            app:layout_constraintTop_toBottomOf="@+id/image_vector" />
+
+        <Button
+            android:id="@+id/image_low_menu_quad2"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:background="@drawable/low_menu_quad"
+            android:scaleType="centerInside"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/image_low_menu_quad1"
+            app:layout_constraintTop_toBottomOf="@+id/image_vector" />
+
+        <ImageView
+            android:id="@+id/image_vector"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/image_vector"
+            android:scaleType="centerInside"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/np_pag2_container1" />
+
+        <TextView
+            android:id="@+id/text_registro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/texto_ironhouse"
+            app:layout_constraintStart_toEndOf="@+id/image_back_button"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_pagos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="REGISTRO \n NUEVO  PAGO"
+            android:textColor="#FF000000"
+            android:textSize="20dp"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_rectangle_gris" />
+
+        <ImageView
+            android:id="@+id/image_icon_person"
+            android:layout_width="49.17dp"
+            android:layout_height="42dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/image_icon_person"
+            app:layout_constraintBottom_toBottomOf="@id/image_low_menu_quad2"
+            app:layout_constraintEnd_toEndOf="@id/image_low_menu_quad2"
+            app:layout_constraintStart_toStartOf="@+id/image_low_menu_quad2"
+            app:layout_constraintTop_toTopOf="@+id/image_low_menu_quad2" />
+
+        <ImageView
+            android:id="@+id/image_new_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/image_new_payment"
+            app:layout_constraintBottom_toBottomOf="@+id/image_low_menu_quad"
+            app:layout_constraintEnd_toEndOf="@+id/image_low_menu_quad"
+            app:layout_constraintStart_toStartOf="@id/image_low_menu_quad"
+            app:layout_constraintTop_toTopOf="@+id/image_low_menu_quad" />
+
+
+        <ImageView
+            android:id="@+id/image_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/image_icon_home"
+            app:layout_constraintBottom_toBottomOf="@+id/image_low_menu_quad1"
+            app:layout_constraintEnd_toEndOf="@+id/image_low_menu_quad1"
+            app:layout_constraintStart_toStartOf="@id/image_low_menu_quad1"
+            app:layout_constraintTop_toTopOf="@+id/image_low_menu_quad1" />
+
+
+        <ImageView
+            android:id="@+id/np_pag2_container1"
+            android:layout_width="340dp"
+            android:layout_height="560dp"
+            android:background="@drawable/container1"
+            app:layout_constraintBottom_toBottomOf="@+id/np_pag2_container_gris"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/menu_pagos_image_rectangle" />
+
+
+        <EditText
+            android:id="@+id/np_pag2_input_comentarios"
+            android:layout_width="300dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/container1"
+            android:elevation="1dp"
+            android:hint="Comentario que crea importante..."
+            android:paddingLeft="10dp"
+            android:textColor="#FF000000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/np_pag2_container1"
+            app:layout_constraintStart_toStartOf="@+id/np_pag2_container1"
+            app:layout_constraintTop_toBottomOf="@+id/textView_comentario" />
+
+        <ImageView
+            android:id="@+id/np_pag2_container_gris"
+            android:layout_width="340dp"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/nuevo_pago_pag1_container_rectangle2"
+            app:layout_constraintBottom_toBottomOf="@+id/np_pag2_container1"
+            app:layout_constraintEnd_toEndOf="@+id/np_pag2_container1"
+            app:layout_constraintStart_toStartOf="@+id/np_pag2_container1"
+            app:layout_constraintTop_toBottomOf="@+id/np_pag2_container_alta_form_marker_pag2" />
+
+
+        <Button
+            android:id="@+id/mes_selector_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/container_izq"
+            android:elevation="2dp"
+            android:textSize="14sp"
+            android:translationZ="2dp"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toStartOf="@+id/anio_selector_btn"
+            app:layout_constraintStart_toStartOf="@+id/container_agr_cuota"
+            app:layout_constraintTop_toTopOf="@+id/container_agr_cuota" />
+
+        <Button
+            android:id="@+id/anio_selector_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/container_der"
+            android:elevation="1dp"
+            android:translationZ="2dp"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="@+id/container_agr_cuota"
+            app:layout_constraintStart_toEndOf="@+id/mes_selector_btn"
+            app:layout_constraintTop_toTopOf="@+id/container_agr_cuota" />
+
+        <Button
+            android:id="@+id/container_agr_cuota"
+            android:layout_width="310dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/container1"
+            android:elevation="2dp"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="@+id/np_pag2_container1"
+            app:layout_constraintStart_toStartOf="@+id/np_pag2_container1"
+            app:layout_constraintTop_toTopOf="@+id/np_pag2_container1" />
+
+        <Button
+            android:id="@+id/container_detalle_factura"
+            android:layout_width="300dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/container1"
+            android:elevation="2dp"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="@+id/np_pag2_container1"
+            app:layout_constraintStart_toStartOf="@+id/np_pag2_container1"
+            app:layout_constraintTop_toBottomOf="@+id/textView_detalle" />
+
+        <ImageView
+            android:id="@id/np_pag2_container_alta_form_marker_pag3"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="top|left"
+            android:layout_marginEnd="107dp"
+            android:background="@drawable/nuevo_pago_pag1_drawable_image_1"
+            android:scaleType="centerInside"
+            app:layout_constraintEnd_toEndOf="@+id/np_pag2_container1"
+            app:layout_constraintStart_toEndOf="@+id/np_pag2_container_alta_form_marker_pag2"
+            app:layout_constraintTop_toBottomOf="@+id/guideline7" />
+
+        <ImageView
+            android:id="@+id/np_pag2_container_alta_form_marker_pag2"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="top|left"
+            android:background="@drawable/nuevo_pago_pag1_container_alta_form_marker_pag"
+            android:scaleType="centerInside"
+            app:layout_constraintEnd_toStartOf="@+id/np_pag2_container_alta_form_marker_pag3"
+            app:layout_constraintStart_toEndOf="@+id/np_pag2_container_alta_form_marker_pag1"
+            app:layout_constraintTop_toBottomOf="@+id/guideline7" />
+
+        <ImageView
+            android:id="@+id/np_pag2_container_alta_form_marker_pag1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="top|left"
+            android:layout_marginStart="100dp"
+            android:background="@drawable/nuevo_pago_pag1_container_alta_form_marker_pag1"
+            android:scaleType="centerInside"
+            app:layout_constraintEnd_toStartOf="@+id/np_pag2_container_alta_form_marker_pag2"
+            app:layout_constraintStart_toStartOf="@+id/np_pag2_container1"
+            app:layout_constraintTop_toBottomOf="@+id/guideline7" />
+
+        <Button
+            android:id="@+id/container_btn_cancelar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_cancelar_bg"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="@+id/np_pag2_container_gris"
+            app:layout_constraintEnd_toStartOf="@+id/container_btn_anterior"
+            app:layout_constraintStart_toStartOf="@+id/np_pag2_container_gris"
+            app:layout_constraintTop_toTopOf="@+id/np_pag2_container_gris" />
+
+        <TextView
+            android:id="@+id/texto_btn_cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="25dp"
+            android:gravity="left|center_vertical"
+            android:text="CANCELAR"
+            android:textColor="#FFFDFDFD"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/container_btn_cancelar"
+            app:layout_constraintEnd_toEndOf="@+id/container_btn_cancelar"
+            app:layout_constraintStart_toStartOf="@+id/container_btn_cancelar"
+            app:layout_constraintTop_toTopOf="@+id/container_btn_cancelar" />
+
+
+        <Button
+            android:id="@+id/container_btn_anterior"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn2_bg"
+            app:backgroundTint="#FDFDFD"
+            app:layout_constraintBottom_toBottomOf="@+id/np_pag2_container_gris"
+            app:layout_constraintEnd_toStartOf="@+id/container_btn_siguiente"
+            app:layout_constraintStart_toEndOf="@+id/container_btn_cancelar"
+            app:layout_constraintTop_toTopOf="@+id/np_pag2_container_gris" />
+
+        <Button
+            android:id="@+id/container_btn_siguiente"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn2_bg"
+            app:backgroundTint="#FDFDFD"
+            app:layout_constraintBottom_toBottomOf="@+id/np_pag2_container_gris"
+            app:layout_constraintEnd_toEndOf="@+id/np_pag2_container_gris"
+            app:layout_constraintStart_toEndOf="@+id/container_btn_anterior"
+            app:layout_constraintTop_toTopOf="@+id/np_pag2_container_gris" />
+
+
+        <TextView
+            android:id="@+id/texto_btn_anterior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:text="ANTERIOR"
+            android:textColor="#656363"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/container_btn_anterior"
+            app:layout_constraintEnd_toEndOf="@+id/container_btn_anterior"
+            app:layout_constraintStart_toStartOf="@+id/container_btn_anterior"
+            app:layout_constraintTop_toTopOf="@+id/container_btn_anterior" />
+
+
+        <ImageView
+            android:id="@+id/btn_cancelar_icono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/btn_cancelar_icono"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toTopOf="@+id/text_btn_cancelar"
+            app:layout_constraintEnd_toEndOf="@+id/container_btn_cancelar"
+            app:layout_constraintStart_toStartOf="@+id/container_btn_cancelar"
+            app:layout_constraintTop_toTopOf="@+id/container_btn_cancelar" />
+
+        <ImageView
+            android:id="@+id/btn_anterior_icono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/icono_flecha_anterior"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toTopOf="@+id/texto_btn_anterior"
+            app:layout_constraintEnd_toEndOf="@+id/container_btn_anterior"
+            app:layout_constraintStart_toStartOf="@+id/container_btn_anterior"
+            app:layout_constraintTop_toTopOf="@+id/container_btn_anterior" />
+
+        <ImageView
+            android:id="@+id/icono_siguiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/icono_siguiente"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toTopOf="@+id/text_btn_siguiente"
+            app:layout_constraintEnd_toEndOf="@+id/container_btn_siguiente"
+            app:layout_constraintStart_toStartOf="@+id/container_btn_siguiente"
+            app:layout_constraintTop_toTopOf="@+id/container_btn_siguiente" />
+
+
+        <TextView
+            android:id="@+id/texto_btn_siguiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:text="SIGUIENTE"
+            android:textColor="#656363"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/container_btn_siguiente"
+            app:layout_constraintEnd_toEndOf="@+id/container_btn_siguiente"
+            app:layout_constraintStart_toStartOf="@+id/container_btn_siguiente"
+            app:layout_constraintTop_toTopOf="@+id/container_btn_siguiente" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="656dp" />
+
+        <TextView
+            android:id="@+id/textView_comentario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Comentario"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/np_pag2_container1"
+            app:layout_constraintTop_toBottomOf="@+id/container_agr_cuota" />
+
+        <TextView
+            android:id="@+id/textView_detalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Detalle Factura"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/np_pag2_container1"
+            app:layout_constraintTop_toBottomOf="@+id/np_pag2_input_comentarios" />
+
+
+        <TextView
+            android:id="@+id/texto_agregar_cuota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            android:text="AGREGAR CUOTA"
+            android:textColor="#656363"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/container_agr_cuota"
+            app:layout_constraintEnd_toEndOf="@+id/container_agr_cuota"
+            app:layout_constraintStart_toStartOf="@+id/container_agr_cuota"
+            app:layout_constraintTop_toTopOf="@+id/container_agr_cuota" />
+
+        <ImageView
+            android:id="@+id/icono_agregar_cuota"
+            android:layout_width="38dp"
+            android:layout_height="28dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/icono_agregar1"
+            app:layout_constraintBottom_toBottomOf="@+id/container_agr_cuota"
+            app:layout_constraintEnd_toEndOf="@+id/container_agr_cuota"
+            app:layout_constraintStart_toEndOf="@+id/texto_agregar_cuota" />
+
+        <TextView
+            android:id="@+id/texto_mes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="3dp"
+            android:text="MES"
+            android:textColor="#656363"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:translationZ="2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/mes_selector_btn"
+            app:layout_constraintEnd_toEndOf="@+id/mes_selector_btn"
+            app:layout_constraintStart_toStartOf="@+id/mes_selector_btn"
+            app:layout_constraintTop_toTopOf="@+id/mes_selector_btn" />
+
+
+        <TextView
+            android:id="@+id/texto_anio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="3dp"
+            android:text="AÑO"
+            android:textColor="#656363"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/anio_selector_btn"
+            app:layout_constraintEnd_toEndOf="@+id/anio_selector_btn"
+            app:layout_constraintStart_toStartOf="@+id/anio_selector_btn"
+            app:layout_constraintTop_toTopOf="@+id/anio_selector_btn" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="@+id/container_detalle_factura"
+            app:layout_constraintEnd_toEndOf="@+id/container_detalle_factura"
+            app:layout_constraintStart_toStartOf="@+id/container_detalle_factura"
+            app:layout_constraintTop_toTopOf="@+id/container_detalle_factura" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

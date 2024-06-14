@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toStartOf="@+id/btn_siguiente"
         app:layout_constraintStart_toStartOf="@+id/btn_siguiente"
-        tools:context=".Nuevo_Pago_Descargando_Comprob_Activity">
+        tools:context=".Historial_Pagos_Activity">
 
         <ImageView
             android:id="@+id/menu_pagos_image_rectangle"
