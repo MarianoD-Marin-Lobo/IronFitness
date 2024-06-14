@@ -13,6 +13,27 @@
         android:theme="@style/Theme.IronFitness"
         tools:targetApi="31">
         <activity
+            android:name=".Historial_Pagos_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Nuevo_Pago_Descargando_Comprob_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Nuevo_Pago_Pag4_Confirm_Impres_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Nuevo_Pago_Pag3_Efec_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Nuevo_Pago_Pag2_Cuota_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Nuevo_Pago_Pag2_Actividad_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Nuevo_Pago_Pag1_Activity"
+            android:exported="false" />
+        <activity
             android:name=".Menu_PagosActivity"
             android:exported="false" />
         <activity

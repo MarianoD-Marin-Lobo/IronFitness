@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:2:1-32:12
+ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:2:1-53:12
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\admin\.gradle\caches\transforms-4\920679362723884e0a3ca673410c2356\transformed\material-1.12.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\admin\.gradle\caches\transforms-4\ad293e767ad8251ffb2b4238022848bd\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\admin\.gradle\caches\transforms-4\748e81845ebec6c4be118c9472082284\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
@@ -56,8 +56,8 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\admin\.gradle\caches\transform
 	xmlns:android
 		ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:5:5-30:19
-INJECTED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:5:5-30:19
+ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:5:5-51:19
+INJECTED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:5:5-51:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\admin\.gradle\caches\transforms-4\920679362723884e0a3ca673410c2356\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\admin\.gradle\caches\transforms-4\920679362723884e0a3ca673410c2356\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\admin\.gradle\caches\transforms-4\ad293e767ad8251ffb2b4238022848bd\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -96,34 +96,76 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ad
 		ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:13:9-49
 	android:dataExtractionRules
 		ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:7:9-65
-activity#ar.madmaimarramsaz.ironFitness.Menu_PagosActivity
+activity#ar.madmaimarramsaz.ironFitness.Historial_Pagos_Activity
 ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:15:9-17:40
 	android:exported
 		ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:17:13-37
 	android:name
-		ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:16:13-47
-activity#ar.madmaimarramsaz.ironFitness.HomeActivity
+		ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:16:13-53
+activity#ar.madmaimarramsaz.ironFitness.Nuevo_Pago_Descargando_Comprob_Activity
 ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:18:9-20:40
 	android:exported
 		ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:20:13-37
 	android:name
-		ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:19:13-41
-activity#ar.madmaimarramsaz.ironFitness.LoginActivity
-ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:21:9-29:20
+		ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:19:13-68
+activity#ar.madmaimarramsaz.ironFitness.Nuevo_Pago_Pag4_Confirm_Impres_Activity
+ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:21:9-23:40
 	android:exported
-		ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:23:13-36
+		ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:23:13-37
 	android:name
-		ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:22:13-42
+		ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:22:13-68
+activity#ar.madmaimarramsaz.ironFitness.Nuevo_Pago_Pag3_Efec_Activity
+ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:24:9-26:40
+	android:exported
+		ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:25:13-58
+activity#ar.madmaimarramsaz.ironFitness.Nuevo_Pago_Pag2_Cuota_Activity
+ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:27:9-29:40
+	android:exported
+		ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:29:13-37
+	android:name
+		ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:28:13-59
+activity#ar.madmaimarramsaz.ironFitness.Nuevo_Pago_Pag2_Actividad_Activity
+ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:30:9-32:40
+	android:exported
+		ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:31:13-63
+activity#ar.madmaimarramsaz.ironFitness.Nuevo_Pago_Pag1_Activity
+ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:33:9-35:40
+	android:exported
+		ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:34:13-53
+activity#ar.madmaimarramsaz.ironFitness.Menu_PagosActivity
+ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:36:9-38:40
+	android:exported
+		ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:38:13-37
+	android:name
+		ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:37:13-47
+activity#ar.madmaimarramsaz.ironFitness.HomeActivity
+ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:39:9-41:40
+	android:exported
+		ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:41:13-37
+	android:name
+		ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:40:13-41
+activity#ar.madmaimarramsaz.ironFitness.LoginActivity
+ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:42:9-50:20
+	android:exported
+		ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:44:13-36
+	android:name
+		ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:43:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:24:13-28:29
+ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:45:13-49:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:25:17-69
+ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:46:17-69
 	android:name
-		ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:25:25-66
+		ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:46:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:27:17-77
+ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:48:17-77
 	android:name
-		ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:27:27-74
+		ADDED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:48:27-74
 uses-sdk
 INJECTED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml
