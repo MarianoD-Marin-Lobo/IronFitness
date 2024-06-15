@@ -13,6 +13,27 @@
         android:theme="@style/Theme.IronFitness"
         tools:targetApi="31">
         <activity
+            android:name=".Estados_Cuenta_Activity.EstadoCuenta3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Estados_Cuenta_Activity.EstadoCuenta2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Estados_Cuenta_Activity.EstadoCuenta1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Afiliados_Carnet_Activity.Pantalla4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Afiliados_Carnet_Activity.Pantalla3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Afiliados_Carnet_Activity.Pantalla2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Afiliados_Carnet_Activity.Pantalla1Activity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
