@@ -3193,6 +3193,8 @@ int id bounce 0x7f08005e
 int id bounceBoth 0x7f08005f
 int id bounceEnd 0x7f080060
 int id bounceStart 0x7f080061
+int id button 0x7f0801f5
+int id button2 0x7f0801f6
 int id buttonPanel 0x7f080062
 int id cache_measures 0x7f080063
 int id callMeasure 0x7f080064
@@ -3545,6 +3547,8 @@ int id textSpacerNoButtons 0x7f0801be
 int id textSpacerNoTitle 0x7f0801bf
 int id textStart 0x7f0801c0
 int id textTop 0x7f0801c1
+int id textView 0x7f0801f7
+int id textView2 0x7f0801f8
 int id text_input_end_icon 0x7f0801c2
 int id text_input_error_icon 0x7f0801c3
 int id text_input_start_icon 0x7f0801c4
@@ -3710,7 +3714,14 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0b0018
 int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
+int layout activity_estado_cuenta1 0x7f0b006c
+int layout activity_estado_cuenta2 0x7f0b006d
+int layout activity_estado_cuenta3 0x7f0b006e
 int layout activity_main 0x7f0b001c
+int layout activity_pantalla1 0x7f0b006f
+int layout activity_pantalla2 0x7f0b0070
+int layout activity_pantalla3 0x7f0b0071
+int layout activity_pantalla4 0x7f0b0072
 int layout custom_dialog 0x7f0b001d
 int layout design_bottom_navigation_item 0x7f0b001e
 int layout design_bottom_sheet_dialog 0x7f0b001f

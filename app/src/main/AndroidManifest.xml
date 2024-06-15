@@ -18,9 +18,12 @@
         <activity
             android:name=".Estados_Cuenta_Activity.EstadoCuenta2Activity"
             android:exported="false" />
-        <activity
-            android:name=".Estados_Cuenta_Activity.EstadoCuenta1Activity"
-            android:exported="false" />
+        <activity android:name=".Estados_Cuenta_Activity.EstadoCuenta1Activity" android:exported="true">
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+                 <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+        </activity >
         <activity
             android:name=".Afiliados_Carnet_Activity.Pantalla4Activity"
             android:exported="false" />
@@ -35,12 +38,8 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="false">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
