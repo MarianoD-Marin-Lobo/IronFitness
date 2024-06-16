@@ -13,6 +13,9 @@
         android:theme="@style/Theme.IronFitness"
         tools:targetApi="31">
         <activity
+            android:name=".Impresion_Comprobantes_Activity"
+            android:exported="false" />
+        <activity
             android:name=".Historial_Pagos_Activity"
             android:exported="false" />
         <activity

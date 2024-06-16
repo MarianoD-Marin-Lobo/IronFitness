@@ -475,7 +475,7 @@
             android:layout_width="35dp"
             android:layout_height="22dp"
             android:layout_marginEnd="20dp"
-            android:background="@drawable/spinner_icono"
+            android:background="@drawable/icono_spinner"
             android:elevation="1dp"
             android:scaleType="centerInside"
             app:layout_constraintBottom_toBottomOf="@+id/nuevo_pago_actividad_spinner"

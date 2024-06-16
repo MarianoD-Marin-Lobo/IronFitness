@@ -434,7 +434,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
             android:layout_marginTop="0dp"
-            android:background="@drawable/spinner_icono"
+            android:background="@drawable/icono_spinner"
             android:elevation="1dp"
             android:scaleType="centerInside"
             app:layout_constraintBottom_toBottomOf="@+id/nuevo_pago_pag1_spinner"
