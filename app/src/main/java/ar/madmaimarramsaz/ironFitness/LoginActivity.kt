@@ -67,7 +67,7 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show()
 
                 // Se abre la ventana al home
-                val intent = Intent(this, HomeActivity::class.java)
+                val intent = Intent(this, Menu_PagosActivity::class.java)
                 startActivity(intent)
             } else {
 
@@ -110,14 +110,14 @@ class LoginActivity : AppCompatActivity() {
             msjError2.visibility = View.INVISIBLE
             bordeInputUsuario.setStroke(5, Color.parseColor("#656363"))
             bordeInputClave.setStroke(5, Color.parseColor("#656363"))
-            btnLogin.setBackgroundResource(R.drawable.boton_login_datoscompletos)
+            btnLogin.setBackgroundResource(R.drawable.login_boton_datoscompletos)
             btnLogin.setTextColor(Color.parseColor("#FCFCFC"))
         } else {
             msjError1.visibility = View.INVISIBLE
             msjError2.visibility = View.INVISIBLE
             bordeInputUsuario.setStroke(5, Color.parseColor("#E9E1E1"))
             bordeInputClave.setStroke(5, Color.parseColor("#E9E1E1"))
-            btnLogin.setBackgroundResource(R.drawable.boton_login_sindatos)
+            btnLogin.setBackgroundResource(R.drawable.login_boton_sindatos)
             btnLogin.setTextColor(Color.parseColor("#BCBCBC"))
         }
     }
