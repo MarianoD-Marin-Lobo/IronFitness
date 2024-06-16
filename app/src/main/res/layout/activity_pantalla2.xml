@@ -195,25 +195,27 @@
 
 
     <!-- Contenido debajo del FrameLayout -->
+
     <Button
         android:id="@+id/image_low_menu_quad"
-        android:layout_width="120dp"
-        android:layout_height="80dp"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
         android:layout_marginBottom="5dp"
         android:background="@drawable/New_Payment_4"
         android:scaleType="centerInside"
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-
         app:layout_constraintEnd_toStartOf="@+id/image_low_menu_quad1"
-        app:layout_constraintStart_toStartOf="parent" />
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.521" />
 
     <Button
         android:id="@+id/image_low_menu_quad1"
-        android:layout_width="120dp"
-        android:layout_height="80dp"
-        android:layout_marginBottom="5dp"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/icon_home"
         android:scaleType="centerInside"
         app:backgroundTint="@null"
@@ -223,16 +225,15 @@
 
     <Button
         android:id="@+id/image_low_menu_quad2"
-        android:layout_width="120dp"
-        android:layout_height="80dp"
-        android:layout_marginBottom="5dp"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/icon_person"
         android:scaleType="centerInside"
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/image_low_menu_quad1" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
