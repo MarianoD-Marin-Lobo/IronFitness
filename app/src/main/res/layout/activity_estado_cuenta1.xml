@@ -151,7 +151,7 @@
             <Button
                 android:id="@+id/menu_pagos_pago_cuota_mensual_socio_button"
                 android:layout_width="wrap_content"
-                android:layout_height="160dp"
+                android:layout_height="170dp"
                 android:layout_marginTop="0dp"
                 android:background="@drawable/CuotasAVencer"
                 android:gravity="center_horizontal|top"
@@ -185,7 +185,7 @@
                 android:id="@+id/menu_pagos_historial_pagos_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="0dp"
                 android:background="@drawable/menu_pagos_pagos_border_button"
                 android:text=""
                 android:textColor="#FF656363"
