@@ -6,6 +6,257 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Afiliados_Carnet_Activity.Pantalla4Activity">
+    <ImageView
+        android:id="@+id/menu_pagos_image_rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/Rectangle_25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_rectangle_gris" />
+    <TextView
+        android:id="@+id/text_pagos"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/CARNETS"
+        android:includeFontPadding="false"
+        android:text=""
+        android:textColor="#FF000000"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_rectangle_gris" />
+
+    <ImageView
+        android:id="@+id/image_rectangle_gris"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/Rectangle_25_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/text_registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/Registro"
+        app:layout_constraintStart_toEndOf="@+id/image_back_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_back_button"
+        android:layout_width="47dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/Vector_3"
+        app:layout_constraintStart_toStartOf="@+id/image_rectangle_gris"
+        app:layout_constraintTop_toTopOf="@+id/image_rectangle_gris" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="280dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="220dp"
+        android:fontFamily="sans-serif"
+        android:background="@drawable/DATOS_CARNET"
+        android:text=" "
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+    <!-- FrameLayout con borde redondeado -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Label and Input for the first field -->
+        <TextView
+            android:id="@+id/label1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="N°/Id Socio"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/input1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="13579"/>
+
+        <!-- Label and Input for the second field -->
+        <TextView
+            android:id="@+id/label2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre/s"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/input2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Inserte su/s nombre/s"/>
+
+        <!-- Label and Input for the third field -->
+        <TextView
+            android:id="@+id/label3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apellido/s"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/input3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Inserte su Apellido/s"/>
+
+        <!-- Label and Input for the fourth field -->
+        <TextView
+            android:id="@+id/label4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="N° de carnet"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/input4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Inserte su N° de carnet"/>
+        <LinearLayout
+            android:id="@+id/buttonRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/input4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp">
+
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/volver"
+                app:backgroundTint="@null"
+                android:text="" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/Borrar_Carnet_Button"
+                app:backgroundTint="@null"
+                android:text="" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/Editar_Carnet_Button"
+                app:backgroundTint="@null"
+                android:text="" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/Imprimir_Carnet_Button"
+                app:backgroundTint="@null"
+                android:text="" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_white_rounded"
+            android:orientation="vertical"
+            android:padding="14dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/alertMessage1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/vector_cruz"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/alertMessage2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/esta_seguro"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/closeButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/aceptar"
+                android:paddingStart="20dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="5dp"
+                android:text="Cerrar"
+                android:textColor="@android:color/white"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toStartOf="@+id/closeButton2"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <!-- Segundo botón (closeButton2) -->
+            <Button
+                android:id="@+id/closeButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cancelar"
+                android:paddingStart="20dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="5dp"
+                android:text="Cerrar"
+                android:textColor="@android:color/white"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/closeButton1" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- Contenido debajo del FrameLayout -->
     <Button
         android:id="@+id/image_low_menu_quad"
         android:layout_width="120dp"
@@ -15,7 +266,7 @@
         android:scaleType="centerInside"
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
 
         app:layout_constraintEnd_toStartOf="@+id/image_low_menu_quad1"
         app:layout_constraintStart_toStartOf="parent" />
