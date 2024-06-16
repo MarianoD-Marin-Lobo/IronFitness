@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- Contenido arriba del FrameLayout -->
+
     <ImageView
         android:id="@+id/menu_pagos_image_rectangle"
         android:layout_width="match_parent"
