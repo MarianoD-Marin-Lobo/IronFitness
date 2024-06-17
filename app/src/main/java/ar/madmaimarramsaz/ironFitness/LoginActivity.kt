@@ -67,7 +67,7 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show()
 
                 // Se abre la ventana al home
-                val intent = Intent(this, HomeActivity::class.java)
+                val intent = Intent(this, Menu_PagosActivity::class.java)
                 startActivity(intent)
             } else {
 
