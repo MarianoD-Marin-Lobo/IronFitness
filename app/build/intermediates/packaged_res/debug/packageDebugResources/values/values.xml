@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
+<<<<<<< HEAD
     <color name="bordeGrisClaro">#E9E1E1</color>
     <color name="bordeGrisOscuro">#656363</color>
     <color name="btnLogin1fondo">#E9E5E5</color>
@@ -14,6 +15,10 @@
     <string name="app_name">Iron Fitness</string>
     <string name="credError1">Credenciales inválidas. </string>
     <string name="credError2">Revisá los datos ingresados e intentá nuevamente.</string>
+=======
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Iron Fitness</string>
+>>>>>>> origin/rama-martin
     <style name="Base.Theme.IronFitness" parent="Theme.Material3.DayNight.NoActionBar">
         
         

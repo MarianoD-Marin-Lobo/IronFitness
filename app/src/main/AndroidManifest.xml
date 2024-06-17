@@ -13,6 +13,7 @@
         android:theme="@style/Theme.IronFitness"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".Historial_Pagos_Activity"
             android:exported="false" />
         <activity
@@ -44,6 +45,24 @@
 
         <activity
             android:name=".LoginActivity"
+=======
+            android:name=".Ver_datos_afiliados_activity.Datos_Afiliado_Configuracion"
+            android:exported="false" />
+        <activity
+            android:name=".Ver_datos_afiliados_activity.Datos_Afiliado_Editar"
+            android:exported="false" />
+        <activity
+            android:name=".Ver_datos_afiliados_activity.Datos_Afiliado_Ver"
+            android:exported="false" />
+        <activity
+            android:name=".Estados_Cuenta_Activity.EstadoCuenta3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Estados_Cuenta_Activity.EstadoCuenta2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Estados_Cuenta_Activity.EstadoCuenta1Activity"
+>>>>>>> origin/rama-martin
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -51,10 +70,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+=======
+        <activity
+            android:name=".Afiliados_Carnet_Activity.Pantalla4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Afiliados_Carnet_Activity.Pantalla3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Afiliados_Carnet_Activity.Pantalla2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Afiliados_Carnet_Activity.Pantalla1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+>>>>>>> origin/rama-martin
     </application>
 
 </manifest>

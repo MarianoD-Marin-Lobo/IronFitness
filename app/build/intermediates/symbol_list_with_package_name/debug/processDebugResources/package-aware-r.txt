@@ -1362,18 +1362,24 @@ color background_floating_material_light
 color background_material_dark
 color background_material_light
 color black
+<<<<<<< HEAD
 color bordeGrisClaro
 color bordeGrisOscuro
+=======
+>>>>>>> origin/rama-martin
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
 color bright_foreground_inverse_material_light
 color bright_foreground_material_dark
 color bright_foreground_material_light
+<<<<<<< HEAD
 color btnLogin1fondo
 color btnLogin1letra
 color btnLogin2fondo
 color btnLogin2letra
+=======
+>>>>>>> origin/rama-martin
 color button_material_dark
 color button_material_light
 color call_notification_answer_color
@@ -1382,7 +1388,10 @@ color cardview_dark_background
 color cardview_light_background
 color cardview_shadow_end_color
 color cardview_shadow_start_color
+<<<<<<< HEAD
 color colorBase
+=======
+>>>>>>> origin/rama-martin
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
 color design_dark_default_color_background
@@ -1427,7 +1436,10 @@ color dim_foreground_material_dark
 color dim_foreground_material_light
 color error_color_material_dark
 color error_color_material_light
+<<<<<<< HEAD
 color fondoGris
+=======
+>>>>>>> origin/rama-martin
 color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
@@ -2098,7 +2110,10 @@ color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
 color ripple_material_dark
 color ripple_material_light
+<<<<<<< HEAD
 color rojo
+=======
+>>>>>>> origin/rama-martin
 color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
@@ -2996,10 +3011,13 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+<<<<<<< HEAD
 drawable btn2_bg
 drawable btn_buscar_icon
 drawable btn_cancelar_bg
 drawable btn_cancelar_icono
+=======
+>>>>>>> origin/rama-martin
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3008,12 +3026,15 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+<<<<<<< HEAD
 drawable btn_siguiente_bg
 drawable btn_siguiente_icon
 drawable container1
 drawable container1_gris
 drawable container_der
 drawable container_izq
+=======
+>>>>>>> origin/rama-martin
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -3039,6 +3060,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
+<<<<<<< HEAD
 drawable icono_agregar1
 drawable icono_confirmar
 drawable icono_correcto
@@ -3061,6 +3083,9 @@ drawable login_boton_datoscompletos
 drawable login_boton_sindatos
 drawable logo_iron
 drawable low_menu_quad
+=======
+drawable indeterminate_static
+>>>>>>> origin/rama-martin
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
 drawable m3_bottom_sheet_drag_handle
@@ -3082,9 +3107,12 @@ drawable material_ic_keyboard_arrow_previous_black_24dp
 drawable material_ic_keyboard_arrow_right_black_24dp
 drawable material_ic_menu_arrow_down_black_24dp
 drawable material_ic_menu_arrow_up_black_24dp
+<<<<<<< HEAD
 drawable menu_pagos_container_borde_button
 drawable menu_pagos_image_rectangle
 drawable menu_pagos_pagos_border_button
+=======
+>>>>>>> origin/rama-martin
 drawable mtrl_bottomsheet_drag_handle
 drawable mtrl_checkbox_button
 drawable mtrl_checkbox_button_checked_unchecked
@@ -3136,6 +3164,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+<<<<<<< HEAD
 drawable nuevo_pago_pag1_container_alta_form_marker_pag
 drawable nuevo_pago_pag1_container_alta_form_marker_pag1
 drawable nuevo_pago_pag1_container_rectangle1
@@ -3156,6 +3185,9 @@ drawable pag3_importe_total1
 drawable spinner_icono
 drawable test_level_drawable
 drawable texto_ironhouse
+=======
+drawable test_level_drawable
+>>>>>>> origin/rama-martin
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
@@ -3236,7 +3268,10 @@ id allStates
 id always
 id animateToEnd
 id animateToStart
+<<<<<<< HEAD
 id anio_selector_btn
+=======
+>>>>>>> origin/rama-martin
 id antiClockwise
 id anticipate
 id arc
@@ -3257,6 +3292,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+<<<<<<< HEAD
 id btnLogin
 id btn_anterior_icono
 id btn_buscar_icon
@@ -3267,6 +3303,10 @@ id btn_pag5_container4
 id btn_siguiente
 id btn_siguiente_icono
 id btn_volver_gris
+=======
+id button
+id button2
+>>>>>>> origin/rama-martin
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3294,6 +3334,7 @@ id compress
 id confirm_button
 id constraint
 id container
+<<<<<<< HEAD
 id container_agr_actividad
 id container_agr_cuota
 id container_btn_anterior
@@ -3306,6 +3347,8 @@ id container_btn_siguiente
 id container_detalle_factura
 id container_importe_total
 id container_pago_cuota_mensual_socio_button
+=======
+>>>>>>> origin/rama-martin
 id content
 id contentPanel
 id contiguous
@@ -3314,8 +3357,11 @@ id coordinator
 id cos
 id counterclockwise
 id cradle
+<<<<<<< HEAD
 id credencialesError1
 id credencialesError2
+=======
+>>>>>>> origin/rama-martin
 id currentState
 id custom
 id customPanel
@@ -3391,6 +3437,7 @@ id graph_wrap
 id group_divider
 id grouping
 id groups
+<<<<<<< HEAD
 id guideline
 id guideline2
 id guideline3
@@ -3400,6 +3447,8 @@ id guideline6
 id guideline7
 id guideline8
 id guideline9
+=======
+>>>>>>> origin/rama-martin
 id header_title
 id hide_ime_id
 id hideable
@@ -3409,12 +3458,16 @@ id honorRequest
 id horizontal_only
 id icon
 id icon_group
+<<<<<<< HEAD
 id icono_agregar_cuota
 id icono_siguiente
+=======
+>>>>>>> origin/rama-martin
 id ifRoom
 id ignore
 id ignoreRequest
 id image
+<<<<<<< HEAD
 id imageView
 id image_back_button
 id image_home
@@ -3426,14 +3479,19 @@ id image_low_menu_quad2
 id image_new_payment
 id image_rectangle_gris
 id image_vector
+=======
+>>>>>>> origin/rama-martin
 id immediateStop
 id included
 id indeterminate
 id info
+<<<<<<< HEAD
 id inputClave
 id inputUsuario
 id input_buscar_afiliado
 id input_nro_afiliado
+=======
+>>>>>>> origin/rama-martin
 id invisible
 id inward
 id italic
@@ -3450,7 +3508,10 @@ id line3
 id linear
 id listMode
 id list_item
+<<<<<<< HEAD
 id logo
+=======
+>>>>>>> origin/rama-martin
 id m3_side_sheet
 id main
 id marquee
@@ -3478,11 +3539,14 @@ id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
 id matrix
+<<<<<<< HEAD
 id menu_pagos_historial_pagos_button
 id menu_pagos_image_rectangle
 id menu_pagos_pago_activ_diaria_button
 id menu_pagos_pago_cuota_mensual_socio_button
 id mes_selector_btn
+=======
+>>>>>>> origin/rama-martin
 id message
 id middle
 id mini
@@ -3535,6 +3599,7 @@ id north
 id notification_background
 id notification_main_column
 id notification_main_column_container
+<<<<<<< HEAD
 id np_pag2_container1
 id np_pag2_container_alta_form_marker_pag1
 id np_pag2_container_alta_form_marker_pag2
@@ -3563,6 +3628,8 @@ id nuevo_pago_pag1_spinner_icono
 id nuevo_pago_pag1_text_nro_identificacion
 id nuevo_pago_pag3_container_gris
 id nuevo_pago_pag5_container2
+=======
+>>>>>>> origin/rama-martin
 id off
 id on
 id onInterceptTouchReturnSwipe
@@ -3584,8 +3651,11 @@ id outline
 id outward
 id overshoot
 id packed
+<<<<<<< HEAD
 id pag3_container1
 id pag3_nro_importe
+=======
+>>>>>>> origin/rama-martin
 id parallax
 id parent
 id parentPanel
@@ -3695,6 +3765,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+<<<<<<< HEAD
 id textView_comentario
 id textView_detalle
 id text_btn_cancelar
@@ -3712,12 +3783,20 @@ id text_input_start_icon
 id text_pagos
 id text_registrado_exito
 id text_registro
+=======
+id textView
+id textView2
+id text_input_end_icon
+id text_input_error_icon
+id text_input_start_icon
+>>>>>>> origin/rama-martin
 id textinput_counter
 id textinput_error
 id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
+<<<<<<< HEAD
 id texto_agregar_actividad
 id texto_agregar_cuota
 id texto_anio
@@ -3729,6 +3808,8 @@ id texto_debito
 id texto_efectivo
 id texto_importe_total
 id texto_mes
+=======
+>>>>>>> origin/rama-martin
 id time
 id title
 id titleDividerNoCustom
@@ -3748,11 +3829,14 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+<<<<<<< HEAD
 id tvContrasena
 id tvIniciarSesion
 id tvPreguntaR
 id tvRRHH
 id tvUsuario
+=======
+>>>>>>> origin/rama-martin
 id unchecked
 id uniform
 id unlabeled
@@ -3890,6 +3974,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+<<<<<<< HEAD
 layout activity_historial_pagos
 layout activity_home
 layout activity_login
@@ -3900,6 +3985,16 @@ layout activity_nuevo_pago_pag2_actividad
 layout activity_nuevo_pago_pag2_cuota
 layout activity_nuevo_pago_pag3_efec
 layout activity_nuevo_pago_pag4_confirm_impres
+=======
+layout activity_estado_cuenta1
+layout activity_estado_cuenta2
+layout activity_estado_cuenta3
+layout activity_main
+layout activity_pantalla1
+layout activity_pantalla2
+layout activity_pantalla3
+layout activity_pantalla4
+>>>>>>> origin/rama-martin
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -4029,8 +4124,11 @@ string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string clear_text_end_icon_content_description
+<<<<<<< HEAD
 string credError1
 string credError2
+=======
+>>>>>>> origin/rama-martin
 string error_a11y_label
 string error_icon_content_description
 string exposed_dropdown_menu_content_description

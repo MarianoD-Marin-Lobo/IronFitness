@@ -28,6 +28,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.IronFitness" >
         <activity
+<<<<<<< HEAD
             android:name="ar.madmaimarramsaz.ironFitness.Historial_Pagos_Activity"
             android:exported="false" />
         <activity
@@ -56,6 +57,15 @@
             android:exported="false" />
         <activity
             android:name="ar.madmaimarramsaz.ironFitness.LoginActivity"
+=======
+            android:name="ar.madmaimarramsaz.ironFitness.Estados_Cuenta_Activity.EstadoCuenta3Activity"
+            android:exported="false" />
+        <activity
+            android:name="ar.madmaimarramsaz.ironFitness.Estados_Cuenta_Activity.EstadoCuenta2Activity"
+            android:exported="false" />
+        <activity
+            android:name="ar.madmaimarramsaz.ironFitness.Estados_Cuenta_Activity.EstadoCuenta1Activity"
+>>>>>>> origin/rama-martin
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -63,6 +73,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
+=======
+        <activity
+            android:name="ar.madmaimarramsaz.ironFitness.Afiliados_Carnet_Activity.Pantalla4Activity"
+            android:exported="false" />
+        <activity
+            android:name="ar.madmaimarramsaz.ironFitness.Afiliados_Carnet_Activity.Pantalla3Activity"
+            android:exported="false" />
+        <activity
+            android:name="ar.madmaimarramsaz.ironFitness.Afiliados_Carnet_Activity.Pantalla2Activity"
+            android:exported="false" />
+        <activity
+            android:name="ar.madmaimarramsaz.ironFitness.Afiliados_Carnet_Activity.Pantalla1Activity"
+            android:exported="false" />
+        <activity
+            android:name="ar.madmaimarramsaz.ironFitness.MainActivity"
+            android:exported="false" >
+        </activity>
+>>>>>>> origin/rama-martin
 
         <provider
             android:name="androidx.startup.InitializationProvider"

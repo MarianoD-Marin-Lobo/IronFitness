@@ -1,6 +1,7 @@
 R_DEF: Internal format may change without notice
 local
 color black
+<<<<<<< HEAD
 color bordeGrisClaro
 color bordeGrisOscuro
 color btnLogin1fondo
@@ -200,6 +201,27 @@ mipmap ic_launcher_round
 string app_name
 string credError1
 string credError2
+=======
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id button
+id button2
+id main
+id textView
+id textView2
+layout activity_estado_cuenta1
+layout activity_estado_cuenta2
+layout activity_estado_cuenta3
+layout activity_main
+layout activity_pantalla1
+layout activity_pantalla2
+layout activity_pantalla3
+layout activity_pantalla4
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+>>>>>>> origin/rama-martin
 style Base.Theme.IronFitness
 style Theme.IronFitness
 xml backup_rules
