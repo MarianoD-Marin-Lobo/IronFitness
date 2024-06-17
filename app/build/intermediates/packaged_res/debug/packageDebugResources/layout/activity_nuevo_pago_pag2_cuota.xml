@@ -452,7 +452,7 @@
 
         <ImageView
             android:id="@+id/icono_agregar_cuota"
-            android:layout_width="38dp"
+            android:layout_width="28dp"
             android:layout_height="28dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/icono_agregar1"
