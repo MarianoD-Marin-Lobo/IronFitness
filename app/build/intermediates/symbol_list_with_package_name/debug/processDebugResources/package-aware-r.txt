@@ -1362,24 +1362,18 @@ color background_floating_material_light
 color background_material_dark
 color background_material_light
 color black
-<<<<<<< HEAD
 color bordeGrisClaro
 color bordeGrisOscuro
-=======
->>>>>>> origin/rama-martin
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
 color bright_foreground_inverse_material_light
 color bright_foreground_material_dark
 color bright_foreground_material_light
-<<<<<<< HEAD
 color btnLogin1fondo
 color btnLogin1letra
 color btnLogin2fondo
 color btnLogin2letra
-=======
->>>>>>> origin/rama-martin
 color button_material_dark
 color button_material_light
 color call_notification_answer_color
@@ -1388,10 +1382,7 @@ color cardview_dark_background
 color cardview_light_background
 color cardview_shadow_end_color
 color cardview_shadow_start_color
-<<<<<<< HEAD
 color colorBase
-=======
->>>>>>> origin/rama-martin
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
 color design_dark_default_color_background
@@ -1436,10 +1427,7 @@ color dim_foreground_material_dark
 color dim_foreground_material_light
 color error_color_material_dark
 color error_color_material_light
-<<<<<<< HEAD
 color fondoGris
-=======
->>>>>>> origin/rama-martin
 color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
@@ -2110,10 +2098,7 @@ color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
 color ripple_material_dark
 color ripple_material_light
-<<<<<<< HEAD
 color rojo
-=======
->>>>>>> origin/rama-martin
 color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
@@ -3009,15 +2994,22 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable aceptar
+drawable administrar_carnets
+drawable afiliado_searchbox
+drawable afiliados
+drawable afiliados_complete_list
+drawable alert
+drawable anterior_button_small
 drawable avd_hide_password
 drawable avd_show_password
-<<<<<<< HEAD
+drawable background_white_rounded
+drawable borrar_afiliado_button
+drawable borrar_carnet_button
 drawable btn2_bg
 drawable btn_buscar_icon
 drawable btn_cancelar_bg
 drawable btn_cancelar_icono
-=======
->>>>>>> origin/rama-martin
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3026,20 +3018,36 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
-<<<<<<< HEAD
 drawable btn_siguiente_bg
 drawable btn_siguiente_icon
+drawable cancelar
+drawable cancelar_button_large
+drawable cancelar_button_small
+drawable cancelar_cambios
+drawable cancelar_cambios_button
+drawable carnets
+drawable confirmar_button_small
+drawable confirmar_cambios
+drawable confirmar_cambios_button
 drawable container1
 drawable container1_gris
 drawable container_der
 drawable container_izq
-=======
->>>>>>> origin/rama-martin
+drawable cuotas_a_vencer
+drawable cuotas_a_vencer_en_el_dia
+drawable datos_afiliado
+drawable datos_carnet
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable editar_afiliado_button
+drawable editar_carnet_button
+drawable esta_seguro
+drawable estados_cuenta_todos_los_socios
+drawable estados_de_cuenta
+drawable gente_fit
 drawable ic_arrow_back_black_24
 drawable ic_call_answer
 drawable ic_call_answer_low
@@ -3060,7 +3068,9 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
-<<<<<<< HEAD
+drawable icon_home
+drawable icon_person
+drawable iconmoney
 drawable icono_agregar1
 drawable icono_confirmar
 drawable icono_correcto
@@ -3076,16 +3086,20 @@ drawable image_icon_person
 drawable image_new_payment
 drawable image_rectangle_gris
 drawable image_vector
+drawable imageafiliado
+drawable imagecarnet
+drawable imagecuenta
+drawable imprimir_carnet_button
 drawable indeterminate_static
+drawable input_afiliado
 drawable iv_back_button
+drawable listado_carnets_socios
 drawable login_borde_inputs
 drawable login_boton_datoscompletos
 drawable login_boton_sindatos
 drawable logo_iron
 drawable low_menu_quad
-=======
-drawable indeterminate_static
->>>>>>> origin/rama-martin
+drawable lupa
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
 drawable m3_bottom_sheet_drag_handle
@@ -3097,6 +3111,7 @@ drawable m3_tabs_background
 drawable m3_tabs_line_indicator
 drawable m3_tabs_rounded_line_indicator
 drawable m3_tabs_transparent_background
+drawable manos_dinero
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -3107,12 +3122,9 @@ drawable material_ic_keyboard_arrow_previous_black_24dp
 drawable material_ic_keyboard_arrow_right_black_24dp
 drawable material_ic_menu_arrow_down_black_24dp
 drawable material_ic_menu_arrow_up_black_24dp
-<<<<<<< HEAD
 drawable menu_pagos_container_borde_button
 drawable menu_pagos_image_rectangle
 drawable menu_pagos_pagos_border_button
-=======
->>>>>>> origin/rama-martin
 drawable mtrl_bottomsheet_drag_handle
 drawable mtrl_checkbox_button
 drawable mtrl_checkbox_button_checked_unchecked
@@ -3151,6 +3163,9 @@ drawable mtrl_switch_track
 drawable mtrl_switch_track_decoration
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
+drawable new_afiliado_button
+drawable new_payment_4
+drawable nosocio_icon
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -3164,7 +3179,6 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
-<<<<<<< HEAD
 drawable nuevo_pago_pag1_container_alta_form_marker_pag
 drawable nuevo_pago_pag1_container_alta_form_marker_pag1
 drawable nuevo_pago_pag1_container_rectangle1
@@ -3182,14 +3196,29 @@ drawable nuevo_pago_pag1_img_filter_todos
 drawable nuevo_pago_pag1_nro_id
 drawable nuevo_pago_pag1_spinner
 drawable pag3_importe_total1
+drawable pago_cuota_socio_1
+drawable rectangle_25
+drawable rectangle_25_1
+drawable registro
+drawable rounded_border
+drawable seguro_borrar_afiliado
+drawable siguiente_button_large
+drawable siguiente_button_small
+drawable socio_icon
+drawable socios_image
 drawable spinner_icono
 drawable test_level_drawable
+drawable texto_afiliado
+drawable texto_carnet
+drawable texto_cuenta
 drawable texto_ironhouse
-=======
-drawable test_level_drawable
->>>>>>> origin/rama-martin
+drawable todos_los_estados_de_cuenta
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable vector_3
+drawable vector_cruz
+drawable volver
+drawable volver_afiliado_button
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -3261,6 +3290,8 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id alertMessage1
+id alertMessage2
 id alertTitle
 id aligned
 id all
@@ -3268,10 +3299,7 @@ id allStates
 id always
 id animateToEnd
 id animateToStart
-<<<<<<< HEAD
 id anio_selector_btn
-=======
->>>>>>> origin/rama-martin
 id antiClockwise
 id anticipate
 id arc
@@ -3292,7 +3320,6 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-<<<<<<< HEAD
 id btnLogin
 id btn_anterior_icono
 id btn_buscar_icon
@@ -3303,14 +3330,16 @@ id btn_pag5_container4
 id btn_siguiente
 id btn_siguiente_icono
 id btn_volver_gris
-=======
-id button
+id button1
 id button2
->>>>>>> origin/rama-martin
+id button3
+id button4
 id buttonPanel
+id buttonRow
 id cache_measures
 id callMeasure
 id cancel_button
+id carnets
 id carryVelocity
 id center
 id centerCrop
@@ -3320,6 +3349,8 @@ id center_vertical
 id chain
 id chain2
 id chains
+id checkNoSocio
+id checkSocio
 id checkbox
 id checked
 id chronometer
@@ -3328,13 +3359,14 @@ id clear_text
 id clip_horizontal
 id clip_vertical
 id clockwise
+id closeButton1
+id closeButton2
 id closest
 id collapseActionView
 id compress
 id confirm_button
 id constraint
 id container
-<<<<<<< HEAD
 id container_agr_actividad
 id container_agr_cuota
 id container_btn_anterior
@@ -3347,8 +3379,6 @@ id container_btn_siguiente
 id container_detalle_factura
 id container_importe_total
 id container_pago_cuota_mensual_socio_button
-=======
->>>>>>> origin/rama-martin
 id content
 id contentPanel
 id contiguous
@@ -3357,11 +3387,8 @@ id coordinator
 id cos
 id counterclockwise
 id cradle
-<<<<<<< HEAD
 id credencialesError1
 id credencialesError2
-=======
->>>>>>> origin/rama-martin
 id currentState
 id custom
 id customPanel
@@ -3400,6 +3427,7 @@ id easeInOut
 id easeOut
 id east
 id edge
+id editText
 id edit_query
 id edit_text_id
 id elastic
@@ -3427,6 +3455,7 @@ id flip
 id floating
 id forever
 id fragment_container_view_tag
+id frameLayout
 id frost
 id fullscreen_header
 id ghost_view
@@ -3437,7 +3466,6 @@ id graph_wrap
 id group_divider
 id grouping
 id groups
-<<<<<<< HEAD
 id guideline
 id guideline2
 id guideline3
@@ -3447,8 +3475,6 @@ id guideline6
 id guideline7
 id guideline8
 id guideline9
-=======
->>>>>>> origin/rama-martin
 id header_title
 id hide_ime_id
 id hideable
@@ -3458,18 +3484,24 @@ id honorRequest
 id horizontal_only
 id icon
 id icon_group
-<<<<<<< HEAD
 id icono_agregar_cuota
 id icono_siguiente
-=======
->>>>>>> origin/rama-martin
 id ifRoom
 id ignore
 id ignoreRequest
 id image
-<<<<<<< HEAD
+id imageButton
+id imageButton10
+id imageButton2
+id imageButton3
+id imageButton6
+id imageButton7
+id imageButton8
+id imageButton9
+id imageButtonAfiliado
 id imageView
 id image_back_button
+id image_column
 id image_home
 id image_icon_home
 id image_icon_person
@@ -3479,25 +3511,30 @@ id image_low_menu_quad2
 id image_new_payment
 id image_rectangle_gris
 id image_vector
-=======
->>>>>>> origin/rama-martin
 id immediateStop
 id included
 id indeterminate
 id info
-<<<<<<< HEAD
+id input1
+id input2
+id input3
+id input4
 id inputClave
 id inputUsuario
 id input_buscar_afiliado
+id input_fecha_nacimiento
 id input_nro_afiliado
-=======
->>>>>>> origin/rama-martin
 id invisible
 id inward
 id italic
 id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
+id label1
+id label2
+id label3
+id label4
+id labelRol
 id labeled
 id layout
 id left
@@ -3506,12 +3543,10 @@ id legacy
 id line1
 id line3
 id linear
+id linearLayout
 id listMode
 id list_item
-<<<<<<< HEAD
 id logo
-=======
->>>>>>> origin/rama-martin
 id m3_side_sheet
 id main
 id marquee
@@ -3539,14 +3574,11 @@ id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
 id matrix
-<<<<<<< HEAD
 id menu_pagos_historial_pagos_button
 id menu_pagos_image_rectangle
 id menu_pagos_pago_activ_diaria_button
 id menu_pagos_pago_cuota_mensual_socio_button
 id mes_selector_btn
-=======
->>>>>>> origin/rama-martin
 id message
 id middle
 id mini
@@ -3593,13 +3625,13 @@ id neverCompleteToEnd
 id neverCompleteToStart
 id noScroll
 id noState
+id nombre_column
 id none
 id normal
 id north
 id notification_background
 id notification_main_column
 id notification_main_column_container
-<<<<<<< HEAD
 id np_pag2_container1
 id np_pag2_container_alta_form_marker_pag1
 id np_pag2_container_alta_form_marker_pag2
@@ -3607,6 +3639,30 @@ id np_pag2_container_alta_form_marker_pag3
 id np_pag2_container_gris
 id np_pag2_input_comentarios
 id np_pag2_spinner_icono1
+id nuevoAfiliado_image_rectangle
+id nuevo_afiliado_input_adress
+id nuevo_afiliado_input_cityAndPostCod
+id nuevo_afiliado_input_comments
+id nuevo_afiliado_input_email
+id nuevo_afiliado_input_telefono
+id nuevo_afiliado_input_telefonoEmerg
+id nuevo_afiliado_lbl_adress
+id nuevo_afiliado_lbl_aptoMed
+id nuevo_afiliado_lbl_cityAndPostCod
+id nuevo_afiliado_lbl_comments
+id nuevo_afiliado_lbl_email
+id nuevo_afiliado_lbl_fechaAfil
+id nuevo_afiliado_lbl_rol
+id nuevo_afiliado_lbl_telefono
+id nuevo_afiliado_lbl_telefonoEmerg
+id nuevo_afiliado_pag1_container_alta_form_marker_pag1
+id nuevo_afiliado_pag1_container_alta_form_marker_pag2
+id nuevo_afiliado_pag1_container_alta_form_marker_pag3
+id nuevo_afiliado_pag1_container_alta_form_marker_pag4
+id nuevo_afiliado_pag1_input_aptoMed
+id nuevo_afiliado_pag1_input_nombre_apellido_afiliado
+id nuevo_afiliado_pag1_label_nombres_apellidos
+id nuevo_afiliado_pag1_label_nro_afiliado_socio
 id nuevo_pago_actividad_spinner
 id nuevo_pago_container_descargando
 id nuevo_pago_descargando_icono
@@ -3628,8 +3684,6 @@ id nuevo_pago_pag1_spinner_icono
 id nuevo_pago_pag1_text_nro_identificacion
 id nuevo_pago_pag3_container_gris
 id nuevo_pago_pag5_container2
-=======
->>>>>>> origin/rama-martin
 id off
 id on
 id onInterceptTouchReturnSwipe
@@ -3651,11 +3705,8 @@ id outline
 id outward
 id overshoot
 id packed
-<<<<<<< HEAD
 id pag3_container1
 id pag3_nro_importe
-=======
->>>>>>> origin/rama-martin
 id parallax
 id parent
 id parentPanel
@@ -3675,6 +3726,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id recycler_view
 id report_drawn
 id reverseSawtooth
 id right
@@ -3706,6 +3758,8 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id selector_noSocio_radbtn
+id selector_socio_radbtn
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -3744,7 +3798,9 @@ id stretch
 id submenuarrow
 id submit_area
 id supportScrollUp
+id tabLayout
 id tabMode
+id tableLayout
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
 id tag_accessibility_heading
@@ -3765,9 +3821,13 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-<<<<<<< HEAD
+id textView
+id textView3
+id textView4
 id textView_comentario
 id textView_detalle
+id text_afiliados
+id text_alta_nuevo_afiliado
 id text_btn_cancelar
 id text_btn_confirmar
 id text_btn_siguiente
@@ -3780,23 +3840,17 @@ id text_imprimir
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
+id text_no_socios
 id text_pagos
 id text_registrado_exito
 id text_registro
-=======
-id textView
-id textView2
-id text_input_end_icon
-id text_input_error_icon
-id text_input_start_icon
->>>>>>> origin/rama-martin
+id text_socios
 id textinput_counter
 id textinput_error
 id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
-<<<<<<< HEAD
 id texto_agregar_actividad
 id texto_agregar_cuota
 id texto_anio
@@ -3808,8 +3862,6 @@ id texto_debito
 id texto_efectivo
 id texto_importe_total
 id texto_mes
-=======
->>>>>>> origin/rama-martin
 id time
 id title
 id titleDividerNoCustom
@@ -3829,20 +3881,18 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
-<<<<<<< HEAD
 id tvContrasena
 id tvIniciarSesion
 id tvPreguntaR
 id tvRRHH
 id tvUsuario
-=======
->>>>>>> origin/rama-martin
 id unchecked
 id uniform
 id unlabeled
 id up
 id useLogo
 id vertical_only
+id viewPager
 id view_offset_helper
 id view_transition
 id view_tree_lifecycle_owner
@@ -3974,27 +4024,31 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-<<<<<<< HEAD
+layout activity_datos_afiliado_configuracion
+layout activity_datos_afiliado_editar
+layout activity_datos_afiliado_ver
+layout activity_estado_cuenta1
+layout activity_estado_cuenta2
+layout activity_estado_cuenta3
+layout activity_gestion
 layout activity_historial_pagos
 layout activity_home
 layout activity_login
 layout activity_menu_pagos
+layout activity_nuevo_afiliado_pag1
+layout activity_nuevo_afiliado_pag2
+layout activity_nuevo_afiliado_pag3
+layout activity_nuevo_afiliado_pag4
 layout activity_nuevo_pago_descargando_comprob
 layout activity_nuevo_pago_pag1
 layout activity_nuevo_pago_pag2_actividad
 layout activity_nuevo_pago_pag2_cuota
 layout activity_nuevo_pago_pag3_efec
 layout activity_nuevo_pago_pag4_confirm_impres
-=======
-layout activity_estado_cuenta1
-layout activity_estado_cuenta2
-layout activity_estado_cuenta3
-layout activity_main
 layout activity_pantalla1
 layout activity_pantalla2
 layout activity_pantalla3
 layout activity_pantalla4
->>>>>>> origin/rama-martin
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -4011,6 +4065,9 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_no_socios
+layout fragment_socios
+layout fragment_todos
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout m3_alert_dialog
@@ -4074,6 +4131,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+layout tabla_item
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
@@ -4124,11 +4182,8 @@ string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string clear_text_end_icon_content_description
-<<<<<<< HEAD
 string credError1
 string credError2
-=======
->>>>>>> origin/rama-martin
 string error_a11y_label
 string error_icon_content_description
 string exposed_dropdown_menu_content_description

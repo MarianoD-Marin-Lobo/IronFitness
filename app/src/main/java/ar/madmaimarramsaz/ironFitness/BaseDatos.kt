@@ -6,6 +6,7 @@ import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import android.util.Log
+import ar.madmaimarramsaz.ironFitness.Entidades.Administrador
 
 const val DB_NAME = "BaseDatos"
 const val DB_VERSION = 1

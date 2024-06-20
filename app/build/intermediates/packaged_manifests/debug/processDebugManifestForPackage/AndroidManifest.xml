@@ -28,7 +28,6 @@
         android:testOnly="true"
         android:theme="@style/Theme.IronFitness" >
         <activity
-<<<<<<< HEAD
             android:name="ar.madmaimarramsaz.ironFitness.Historial_Pagos_Activity"
             android:exported="false" />
         <activity
@@ -56,8 +55,28 @@
             android:name="ar.madmaimarramsaz.ironFitness.HomeActivity"
             android:exported="false" />
         <activity
+            android:name="ar.madmaimarramsaz.ironFitness.GestionAfiliadoActivity"
+            android:exported="false" />
+        <activity
             android:name="ar.madmaimarramsaz.ironFitness.LoginActivity"
-=======
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        />
+        </activity>
+        <activity
+            android:name="ar.madmaimarramsaz.ironFitness.Ver_datos_afiliados_activity.Datos_Afiliado_Configuracion"
+            android:exported="false" />
+        <activity
+            android:name="ar.madmaimarramsaz.ironFitness.Ver_datos_afiliados_activity.Datos_Afiliado_Editar"
+            android:exported="false" />
+        <activity
+            android:name="ar.madmaimarramsaz.ironFitness.Ver_datos_afiliados_activity.Datos_Afiliado_Ver"
+            android:exported="false" />
+        <activity
             android:name="ar.madmaimarramsaz.ironFitness.Estados_Cuenta_Activity.EstadoCuenta3Activity"
             android:exported="false" />
         <activity
@@ -65,16 +84,7 @@
             android:exported="false" />
         <activity
             android:name="ar.madmaimarramsaz.ironFitness.Estados_Cuenta_Activity.EstadoCuenta1Activity"
->>>>>>> origin/rama-martin
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-<<<<<<< HEAD
-=======
+            android:exported="false" />
         <activity
             android:name="ar.madmaimarramsaz.ironFitness.Afiliados_Carnet_Activity.Pantalla4Activity"
             android:exported="false" />
@@ -89,9 +99,7 @@
             android:exported="false" />
         <activity
             android:name="ar.madmaimarramsaz.ironFitness.MainActivity"
-            android:exported="false" >
-        </activity>
->>>>>>> origin/rama-martin
+            android:exported="false" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

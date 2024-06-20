@@ -10,7 +10,7 @@
         android:id="@+id/menu_pagos_image_rectangle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/Rectangle_25"
+        android:background="@drawable/rectangle_25"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image_rectangle_gris" />
@@ -20,7 +20,7 @@
         android:layout_height="25dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="44dp"
-        android:background="@drawable/CARNETS"
+        android:background="@drawable/carnets"
         android:includeFontPadding="false"
         android:text=""
         android:textColor="#FF000000"
@@ -33,7 +33,7 @@
         android:id="@+id/image_rectangle_gris"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/Rectangle_25_1"
+        android:background="@drawable/rectangle_25_1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="30dp"
-        android:background="@drawable/Registro"
+        android:background="@drawable/registro"
         app:layout_constraintStart_toEndOf="@+id/image_back_button"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -54,7 +54,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
         android:scaleType="centerInside"
-        android:src="@drawable/Vector_3"
+        android:src="@drawable/vector_3"
         app:layout_constraintStart_toStartOf="@+id/image_rectangle_gris"
         app:layout_constraintTop_toTopOf="@+id/image_rectangle_gris" />
 
@@ -64,7 +64,7 @@
         android:layout_height="25dp"
         android:layout_marginTop="220dp"
         android:fontFamily="sans-serif"
-        android:background="@drawable/DATOS_CARNET"
+        android:background="@drawable/datos_carnet"
         android:text=" "
         android:textAlignment="center"
         android:textSize="20sp"
@@ -166,7 +166,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@drawable/Borrar_Carnet_Button"
+                android:background="@drawable/borrar_carnet_button"
                 app:backgroundTint="@null"
                 android:text="" />
 
@@ -175,7 +175,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@drawable/Editar_Carnet_Button"
+                android:background="@drawable/editar_carnet_button"
                 app:backgroundTint="@null"
                 android:text="" />
 
@@ -184,7 +184,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@drawable/Imprimir_Carnet_Button"
+                android:background="@drawable/imprimir_carnet_button"
                 app:backgroundTint="@null"
                 android:text="" />
 
@@ -266,7 +266,7 @@
         android:layout_width="60dp"
         android:layout_height="40dp"
         android:layout_marginBottom="5dp"
-        android:background="@drawable/New_Payment_4"
+        android:background="@drawable/new_payment_4"
         android:scaleType="centerInside"
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"

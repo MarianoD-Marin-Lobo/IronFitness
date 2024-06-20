@@ -14,14 +14,11 @@
     tools:context=".Estados_Cuenta_Activity.EstadoCuenta1Activity">
 
 
-
-
-
             <ImageView
                 android:id="@+id/menu_pagos_image_rectangle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/Manos_dinero"
+                android:background="@drawable/manos_dinero"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/image_rectangle_gris" />
@@ -30,7 +27,7 @@
         android:id="@+id/image_rectangle_gris"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/Rectangle_25_1"
+        android:background="@drawable/rectangle_25_1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,7 +40,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="12dp"
                 android:scaleType="centerInside"
-                android:src="@drawable/Vector_3"
+                android:src="@drawable/vector_3"
                 app:layout_constraintStart_toStartOf="@+id/image_rectangle_gris"
                 app:layout_constraintTop_toTopOf="@+id/image_rectangle_gris" />
 
@@ -52,7 +49,7 @@
         android:layout_width="60dp"
         android:layout_height="40dp"
         android:layout_marginTop="14dp"
-        android:background="@drawable/New_Payment_4"
+        android:background="@drawable/new_payment_4"
         android:scaleType="centerInside"
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -107,7 +104,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="30dp"
-                android:background="@drawable/Registro"
+                android:background="@drawable/registro"
                 app:layout_constraintStart_toEndOf="@+id/image_back_button"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -117,7 +114,7 @@
         android:layout_height="55dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="44dp"
-        android:background="@drawable/ESTADOS_DE_CUENTA"
+        android:background="@drawable/estados_de_cuenta"
         android:includeFontPadding="false"
         android:text=""
         android:textColor="#FF000000"
@@ -142,11 +139,11 @@
         app:layout_constraintVertical_bias="0.6" />
 
     <Button
-                android:id="@+id/menu_pagos_pago_cuota_mensual_socio_button"
+                android:id="@+id/btn_cuotas_vencer_dia"
                 android:layout_width="wrap_content"
                 android:layout_height="200dp"
                 android:layout_marginTop="0dp"
-                android:background="@drawable/CuotasAVencer"
+                android:background="@drawable/cuotas_a_vencer"
                 android:gravity="center_horizontal|top"
                 android:includeFontPadding="false"
                 android:text=""
@@ -159,11 +156,11 @@
                 app:layout_constraintTop_toBottomOf="@+id/menu_pagos_image_rectangle" />
 
             <Button
-                android:id="@+id/menu_pagos_pago_activ_diaria_button"
+                android:id="@+id/btn_estados_de_cuenta"
                 android:layout_width="wrap_content"
                 android:layout_height="200dp"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/EstadosCuentaTodoslossocios"
+                android:background="@drawable/estados_cuenta_todos_los_socios"
                 android:gravity="center_horizontal|top"
                 android:text=""
                 android:textColor="#FF656363"
@@ -171,7 +168,7 @@
                 app:backgroundTint="@null"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/menu_pagos_pago_cuota_mensual_socio_button" />
+                app:layout_constraintTop_toBottomOf="@+id/btn_cuotas_vencer_dia" />
 
 
     <Button
@@ -179,12 +176,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:background="@drawable/"
         android:text=""
         android:textColor="#FF656363"
         android:textSize="0dp"
         app:backgroundTint="@null"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"

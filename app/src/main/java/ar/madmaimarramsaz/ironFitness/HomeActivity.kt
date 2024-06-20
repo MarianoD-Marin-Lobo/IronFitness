@@ -21,6 +21,19 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val btn_cuotas_vencer_dia: ImageButton = findViewById(R.id.btn_cuotas_vencer_dia)
+
+        imageButtonAfiliado.setOnClickListener {
+            val intent = Intent(this, GestionAfiliadoActivity::class.java)
+            startActivity(intent)
+        }
+
+        val btn_estados_de_cuenta: ImageButton = findViewById(R.id.btn_estados_de_cuenta)
+
+        imageButtonAfiliado.setOnClickListener {
+            val intent = Intent(this, Estados_Cuenta_Activity::class.java)
+            startActivity(intent)
+        }
 
     }
 }

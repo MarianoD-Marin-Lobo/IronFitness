@@ -17,7 +17,7 @@ class EstadoCuenta1Activity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_estado_cuenta1)
         // Aquí puedes encontrar los botones y configurar los listeners
-        val button1 = findViewById<Button>(R.id.button)
+        val button1 = findViewById<Button>(R.id.button1)
         val button2 = findViewById<Button>(R.id.button2)
 
         // Configurar onClickListener para button1
