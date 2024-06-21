@@ -11,14 +11,18 @@ import android.content.Intent
 import android.view.View
 import android.widget.Button
 
+import ar.madmaimarramsaz.ironFitness.Estados_Cuenta_Activity.EstadoCuenta2Activity
+import ar.madmaimarramsaz.ironFitness.Estados_Cuenta_Activity.EstadoCuenta3Activity
+
 class EstadoCuenta1Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_estado_cuenta1)
+
         // Aquí puedes encontrar los botones y configurar los listeners
-        val button1 = findViewById<Button>(R.id.button1)
-        val button2 = findViewById<Button>(R.id.button2)
+        val button1 = findViewById<Button>(R.id.btn_cuotas_vencer_dia)
+        val button2 = findViewById<Button>(R.id.btn_estados_de_cuenta)
 
         // Configurar onClickListener para button1
         button1.setOnClickListener {

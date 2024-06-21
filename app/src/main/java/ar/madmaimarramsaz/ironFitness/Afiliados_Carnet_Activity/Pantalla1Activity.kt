@@ -1,6 +1,9 @@
 package ar.madmaimarramsaz.ironFitness.Afiliados_Carnet_Activity
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.ImageButton
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -12,10 +15,12 @@ class Pantalla1Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_pantalla1)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        // boton volver a la ventana anterior
+        val btn_volver: Button = findViewById(R.id.image_back_button)
+
+        btn_volver.setOnClickListener {
+            finish()
         }
     }
 }

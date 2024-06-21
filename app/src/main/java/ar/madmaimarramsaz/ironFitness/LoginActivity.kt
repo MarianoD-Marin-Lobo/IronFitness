@@ -31,7 +31,6 @@ class LoginActivity : AppCompatActivity() {
         inputClave = findViewById(R.id.inputClave)
         btnLogin = findViewById(R.id.btnLogin)
 
-
         // Agrega un TextChangedListener al EditText para inputUsuario
         inputUsuario.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
@@ -90,8 +89,6 @@ class LoginActivity : AppCompatActivity() {
                 msjError1.visibility = View.VISIBLE
                 msjError2.visibility = View.VISIBLE
             }
-
-
         }
     }
 ///////////

@@ -3325,6 +3325,8 @@ id btn_anterior_icono
 id btn_buscar_icon
 id btn_cancelar_icono
 id btn_confirmar_icono
+id btn_cuotas_vencer_dia
+id btn_estados_de_cuenta
 id btn_pag5_container3
 id btn_pag5_container4
 id btn_siguiente

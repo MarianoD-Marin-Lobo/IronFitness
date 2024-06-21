@@ -2,11 +2,17 @@ package ar.madmaimarramsaz.ironFitness
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageButton
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+
+import ar.madmaimarramsaz.ironFitness.Estados_Cuenta_Activity.EstadoCuenta1Activity
+import ar.madmaimarramsaz.ironFitness.Afiliados_Carnet_Activity.Pantalla1Activity
+
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,6 +20,7 @@ class HomeActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_home)
 
+        // abre la ventana de Gestion de Afiliados
         val imageButtonAfiliado: ImageButton = findViewById(R.id.imageButtonAfiliado)
 
         imageButtonAfiliado.setOnClickListener {
@@ -21,19 +28,28 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val btn_cuotas_vencer_dia: ImageButton = findViewById(R.id.btn_cuotas_vencer_dia)
+        // abre la ventana de Carnets
+        val btn_carnets: ImageButton = findViewById(R.id.imageButton2)
 
-        imageButtonAfiliado.setOnClickListener {
-            val intent = Intent(this, GestionAfiliadoActivity::class.java)
+        btn_carnets.setOnClickListener {
+            val intent = Intent(this, Pantalla1Activity::class.java)
             startActivity(intent)
         }
 
-        val btn_estados_de_cuenta: ImageButton = findViewById(R.id.btn_estados_de_cuenta)
+        // abre la ventana de Estados de Cuenta
+        val btn_estados_de_cuenta: ImageButton = findViewById(R.id.imageButton3)
 
-        imageButtonAfiliado.setOnClickListener {
-            val intent = Intent(this, Estados_Cuenta_Activity::class.java)
+        btn_estados_de_cuenta.setOnClickListener {
+            val intent = Intent(this, EstadoCuenta1Activity::class.java)
             startActivity(intent)
         }
 
+
+        // boton volver a la ventana anterior
+            val btn_volver: Button = findViewById(R.id.image_back_button)
+
+        btn_volver.setOnClickListener {
+            finish()
+        }
     }
 }

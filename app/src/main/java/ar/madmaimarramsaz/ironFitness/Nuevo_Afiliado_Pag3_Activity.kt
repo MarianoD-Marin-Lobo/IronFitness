@@ -11,7 +11,5 @@ class Nuevo_Afiliado_Pag3_Activity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_nuevo_afiliado_pag3)
 
-
-
     }
 }

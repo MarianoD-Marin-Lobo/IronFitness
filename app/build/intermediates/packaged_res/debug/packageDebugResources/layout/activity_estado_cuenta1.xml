@@ -14,9 +14,6 @@
     tools:context=".Estados_Cuenta_Activity.EstadoCuenta1Activity">
 
 
-
-
-
             <ImageView
                 android:id="@+id/menu_pagos_image_rectangle"
                 android:layout_width="match_parent"
@@ -142,7 +139,7 @@
         app:layout_constraintVertical_bias="0.6" />
 
     <Button
-                android:id="@+id/menu_pagos_pago_cuota_mensual_socio_button"
+                android:id="@+id/btn_cuotas_vencer_dia"
                 android:layout_width="wrap_content"
                 android:layout_height="200dp"
                 android:layout_marginTop="0dp"
@@ -159,7 +156,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/menu_pagos_image_rectangle" />
 
             <Button
-                android:id="@+id/menu_pagos_pago_activ_diaria_button"
+                android:id="@+id/btn_estados_de_cuenta"
                 android:layout_width="wrap_content"
                 android:layout_height="200dp"
                 android:layout_marginTop="20dp"
@@ -171,7 +168,7 @@
                 app:backgroundTint="@null"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/menu_pagos_pago_cuota_mensual_socio_button" />
+                app:layout_constraintTop_toBottomOf="@+id/btn_cuotas_vencer_dia" />
 
 
     <Button
