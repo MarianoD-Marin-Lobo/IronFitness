@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBase">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/btn_siguiente"
+        app:layout_constraintStart_toStartOf="@+id/btn_siguiente"
+        tools:context=".Nuevo_Pago_Descargando_Comprob_Activity">
+
+        <ImageView
+            android:id="@+id/menu_pagos_image_rectangle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="47dp"
+            android:background="@drawable/menu_pagos_image_rectangle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image_rectangle_gris"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/image_rectangle_gris"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image_back_button"
+            android:layout_width="47dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/image_back_button"
+            app:layout_constraintStart_toStartOf="@+id/image_rectangle_gris"
+            app:layout_constraintTop_toTopOf="@+id/image_rectangle_gris" />
+
+        <Button
+            android:id="@+id/image_low_menu_quad"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:background="@drawable/low_menu_quad"
+            android:scaleType="centerInside"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/image_low_menu_quad1"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_vector" />
+
+        <Button
+            android:id="@+id/image_low_menu_quad1"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:background="@drawable/low_menu_quad"
+            android:scaleType="centerInside"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/image_low_menu_quad2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/image_low_menu_quad"
+            app:layout_constraintTop_toBottomOf="@+id/image_vector"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/image_low_menu_quad2"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:background="@drawable/low_menu_quad"
+            android:scaleType="centerInside"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/image_low_menu_quad1"
+            app:layout_constraintTop_toBottomOf="@+id/image_vector" />
+
+        <ImageView
+            android:id="@+id/image_vector"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/image_vector"
+            android:scaleType="centerInside"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nuevo_pago_container_descargando" />
+
+        <TextView
+            android:id="@+id/text_registro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/texto_ironhouse"
+            app:layout_constraintStart_toEndOf="@+id/image_back_button"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_pagos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="30dp"
+            android:includeFontPadding="false"
+            android:text="REGISTRO \n NUEVO PAGO"
+            android:textColor="#FF000000"
+            android:textSize="20dp"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_rectangle_gris" />
+
+        <ImageView
+            android:id="@+id/image_icon_person"
+            android:layout_width="49.17dp"
+            android:layout_height="42dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/image_icon_person"
+            app:layout_constraintBottom_toBottomOf="@id/image_low_menu_quad2"
+            app:layout_constraintEnd_toEndOf="@id/image_low_menu_quad2"
+            app:layout_constraintStart_toStartOf="@+id/image_low_menu_quad2"
+            app:layout_constraintTop_toTopOf="@+id/image_low_menu_quad2" />
+
+        <ImageView
+            android:id="@+id/image_new_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/image_new_payment"
+            app:layout_constraintBottom_toBottomOf="@+id/image_low_menu_quad"
+            app:layout_constraintEnd_toEndOf="@+id/image_low_menu_quad"
+            app:layout_constraintStart_toStartOf="@id/image_low_menu_quad"
+            app:layout_constraintTop_toTopOf="@+id/image_low_menu_quad" />
+
+
+        <ImageView
+            android:id="@+id/image_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/image_icon_home"
+            app:layout_constraintBottom_toBottomOf="@+id/image_low_menu_quad1"
+            app:layout_constraintEnd_toEndOf="@+id/image_low_menu_quad1"
+            app:layout_constraintStart_toStartOf="@id/image_low_menu_quad1"
+            app:layout_constraintTop_toTopOf="@+id/image_low_menu_quad1" />
+
+
+        <ImageView
+            android:id="@+id/nuevo_pago_pag5_container2"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/container1"
+            android:elevation="1dp"
+            android:scaleType="centerInside"
+            app:layout_constraintEnd_toEndOf="@+id/nuevo_pago_container_descargando"
+            app:layout_constraintStart_toStartOf="@+id/nuevo_pago_container_descargando"
+            app:layout_constraintTop_toBottomOf="@+id/text_registrado_exito" />
+
+        <Button
+            android:id="@+id/btn_pag5_container3"
+            android:layout_width="130dp"
+            android:layout_height="120dp"
+            android:background="@drawable/container1"
+            android:elevation="2dp"
+            android:translationZ="2dp"
+            app:backgroundTint="@null"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="@+id/nuevo_pago_pag5_container2"
+            app:layout_constraintEnd_toEndOf="@+id/nuevo_pago_pag5_container2"
+            app:layout_constraintStart_toEndOf="@+id/btn_pag5_container4"
+            app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+        <Button
+            android:id="@+id/btn_pag5_container4"
+            android:layout_width="130dp"
+            android:layout_height="120dp"
+            android:background="@drawable/container1"
+            android:elevation="2dp"
+            app:backgroundTint="@null"
+            android:translationZ="2dp"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="@+id/nuevo_pago_pag5_container2"
+            app:layout_constraintEnd_toStartOf="@+id/btn_pag5_container3"
+            app:layout_constraintStart_toStartOf="@+id/nuevo_pago_pag5_container2"
+            app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+
+        <ImageView
+            android:id="@+id/nuevo_pago_container_descargando"
+            android:layout_width="340dp"
+            android:layout_height="480dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/container1"
+            android:scaleType="centerInside"
+            android:elevation="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/nuevo_pago_pag1_container_rectangle2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/menu_pagos_image_rectangle" />
+
+        <Button
+            android:id="@+id/btn_volver_gris"
+            android:layout_width="340dp"
+            android:layout_height="45dp"
+            android:layout_gravity="top|left"
+            android:background="@drawable/nuevo_pago_pag1_container_rectangle2"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="@+id/nuevo_pago_container_descargando"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="@+id/nuevo_pago_container_descargando"
+            app:layout_constraintStart_toStartOf="@+id/nuevo_pago_container_descargando" />
+
+
+
+        <TextView
+            android:id="@+id/text_btn_volver_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VOLVER AL MENÚ DE PAGOS"
+            android:textColor="#FFFDFDFD"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_volver_gris"
+            app:layout_constraintEnd_toEndOf="@+id/btn_volver_gris"
+            app:layout_constraintStart_toStartOf="@+id/btn_volver_gris"
+            app:layout_constraintTop_toTopOf="@+id/btn_volver_gris" />
+
+        <ImageView
+            android:id="@+id/nuevo_pago_icono_correcto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/icono_correcto"
+            android:elevation="1dp"
+            android:scaleType="centerInside"
+            app:layout_constraintEnd_toEndOf="@+id/nuevo_pago_container_descargando"
+            app:layout_constraintStart_toStartOf="@+id/nuevo_pago_container_descargando"
+            app:layout_constraintTop_toTopOf="@+id/nuevo_pago_container_descargando" />
+
+        <ImageView
+            android:id="@+id/nuevo_pago_icono_descarga2"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/icono_descarga2"
+            android:elevation="3dp"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_pag5_container3"
+            app:layout_constraintEnd_toEndOf="@+id/btn_pag5_container3"
+            app:layout_constraintStart_toStartOf="@+id/btn_pag5_container3"
+            app:layout_constraintTop_toBottomOf="@+id/text_descargar_pdf" />
+
+
+        <ImageView
+            android:id="@+id/nuevo_pago_icono_imprimir"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/icono_imprimir"
+            android:elevation="3dp"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_pag5_container4"
+            app:layout_constraintEnd_toEndOf="@+id/btn_pag5_container4"
+            app:layout_constraintStart_toStartOf="@+id/btn_pag5_container4"
+            app:layout_constraintTop_toBottomOf="@+id/text_imprimir" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="460dp" />
+
+        <TextView
+            android:id="@+id/text_registrado_exito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:elevation="1dp"
+            android:textColor="#FF656363"
+            android:gravity="center_horizontal|top"
+            android:text="PAGO REGISTRADO \n CON EXITO"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/nuevo_pago_container_descargando"
+            app:layout_constraintStart_toStartOf="@+id/nuevo_pago_container_descargando"
+            app:layout_constraintTop_toBottomOf="@+id/nuevo_pago_icono_correcto" />
+
+        <TextView
+            android:id="@+id/text_comprobante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:elevation="1dp"
+            android:text="COMPROBANTE DE PAGO"
+            android:textColor="#FF656363"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/nuevo_pago_pag5_container2"
+            app:layout_constraintStart_toStartOf="@+id/nuevo_pago_pag5_container2"
+            app:layout_constraintTop_toTopOf="@+id/nuevo_pago_pag5_container2" />
+
+        <TextView
+            android:id="@+id/text_imprimir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:elevation="3dp"
+            android:text="IMPRIMIR"
+            android:textColor="#FF656363"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/nuevo_pago_icono_imprimir"
+            app:layout_constraintEnd_toEndOf="@+id/btn_pag5_container4"
+            app:layout_constraintStart_toStartOf="@+id/btn_pag5_container4"
+            app:layout_constraintTop_toTopOf="@+id/btn_pag5_container4" />
+
+        <TextView
+            android:id="@+id/text_descargar_pdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="3dp"
+            android:textStyle="bold"
+            android:text="DESCARGAR \n COMO PDF"
+            android:textColor="#FF656363"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/nuevo_pago_icono_imprimir"
+            app:layout_constraintEnd_toEndOf="@+id/btn_pag5_container3"
+            app:layout_constraintStart_toStartOf="@+id/btn_pag5_container3"
+            app:layout_constraintTop_toTopOf="@+id/btn_pag5_container3" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+
+
+

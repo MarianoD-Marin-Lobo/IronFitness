@@ -448,7 +448,6 @@
             android:layout_height="25dp"
             android:layout_marginStart="10dp"
             app:backgroundTint="@null"
-
             android:background="@drawable/btn_buscar_icon"
             android:scaleType="centerInside"
             app:layout_constraintBottom_toBottomOf="@+id/input_buscar_afiliado"
