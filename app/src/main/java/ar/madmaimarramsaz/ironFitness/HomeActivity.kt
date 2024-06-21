@@ -51,5 +51,26 @@ class HomeActivity : AppCompatActivity() {
         btn_volver.setOnClickListener {
             finish()
         }
+
+        // barra de navegacion Boton 1
+
+        val btn_pagar: Button = findViewById(R.id.image_low_menu_quad)
+
+        btn_pagar.setOnClickListener {
+            val intent = Intent(this, Menu_PagosActivity::class.java)
+            startActivity(intent)
+        }
+
+        // barra de navegacion Boton 2 ninguno
+
+        // barra de navegacion Boton 3
+
+        val btn_home: Button = findViewById(R.id.image_low_menu_quad2)
+
+        btn_home.setOnClickListener {
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }

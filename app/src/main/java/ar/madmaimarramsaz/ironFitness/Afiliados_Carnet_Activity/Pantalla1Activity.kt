@@ -22,5 +22,7 @@ class Pantalla1Activity : AppCompatActivity() {
         btn_volver.setOnClickListener {
             finish()
         }
+
+        
     }
 }
