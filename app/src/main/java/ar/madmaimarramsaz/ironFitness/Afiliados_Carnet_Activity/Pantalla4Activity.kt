@@ -25,31 +25,45 @@ class Pantalla4Activity : AppCompatActivity() {
             finish()
         }
 
-        // barra de navegación Botón 1 Pagar
+        // barra de navegacion Boton 1 Pagar
 
         val btn_pagar: Button = findViewById(R.id.image_low_menu_quad)
 
         btn_pagar.setOnClickListener {
-            val intent = Intent(this, Menu_PagosActivity::class.java)
-            startActivity(intent)
+            irAPagos()
         }
 
-        // barra de navegación Botón 2 ir a Home
+        // barra de navegacion Boton 2 ir a Home
 
         val btn_home: Button = findViewById(R.id.image_low_menu_quad1)
 
         btn_home.setOnClickListener {
-            val intent = Intent(this, HomeActivity::class.java)
-            startActivity(intent)
+            irAHome()
         }
 
-        // barra de navegación Botón 3 ir a Gestión Afiliados
-
+        // barra de navegacion Boton 3 ir a Gestión Afiliados
         val btn_gestionAfiliado: Button = findViewById(R.id.image_low_menu_quad2)
 
         btn_gestionAfiliado.setOnClickListener {
-            val intent = Intent(this, GestionAfiliadoActivity::class.java)
-            startActivity(intent)
+            irAGestionAfiliado()
         }
-        }
+
+
+
     }
+    // Funciones
+    private fun irAPagos(){
+        val intent = Intent(this, Menu_PagosActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun irAHome(){
+        val intent = Intent(this, HomeActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun irAGestionAfiliado(){
+        val intent = Intent(this, GestionAfiliadoActivity::class.java)
+        startActivity(intent)
+    }
+}

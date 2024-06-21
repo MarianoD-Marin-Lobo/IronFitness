@@ -21,10 +21,12 @@
         android:layout_width="19dp"
         android:layout_height="25dp"
         app:backgroundTint="@null"
+        android:background="@drawable/image_back_button"
         android:layout_marginStart="16dp"
         android:layout_marginTop="29dp"
+        android:elevation="5dp"
+        android:translationZ="5dp"
         android:scaleType="centerInside"
-        android:background="@drawable/image_back_button"
         app:layout_constraintStart_toStartOf="@id/image_rectangle_gris"
         app:layout_constraintTop_toTopOf="@id/image_rectangle_gris" />
 

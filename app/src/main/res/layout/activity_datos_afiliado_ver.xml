@@ -48,16 +48,18 @@
         app:layout_constraintStart_toEndOf="@+id/image_back_button"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+    <Button
         android:id="@+id/image_back_button"
-        android:layout_width="47dp"
-        android:layout_height="54dp"
+        android:layout_width="19dp"
+        android:layout_height="25dp"
+        app:backgroundTint="@null"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="29dp"
         android:scaleType="centerInside"
-        android:src="@drawable/vector_3"
-        app:layout_constraintStart_toStartOf="@+id/image_rectangle_gris"
-        app:layout_constraintTop_toTopOf="@+id/image_rectangle_gris" />
+        android:background="@drawable/image_back_button"
+        app:layout_constraintStart_toStartOf="@id/image_rectangle_gris"
+        app:layout_constraintTop_toTopOf="@id/image_rectangle_gris" />
+
 
     <TextView
         android:id="@+id/textView"
