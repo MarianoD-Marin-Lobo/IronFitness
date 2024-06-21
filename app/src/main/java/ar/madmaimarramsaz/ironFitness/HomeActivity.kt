@@ -63,12 +63,12 @@ class HomeActivity : AppCompatActivity() {
 
         // barra de navegacion Boton 2 ninguno
 
-        // barra de navegacion Boton 3
+        // barra de navegacion Boton 3 ir a gestion afiliados
 
         val btn_home: Button = findViewById(R.id.image_low_menu_quad2)
 
         btn_home.setOnClickListener {
-            val intent = Intent(this, HomeActivity::class.java)
+            val intent = Intent(this, GestionAfiliadoActivity::class.java)
             startActivity(intent)
         }
 
