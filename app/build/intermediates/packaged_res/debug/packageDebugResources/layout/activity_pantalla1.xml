@@ -89,13 +89,14 @@
 
     <!-- FrameLayout con borde redondeado -->
     <FrameLayout
+        android:id="@+id/frameLayout3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:background="@drawable/rounded_border"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/editText">
 
         <!-- TableLayout para mostrar los datos -->
         <TableLayout
@@ -115,32 +116,31 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:padding="8dp"
                     android:text="N° CARNET"
-                    android:textStyle="bold"
-                    android:padding="8dp" />
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:padding="8dp"
                     android:text="N° DNI"
-                    android:textStyle="bold"
-                    android:padding="8dp" />
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:padding="8dp"
                     android:text="Nombre/s y Apellido/s"
-                    android:textStyle="bold"
-                    android:padding="8dp" />
+                    android:textStyle="bold" />
             </TableRow>
 
             <!-- Ejemplo de fila con datos -->
-            <TableRow
-                android:padding="8dp">
+            <TableRow android:padding="8dp">
 
                 <EditText
                     android:layout_width="0dp"
@@ -168,8 +168,7 @@
             </TableRow>
 
             <!-- Otras filas de datos -->
-            <TableRow
-                android:padding="8dp">
+            <TableRow android:padding="8dp">
 
                 <EditText
                     android:layout_width="0dp"
@@ -215,7 +214,7 @@
         app:layout_constraintEnd_toStartOf="@+id/image_low_menu_quad1"
 
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3" />
 
     <Button
         android:id="@+id/image_low_menu_quad1"
@@ -227,7 +226,8 @@
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/image_low_menu_quad2"
-        app:layout_constraintStart_toEndOf="@+id/image_low_menu_quad" />
+        app:layout_constraintStart_toEndOf="@+id/image_low_menu_quad"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3" />
 
     <Button
         android:id="@+id/image_low_menu_quad2"
@@ -239,7 +239,8 @@
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/image_low_menu_quad1" />
+        app:layout_constraintStart_toEndOf="@+id/image_low_menu_quad1"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
