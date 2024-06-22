@@ -75,7 +75,7 @@ class Pantalla2Activity : AppCompatActivity() {
         startActivity(intent)
     }
     private fun irAImprimir(){
-        val intent = Intent(this, Pantalla1Activity::class.java)
+        val intent = Intent(this, Impresion_Comprobantes_Activity::class.java)
         startActivity(intent)
     }
 }

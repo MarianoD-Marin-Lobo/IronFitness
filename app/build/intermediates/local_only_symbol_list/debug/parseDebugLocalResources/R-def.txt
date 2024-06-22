@@ -56,6 +56,8 @@ drawable icon_home
 drawable icon_person
 drawable iconmoney
 drawable icono_agregar1
+drawable icono_botonmas
+drawable icono_botonmenos
 drawable icono_confirmar
 drawable icono_correcto
 drawable icono_descarga
@@ -63,6 +65,7 @@ drawable icono_descarga2
 drawable icono_flecha_anterior
 drawable icono_imprimir
 drawable icono_siguiente
+drawable icono_spinner
 drawable image_back_button
 drawable image_filters_bar
 drawable image_icon_home
@@ -73,6 +76,7 @@ drawable image_vector
 drawable imageafiliado
 drawable imagecarnet
 drawable imagecuenta
+drawable impresion_spinner
 drawable imprimir_carnet_button
 drawable input_afiliado
 drawable iv_back_button
@@ -131,6 +135,9 @@ id alertMessage1
 id alertMessage2
 id anio_selector_btn
 id barrier
+id boton_mas
+id boton_menor
+id boton_menos
 id btnLogin
 id btn_anterior_icono
 id btn_buscar_icon
@@ -138,6 +145,7 @@ id btn_cancelar_icono
 id btn_confirmar_icono
 id btn_cuotas_vencer_dia
 id btn_estados_de_cuenta
+id btn_imprimir_icono
 id btn_pag5_container3
 id btn_pag5_container4
 id btn_siguiente
@@ -149,6 +157,7 @@ id button3
 id button4
 id buttonRow
 id carnets
+id checkBox
 id checkNoSocio
 id checkSocio
 id closeButton1
@@ -168,6 +177,7 @@ id container_pago_cuota_mensual_socio_button
 id credencialesError1
 id credencialesError2
 id editText
+id editText_impresora
 id frameLayout
 id frameLayout3
 id guideline
@@ -181,6 +191,11 @@ id guideline8
 id guideline9
 id icono_agregar_cuota
 id icono_siguiente
+id icono_spinner1
+id icono_spinner2
+id icono_spinner4
+id icono_spinner5
+id icono_spinner6
 id imageButton
 id imageButton10
 id imageButton2
@@ -203,6 +218,19 @@ id image_low_menu_quad2
 id image_new_payment
 id image_rectangle_gris
 id image_vector
+id impresion_color_spinner
+id impresion_escala_spinner
+id impresion_impresora_spinner
+id impresion_input_color
+id impresion_input_copias
+id impresion_input_escala
+id impresion_input_impresora
+id impresion_input_paginas
+id impresion_input_pagxhoja
+id impresion_input_tamano
+id impresion_paginas_spinner
+id impresion_pagxhoja_spinner
+id impresion_tamano_spinner
 id input1
 id input2
 id input3
@@ -211,6 +239,7 @@ id inputClave
 id inputUsuario
 id input_buscar_afiliado
 id input_fecha_nacimiento
+id input_nro
 id input_nro_afiliado
 id label1
 id label2
@@ -336,6 +365,7 @@ layout activity_estado_cuenta3
 layout activity_gestion
 layout activity_historial_pagos
 layout activity_home
+layout activity_impresion_comprobantes
 layout activity_login
 layout activity_menu_pagos
 layout activity_nuevo_afiliado_pag1

@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBase">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/btn_siguiente"
+        app:layout_constraintStart_toStartOf="@+id/btn_siguiente"
+        tools:context=".Nuevo_Pago_Pag2_Cuota_Activity">
+
+        <ImageView
+            android:id="@+id/menu_pagos_image_rectangle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/fondo_imprimir_comprobante"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image_rectangle_gris"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/image_rectangle_gris"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/image_back_button"
+            android:layout_width="19dp"
+            android:layout_height="25dp"
+            app:backgroundTint="@null"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="29dp"
+            android:scaleType="centerInside"
+            android:background="@drawable/image_back_button"
+            app:layout_constraintStart_toStartOf="@id/image_rectangle_gris"
+            app:layout_constraintTop_toTopOf="@id/image_rectangle_gris" />
+
+        <Button
+            android:id="@+id/image_low_menu_quad"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:background="@drawable/low_menu_quad"
+            android:scaleType="centerInside"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/image_low_menu_quad1"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_vector" />
+
+        <Button
+            android:id="@+id/image_low_menu_quad1"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:background="@drawable/low_menu_quad"
+            android:scaleType="centerInside"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/image_low_menu_quad2"
+            app:layout_constraintStart_toEndOf="@+id/image_low_menu_quad"
+            app:layout_constraintTop_toBottomOf="@+id/image_vector" />
+
+        <Button
+            android:id="@+id/image_low_menu_quad2"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:background="@drawable/low_menu_quad"
+            android:scaleType="centerInside"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/image_low_menu_quad1"
+            app:layout_constraintTop_toBottomOf="@+id/image_vector" />
+
+        <ImageView
+            android:id="@+id/image_vector"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/image_vector"
+            android:scaleType="centerInside"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/np_pag2_container_gris" />
+
+        <TextView
+            android:id="@+id/text_registro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/texto_ironhouse"
+            app:layout_constraintStart_toEndOf="@+id/image_back_button"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_pagos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="IMPRIMIR COMPROBANTE"
+            android:textColor="#FF000000"
+            android:textSize="25dp"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_rectangle_gris" />
+
+        <ImageView
+            android:id="@+id/image_icon_person"
+            android:layout_width="49.17dp"
+            android:layout_height="42dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/image_icon_person"
+            app:layout_constraintBottom_toBottomOf="@id/image_low_menu_quad2"
+            app:layout_constraintEnd_toEndOf="@id/image_low_menu_quad2"
+            app:layout_constraintStart_toStartOf="@+id/image_low_menu_quad2"
+            app:layout_constraintTop_toTopOf="@+id/image_low_menu_quad2" />
+
+        <ImageView
+            android:id="@+id/image_new_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/image_new_payment"
+            app:layout_constraintBottom_toBottomOf="@+id/image_low_menu_quad"
+            app:layout_constraintEnd_toEndOf="@+id/image_low_menu_quad"
+            app:layout_constraintStart_toStartOf="@id/image_low_menu_quad"
+            app:layout_constraintTop_toTopOf="@+id/image_low_menu_quad" />
+
+
+        <ImageView
+            android:id="@+id/image_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/image_icon_home"
+            app:layout_constraintBottom_toBottomOf="@+id/image_low_menu_quad1"
+            app:layout_constraintEnd_toEndOf="@+id/image_low_menu_quad1"
+            app:layout_constraintStart_toStartOf="@id/image_low_menu_quad1"
+            app:layout_constraintTop_toTopOf="@+id/image_low_menu_quad1" />
+
+
+        <ImageView
+            android:id="@+id/np_pag2_container_gris"
+            android:layout_width="340dp"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/nuevo_pago_pag1_container_rectangle2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_impresora" />
+
+
+        <Button
+            android:id="@+id/container_btn_cancelar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_cancelar_bg"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="@+id/np_pag2_container_gris"
+            app:layout_constraintEnd_toStartOf="@+id/container_btn_anterior"
+            app:layout_constraintStart_toStartOf="@+id/np_pag2_container_gris"
+            app:layout_constraintTop_toTopOf="@+id/np_pag2_container_gris" />
+
+        <TextView
+            android:id="@+id/texto_btn_cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="25dp"
+            android:gravity="left|center_vertical"
+            android:text="CANCELAR"
+            android:textColor="#FFFDFDFD"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/container_btn_cancelar"
+            app:layout_constraintEnd_toEndOf="@+id/container_btn_cancelar"
+            app:layout_constraintStart_toStartOf="@+id/container_btn_cancelar"
+            app:layout_constraintTop_toTopOf="@+id/container_btn_cancelar" />
+
+
+        <Button
+            android:id="@+id/container_btn_anterior"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn2_bg"
+            app:backgroundTint="#FDFDFD"
+            app:layout_constraintBottom_toBottomOf="@+id/np_pag2_container_gris"
+            app:layout_constraintEnd_toEndOf="@+id/np_pag2_container_gris"
+            app:layout_constraintStart_toEndOf="@+id/container_btn_cancelar"
+            app:layout_constraintTop_toTopOf="@+id/np_pag2_container_gris" />
+
+
+        <TextView
+            android:id="@+id/texto_btn_anterior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:text="IMPRIMIR"
+            android:textColor="#656363"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/container_btn_anterior"
+            app:layout_constraintEnd_toEndOf="@+id/container_btn_anterior"
+            app:layout_constraintStart_toStartOf="@+id/container_btn_anterior"
+            app:layout_constraintTop_toTopOf="@+id/container_btn_anterior" />
+
+
+        <ImageView
+            android:id="@+id/btn_cancelar_icono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/btn_cancelar_icono"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toTopOf="@+id/text_btn_cancelar"
+            app:layout_constraintEnd_toEndOf="@+id/container_btn_cancelar"
+            app:layout_constraintStart_toStartOf="@+id/container_btn_cancelar"
+            app:layout_constraintTop_toTopOf="@+id/container_btn_cancelar" />
+
+        <ImageView
+            android:id="@+id/btn_imprimir_icono"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/icono_imprimir"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toTopOf="@+id/texto_btn_anterior"
+            app:layout_constraintEnd_toEndOf="@+id/container_btn_anterior"
+            app:layout_constraintStart_toStartOf="@+id/container_btn_anterior"
+            app:layout_constraintTop_toTopOf="@+id/container_btn_anterior" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="528dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <TextView
+            android:id="@+id/editText_impresora"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:hint="Imprimir a doble cara"
+            android:gravity="left|center_vertical"
+            android:layout_marginStart="23dp"
+            android:background="@drawable/container1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline7" />
+
+
+        <TextView
+            android:id="@+id/impresion_input_impresora"
+            android:layout_width="350dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/container1"
+            android:elevation="1dp"
+            android:gravity="left|center_vertical"
+            android:hint="Impresora"
+            android:paddingLeft="10dp"
+            android:textColor="#FF000000"
+            android:textSize="14sp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/menu_pagos_image_rectangle" />
+
+        <Spinner
+            android:id="@+id/impresion_impresora_spinner"
+            android:layout_width="210dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="13dp"
+            android:layout_weight="1"
+            android:background="@drawable/impresion_spinner"
+            android:elevation="1dp"
+            android:lineHeight="19.36dp"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/impresion_input_impresora"
+            app:layout_constraintEnd_toEndOf="@+id/impresion_input_impresora"
+            app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+        <ImageView
+            android:id="@+id/icono_spinner1"
+            android:layout_width="28dp"
+            android:layout_height="18dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/icono_spinner"
+            android:elevation="2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/impresion_impresora_spinner"
+            app:layout_constraintEnd_toEndOf="@+id/impresion_impresora_spinner"
+            app:layout_constraintTop_toTopOf="@+id/impresion_impresora_spinner" />
+
+
+
+
+        <TextView
+            android:id="@+id/impresion_input_paginas"
+            android:layout_width="350dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/container1"
+            android:elevation="1dp"
+            android:gravity="left|center_vertical"
+            android:hint="Páginas"
+            android:paddingLeft="10dp"
+            android:textColor="#FF000000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/impresion_input_impresora" />
+
+        <Spinner
+            android:id="@+id/impresion_paginas_spinner"
+            android:layout_width="210dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="13dp"
+            android:layout_weight="1"
+            android:background="@drawable/impresion_spinner"
+            android:elevation="1dp"
+            android:lineHeight="19.36dp"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/impresion_input_paginas"
+            app:layout_constraintEnd_toEndOf="@+id/impresion_input_paginas"
+            app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+        <ImageView
+            android:id="@+id/icono_spinner2"
+            android:layout_width="28dp"
+            android:layout_height="18dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/icono_spinner"
+            android:elevation="2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/impresion_paginas_spinner"
+            app:layout_constraintEnd_toEndOf="@+id/impresion_paginas_spinner"
+            app:layout_constraintTop_toTopOf="@+id/impresion_paginas_spinner" />
+
+
+
+        <TextView
+            android:id="@+id/impresion_input_copias"
+            android:layout_width="350dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/container1"
+            android:elevation="1dp"
+            android:gravity="left|center_vertical"
+            android:hint="Copias"
+            android:paddingLeft="10dp"
+            android:textColor="#FF000000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/impresion_input_paginas" />
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/impresion_input_color"
+            android:layout_width="350dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left|center_vertical"
+            android:background="@drawable/container1"
+            android:elevation="1dp"
+            android:hint="Color"
+            android:paddingLeft="10dp"
+            android:textColor="#FF000000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/impresion_input_copias" />
+
+        <Spinner
+            android:id="@+id/impresion_color_spinner"
+            android:layout_width="210dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="13dp"
+            android:layout_weight="1"
+            android:background="@drawable/impresion_spinner"
+            android:elevation="1dp"
+            android:lineHeight="19.36dp"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/impresion_input_color"
+            app:layout_constraintEnd_toEndOf="@+id/impresion_input_color"
+            app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+        <ImageView
+            android:id="@+id/icono_spinner4"
+            android:layout_width="28dp"
+            android:layout_height="18dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/icono_spinner"
+            android:elevation="2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/impresion_color_spinner"
+            app:layout_constraintEnd_toEndOf="@+id/impresion_color_spinner"
+            app:layout_constraintTop_toTopOf="@+id/impresion_color_spinner" />
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/impresion_input_tamano"
+            android:layout_width="350dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left|center_vertical"
+            android:background="@drawable/container1"
+            android:elevation="1dp"
+            android:hint="Tamaño del papel"
+            android:paddingLeft="10dp"
+            android:textColor="#FF000000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/impresion_input_color" />
+
+        <Spinner
+            android:id="@+id/impresion_tamano_spinner"
+            android:layout_width="210dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="13dp"
+            android:layout_weight="1"
+            android:background="@drawable/impresion_spinner"
+            android:elevation="1dp"
+            android:lineHeight="19.36dp"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/impresion_input_tamano"
+            app:layout_constraintEnd_toEndOf="@+id/impresion_input_tamano"
+            app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+        <ImageView
+            android:id="@+id/icono_spinner5"
+            android:layout_width="28dp"
+            android:layout_height="18dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/icono_spinner"
+            android:elevation="2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/impresion_tamano_spinner"
+            app:layout_constraintEnd_toEndOf="@+id/impresion_tamano_spinner"
+            app:layout_constraintTop_toTopOf="@+id/impresion_tamano_spinner" />
+
+
+
+
+
+        <TextView
+            android:id="@+id/impresion_input_pagxhoja"
+            android:layout_width="350dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left|center_vertical"
+            android:background="@drawable/container1"
+            android:elevation="1dp"
+            android:hint="Páginas por hoja"
+            android:paddingLeft="10dp"
+            android:textColor="#FF000000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/impresion_input_tamano" />
+
+        <Spinner
+            android:id="@+id/impresion_pagxhoja_spinner"
+            android:layout_width="210dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="13dp"
+            android:layout_weight="1"
+            android:background="@drawable/impresion_spinner"
+            android:elevation="1dp"
+            android:lineHeight="19.36dp"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/impresion_input_pagxhoja"
+            app:layout_constraintEnd_toEndOf="@+id/impresion_input_pagxhoja"
+            app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+        <ImageView
+            android:id="@+id/icono_spinner6"
+            android:layout_width="28dp"
+            android:layout_height="18dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/icono_spinner"
+            android:elevation="2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/impresion_pagxhoja_spinner"
+            app:layout_constraintEnd_toEndOf="@+id/impresion_pagxhoja_spinner"
+            app:layout_constraintTop_toTopOf="@+id/impresion_pagxhoja_spinner" />
+
+        <TextView
+            android:id="@+id/impresion_input_escala"
+            android:layout_width="350dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/container1"
+            android:elevation="1dp"
+            android:hint="Escala"
+            android:paddingLeft="10dp"
+            android:textColor="#FF000000"
+            android:textSize="14sp"
+            android:gravity="left|center_vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/impresion_input_pagxhoja" />
+
+        <Spinner
+            android:id="@+id/impresion_escala_spinner"
+            android:layout_width="210dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="13dp"
+            android:layout_weight="1"
+            android:background="@drawable/impresion_spinner"
+            android:elevation="1dp"
+            android:lineHeight="19.36dp"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/impresion_input_escala"
+            app:layout_constraintEnd_toEndOf="@+id/impresion_input_escala"
+            app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+        <ImageView
+            android:id="@+id/icono_spinner6"
+            android:layout_width="28dp"
+            android:layout_height="18dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/icono_spinner"
+            android:elevation="2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/impresion_escala_spinner"
+            app:layout_constraintEnd_toEndOf="@+id/impresion_escala_spinner"
+            app:layout_constraintTop_toTopOf="@+id/impresion_escala_spinner" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/editText_impresora"
+            app:layout_constraintTop_toTopOf="@+id/guideline7" />
+
+        <Button
+            android:id="@+id/boton_mas"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            app:backgroundTint="@null"
+            android:gravity="center"
+            android:background="@drawable/container_der"
+            android:elevation="3dp"
+            android:translationZ="2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/impresion_input_copias"
+            app:layout_constraintEnd_toEndOf="@+id/impresion_input_copias"
+            app:layout_constraintTop_toTopOf="@+id/impresion_input_copias" />
+
+        <ImageView
+            android:id="+id/icono_boton_menos"
+            android:background="@drawable/icono_botonmenos"
+            android:elevation="4dp"
+            android:translationZ="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/boton_menos"
+            app:layout_constraintEnd_toEndOf="@+id/boton_menos"
+            app:layout_constraintStart_toStartOf="@+id/boton_menos"
+            app:layout_constraintTop_toTopOf="@+id/boton_menos" />
+
+
+        <Button
+            android:id="@+id/boton_menos"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:elevation="3dp"
+            android:background="@drawable/container_izq"
+            app:backgroundTint="@null"
+            android:translationZ="2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/impresion_input_copias"
+            app:layout_constraintEnd_toStartOf="@+id/input_nro"
+            app:layout_constraintStart_toEndOf="@+id/boton_menor"
+            app:layout_constraintTop_toTopOf="@+id/impresion_input_copias" />
+
+        <ImageView
+            android:id="+id/icono_boton_mas"
+            android:background="@drawable/icono_botonmas"
+            android:elevation="4dp"
+            android:translationZ="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/boton_mas"
+            app:layout_constraintStart_toStartOf="@+id/boton_mas"
+            app:layout_constraintEnd_toEndOf="@+id/boton_mas"
+            app:layout_constraintTop_toTopOf="@+id/boton_mas" />
+
+        <EditText
+            android:id="@+id/input_nro"
+            android:layout_width="89dp"
+            android:layout_height="70dp"
+
+            app:layout_constraintBottom_toBottomOf="@+id/impresion_input_copias"
+            app:layout_constraintEnd_toStartOf="@+id/boton_mas"
+            app:layout_constraintTop_toTopOf="@+id/impresion_input_copias" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

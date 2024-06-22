@@ -28,6 +28,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.IronFitness" >
         <activity
+            android:name="ar.madmaimarramsaz.ironFitness.Impresion_Comprobantes_Activity"
+            android:exported="false" />
+        <activity
             android:name="ar.madmaimarramsaz.ironFitness.Historial_Pagos_Activity"
             android:exported="false" />
         <activity
@@ -65,7 +68,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        />
+            />
         </activity>
         <activity
             android:name="ar.madmaimarramsaz.ironFitness.Ver_datos_afiliados_activity.Datos_Afiliado_Configuracion"

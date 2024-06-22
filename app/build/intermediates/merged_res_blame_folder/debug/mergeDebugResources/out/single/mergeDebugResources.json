@@ -4,12 +4,12 @@
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\drawable\\siguiente_button_large.png"
     },
     {
-        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\drawable_background_white_rounded.xml.flat",
-        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\drawable\\background_white_rounded.xml"
-    },
-    {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\drawable_socio_icon.png.flat",
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\drawable\\socio_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\drawable_background_white_rounded.xml.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\drawable\\background_white_rounded.xml"
     },
     {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\layout_activity_nuevo_afiliado_pag3.xml.flat",
@@ -140,6 +140,10 @@
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\drawable\\icono_confirmar.png"
     },
     {
+        "merged": "ar.madmaimarramsaz.ironFitness.app-debug-31:/drawable_icono_spinner.png.flat",
+        "source": "ar.madmaimarramsaz.ironFitness.app-main-33:/drawable/icono_spinner.png"
+    },
+    {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\drawable_pago_cuota_socio_1.png.flat",
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\drawable\\pago_cuota_socio_1.png"
     },
@@ -150,6 +154,10 @@
     {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\drawable_btn_cancelar_bg.xml.flat",
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\drawable\\btn_cancelar_bg.xml"
+    },
+    {
+        "merged": "ar.madmaimarramsaz.ironFitness.app-debug-31:/layout_activity_impresion_comprobantes.xml.flat",
+        "source": "ar.madmaimarramsaz.ironFitness.app-main-33:/layout/activity_impresion_comprobantes.xml"
     },
     {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\drawable_volver.png.flat",
@@ -380,6 +388,10 @@
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\layout\\activity_historial_pagos.xml"
     },
     {
+        "merged": "ar.madmaimarramsaz.ironFitness.app-debug-31:/drawable_icono_botonmas.xml.flat",
+        "source": "ar.madmaimarramsaz.ironFitness.app-main-33:/drawable/icono_botonmas.xml"
+    },
+    {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\layout_fragment_socios.xml.flat",
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\layout\\fragment_socios.xml"
     },
@@ -500,10 +512,6 @@
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\drawable\\menu_pagos_container_borde_button.xml"
     },
     {
-        "merged": "ar.madmaimarramsaz.ironFitness.app-debug-31:/layout_activity_nuevo_pago_pag3_efec.xml.flat",
-        "source": "ar.madmaimarramsaz.ironFitness.app-main-33:/layout/activity_nuevo_pago_pag3_efec.xml"
-    },
-    {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\layout_activity_datos_afiliado_editar.xml.flat",
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\layout\\activity_datos_afiliado_editar.xml"
     },
@@ -538,6 +546,10 @@
     {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\drawable_aceptar.png.flat",
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\drawable\\aceptar.png"
+    },
+    {
+        "merged": "ar.madmaimarramsaz.ironFitness.app-debug-31:/drawable_icono_botonmenos.xml.flat",
+        "source": "ar.madmaimarramsaz.ironFitness.app-main-33:/drawable/icono_botonmenos.xml"
     },
     {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\drawable_menu_pagos_image_rectangle.png.flat",
@@ -598,6 +610,10 @@
     {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\drawable_confirmar_cambios.png.flat",
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-main-33:\\drawable\\confirmar_cambios.png"
+    },
+    {
+        "merged": "ar.madmaimarramsaz.ironFitness.app-debug-31:/drawable_impresion_spinner.xml.flat",
+        "source": "ar.madmaimarramsaz.ironFitness.app-main-33:/drawable/impresion_spinner.xml"
     },
     {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.6\\ar.madmaimarramsaz.ironFitness.app-debug-31:\\layout_tabla_item.xml.flat",

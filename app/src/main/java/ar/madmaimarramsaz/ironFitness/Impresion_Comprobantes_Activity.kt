@@ -21,6 +21,11 @@ class Impresion_Comprobantes_Activity : AppCompatActivity() {
             finish()
         }
 
+        // boton cancelar
+        val container_btn_cancelar: Button = findViewById(R.id.container_btn_cancelar)
+        container_btn_cancelar.setOnClickListener {
+            finish()
+        }
 
         // barra de navegacion Boton 1 Pagar
         val btn_pagar: Button = findViewById(R.id.image_low_menu_quad)
