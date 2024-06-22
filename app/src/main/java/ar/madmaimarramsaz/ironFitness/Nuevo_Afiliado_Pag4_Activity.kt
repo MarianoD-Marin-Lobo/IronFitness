@@ -58,4 +58,6 @@ class Nuevo_Afiliado_Pag4_Activity : AppCompatActivity() {
         val intent = Intent(this, GestionAfiliadoActivity::class.java)
         startActivity(intent)
     }
+
+
 }

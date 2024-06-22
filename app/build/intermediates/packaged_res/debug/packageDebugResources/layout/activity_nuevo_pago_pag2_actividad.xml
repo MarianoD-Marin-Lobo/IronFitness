@@ -218,12 +218,13 @@
             android:id="@+id/container_agr_actividad"
             android:layout_width="310dp"
             android:layout_height="100dp"
+            android:layout_marginTop="16dp"
             android:background="@drawable/container1"
             android:elevation="1dp"
             app:backgroundTint="@null"
             app:layout_constraintEnd_toEndOf="@+id/pag3_container1"
             app:layout_constraintStart_toStartOf="@+id/pag3_container1"
-            tools:layout_editor_absoluteY="222dp" />
+            app:layout_constraintTop_toTopOf="@+id/pag3_container1" />
 
         <Button
             android:id="@+id/container_detalle_factura"
@@ -280,7 +281,7 @@
             android:background="@drawable/btn_cancelar_bg"
             app:backgroundTint="@null"
             app:layout_constraintBottom_toBottomOf="@+id/nuevo_pago_pag3_container_gris"
-            app:layout_constraintEnd_toStartOf="@+id/container_btn_siguiente"
+            app:layout_constraintEnd_toStartOf="@+id/container_btn_anterior"
             app:layout_constraintStart_toStartOf="@+id/nuevo_pago_pag3_container_gris" />
 
         <TextView
@@ -301,6 +302,18 @@
 
 
         <Button
+            android:id="@+id/container_btn_anterior"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/btn2_bg"
+            app:backgroundTint="#FDFDFD"
+            app:layout_constraintBottom_toBottomOf="@+id/nuevo_pago_pag3_container_gris"
+            app:layout_constraintEnd_toStartOf="@+id/container_btn_siguiente"
+            app:layout_constraintStart_toEndOf="@+id/container_btn_cancelar" />
+
+        <Button
             android:id="@+id/container_btn_siguiente"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -309,24 +322,12 @@
             android:background="@drawable/btn2_bg"
             app:backgroundTint="#FDFDFD"
             app:layout_constraintBottom_toBottomOf="@+id/nuevo_pago_pag3_container_gris"
-            app:layout_constraintEnd_toStartOf="@+id/container_btn_confirmar"
-            app:layout_constraintStart_toEndOf="@+id/container_btn_cancelar" />
-
-        <Button
-            android:id="@+id/container_btn_confirmar"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="2dp"
-            android:layout_marginBottom="2dp"
-            android:background="@drawable/btn2_bg"
-            app:backgroundTint="#FDFDFD"
-            app:layout_constraintBottom_toBottomOf="@+id/nuevo_pago_pag3_container_gris"
             app:layout_constraintEnd_toEndOf="@+id/nuevo_pago_pag3_container_gris"
-            app:layout_constraintStart_toEndOf="@+id/container_btn_siguiente" />
+            app:layout_constraintStart_toEndOf="@+id/container_btn_anterior" />
 
 
         <TextView
-            android:id="@+id/text_btn_siguiente"
+            android:id="@+id/text_btn_anterior"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -335,10 +336,10 @@
             android:textColor="#656363"
             android:textSize="12dp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/container_btn_siguiente"
-            app:layout_constraintEnd_toEndOf="@+id/container_btn_siguiente"
-            app:layout_constraintStart_toStartOf="@+id/container_btn_siguiente"
-            app:layout_constraintTop_toTopOf="@+id/container_btn_siguiente" />
+            app:layout_constraintBottom_toBottomOf="@+id/container_btn_anterior"
+            app:layout_constraintEnd_toEndOf="@+id/container_btn_anterior"
+            app:layout_constraintStart_toStartOf="@+id/container_btn_anterior"
+            app:layout_constraintTop_toTopOf="@+id/container_btn_anterior" />
 
 
         <ImageView
@@ -356,7 +357,7 @@
             app:layout_constraintTop_toTopOf="@+id/container_btn_cancelar" />
 
         <ImageView
-            android:id="@+id/btn_siguiente_icono"
+            android:id="@+id/btn_anterior_icono"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -364,24 +365,24 @@
             android:layout_marginBottom="1dp"
             android:background="@drawable/icono_flecha_anterior"
             android:scaleType="centerInside"
-            app:layout_constraintBottom_toTopOf="@+id/text_btn_siguiente"
-            app:layout_constraintEnd_toEndOf="@+id/container_btn_siguiente"
-            app:layout_constraintStart_toStartOf="@+id/container_btn_siguiente"
-            app:layout_constraintTop_toTopOf="@+id/container_btn_siguiente" />
+            app:layout_constraintBottom_toTopOf="@+id/text_btn_anterior"
+            app:layout_constraintEnd_toEndOf="@+id/container_btn_anterior"
+            app:layout_constraintStart_toStartOf="@+id/container_btn_anterior"
+            app:layout_constraintTop_toTopOf="@+id/container_btn_anterior" />
 
         <ImageView
-            android:id="@+id/btn_confirmar_icono"
+            android:id="@+id/btn_siguiente_icono"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="1dp"
-            android:background="@drawable/icono_confirmar"
+            android:background="@drawable/icono_siguiente"
             android:scaleType="centerInside"
-            app:layout_constraintBottom_toTopOf="@+id/text_btn_confirmar"
-            app:layout_constraintEnd_toEndOf="@+id/container_btn_confirmar"
-            app:layout_constraintStart_toStartOf="@+id/container_btn_confirmar"
-            app:layout_constraintTop_toTopOf="@+id/container_btn_confirmar" />
+            app:layout_constraintBottom_toTopOf="@+id/text_btn_siguiente"
+            app:layout_constraintEnd_toEndOf="@+id/container_btn_siguiente"
+            app:layout_constraintStart_toStartOf="@+id/container_btn_siguiente"
+            app:layout_constraintTop_toTopOf="@+id/container_btn_siguiente" />
 
 
         <TextView
@@ -390,14 +391,14 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="35dp"
-            android:text="CONFIRMAR"
+            android:text="SIGUIENTE"
             android:textColor="#656363"
             android:textSize="12dp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/container_btn_confirmar"
-            app:layout_constraintEnd_toEndOf="@+id/container_btn_confirmar"
-            app:layout_constraintStart_toStartOf="@+id/container_btn_confirmar"
-            app:layout_constraintTop_toTopOf="@+id/container_btn_confirmar" />
+            app:layout_constraintBottom_toBottomOf="@+id/container_btn_siguiente"
+            app:layout_constraintEnd_toEndOf="@+id/container_btn_siguiente"
+            app:layout_constraintStart_toStartOf="@+id/container_btn_siguiente"
+            app:layout_constraintTop_toTopOf="@+id/container_btn_siguiente" />
 
 
         <androidx.constraintlayout.widget.Guideline

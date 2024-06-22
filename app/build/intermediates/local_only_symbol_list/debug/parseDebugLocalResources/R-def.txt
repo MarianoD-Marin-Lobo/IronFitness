@@ -284,6 +284,8 @@ id recycler_view
 id selector_noSocio_radbtn
 id selector_socio_radbtn
 id tabLayout
+id tabLayoutCuota
+id tabLayoutCuotaTotal
 id tableLayout
 id textView
 id textView3
@@ -292,6 +294,7 @@ id textView_comentario
 id textView_detalle
 id text_afiliados
 id text_alta_nuevo_afiliado
+id text_btn_anterior
 id text_btn_cancelar
 id text_btn_confirmar
 id text_btn_siguiente
@@ -323,6 +326,7 @@ id tvPreguntaR
 id tvRRHH
 id tvUsuario
 id viewPager
+id viewPagerCuota
 layout activity_datos_afiliado_configuracion
 layout activity_datos_afiliado_editar
 layout activity_datos_afiliado_ver
@@ -348,8 +352,11 @@ layout activity_pantalla1
 layout activity_pantalla2
 layout activity_pantalla3
 layout activity_pantalla4
+layout fragment_cuota_pager_adapter
+layout fragment_meses
 layout fragment_no_socios
 layout fragment_socios
+layout fragment_subtotal
 layout fragment_todos
 layout tabla_item
 mipmap ic_launcher
@@ -357,6 +364,7 @@ mipmap ic_launcher_round
 string app_name
 string credError1
 string credError2
+string hello_blank_fragment
 style Base.Theme.IronFitness
 style Theme.IronFitness
 xml backup_rules

@@ -8,9 +8,9 @@
     <ImageView
         android:id="@+id/image_rectangle_gris"
         android:layout_width="0dp"
+        android:elevation="1dp"
         android:layout_height="wrap_content"
         android:background="@drawable/image_rectangle_gris"
-        android:elevation="1dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,8 +24,8 @@
         android:background="@drawable/image_back_button"
         android:layout_marginStart="16dp"
         android:layout_marginTop="29dp"
-        android:elevation="5dp"
-        android:translationZ="5dp"
+        android:elevation="2dp"
+        android:translationZ="2dp"
         android:scaleType="centerInside"
         app:layout_constraintStart_toStartOf="@id/image_rectangle_gris"
         app:layout_constraintTop_toTopOf="@id/image_rectangle_gris" />
@@ -50,7 +50,6 @@
         android:background="@null"
         android:scaleType="matrix"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/image_rectangle_gris"
         app:srcCompat="@drawable/imageafiliado" />

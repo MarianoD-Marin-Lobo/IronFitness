@@ -3803,6 +3803,8 @@ id submenuarrow
 id submit_area
 id supportScrollUp
 id tabLayout
+id tabLayoutCuota
+id tabLayoutCuotaTotal
 id tabMode
 id tableLayout
 id tag_accessibility_actions
@@ -3832,6 +3834,7 @@ id textView_comentario
 id textView_detalle
 id text_afiliados
 id text_alta_nuevo_afiliado
+id text_btn_anterior
 id text_btn_cancelar
 id text_btn_confirmar
 id text_btn_siguiente
@@ -3897,6 +3900,7 @@ id up
 id useLogo
 id vertical_only
 id viewPager
+id viewPagerCuota
 id view_offset_helper
 id view_transition
 id view_tree_lifecycle_owner
@@ -4069,8 +4073,11 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_cuota_pager_adapter
+layout fragment_meses
 layout fragment_no_socios
 layout fragment_socios
+layout fragment_subtotal
 layout fragment_todos
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
@@ -4193,6 +4200,7 @@ string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
