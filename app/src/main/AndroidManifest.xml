@@ -12,77 +12,67 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IronFitness"
         tools:targetApi="31">
-
+        <activity
+            android:name=".Impresion_Comprobantes_Activity"
+            android:exported="false" />
         <activity
             android:name=".Historial_Pagos_Activity"
             android:exported="false" />
         <activity
             android:name=".Nuevo_Pago_Descargando_Comprob_Activity"
             android:exported="false" />
-
         <activity
             android:name=".Nuevo_Pago_Pag4_Confirm_Impres_Activity"
             android:exported="false" />
-
         <activity
             android:name=".Nuevo_Pago_Pag3_Efec_Activity"
             android:exported="false" />
-
         <activity
             android:name=".Nuevo_Pago_Pag2_Cuota_Activity"
             android:exported="false" />
-
         <activity
             android:name=".Nuevo_Pago_Pag2_Actividad_Activity"
             android:exported="false" />
-
         <activity
             android:name=".Nuevo_Pago_Pag1_Activity"
             android:exported="false" />
-
         <activity
             android:name=".Menu_PagosActivity"
             android:exported="false" />
         <activity
             android:name=".HomeActivity"
             android:exported="false" />
-
-        <activity android:name=".GestionAfiliadoActivity"
+        <activity
+            android:name=".GestionAfiliadoActivity"
             android:exported="false" />
-
         <activity
             android:name=".LoginActivity"
             android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-        />
-        </activity>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            />
+        </activity>
         <activity
             android:name=".Ver_datos_afiliados_activity.Datos_Afiliado_Configuracion"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".Ver_datos_afiliados_activity.Datos_Afiliado_Editar"
             android:exported="false" />
         <activity
             android:name=".Ver_datos_afiliados_activity.Datos_Afiliado_Ver"
             android:exported="false" />
-
         <activity
             android:name=".Estados_Cuenta_Activity.EstadoCuenta3Activity"
             android:exported="false" />
-
         <activity
             android:name=".Estados_Cuenta_Activity.EstadoCuenta2Activity"
             android:exported="false" />
-
         <activity
             android:name=".Estados_Cuenta_Activity.EstadoCuenta1Activity"
             android:exported="false" />
-
-
         <activity
             android:name=".Afiliados_Carnet_Activity.Pantalla4Activity"
             android:exported="false" />

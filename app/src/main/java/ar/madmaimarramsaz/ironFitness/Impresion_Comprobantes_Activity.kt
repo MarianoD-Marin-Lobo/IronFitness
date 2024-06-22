@@ -1,4 +1,4 @@
-package ar.madmaimarramsaz.ironFitness.Afiliados_Carnet_Activity
+package ar.madmaimarramsaz.ironFitness
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,14 +8,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import ar.madmaimarramsaz.ironFitness.Afiliados_Carnet_Activity.Pantalla1Activity
-import ar.madmaimarramsaz.ironFitness.R
 
-class Pantalla2Activity : AppCompatActivity() {
+class Impresion_Comprobantes_Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_pantalla2)
-
+        setContentView(R.layout.activity_impresion_comprobantes)
 
         // boton volver a la ventana anterior
         val btn_volver: Button = findViewById(R.id.image_back_button)
@@ -23,17 +21,6 @@ class Pantalla2Activity : AppCompatActivity() {
             finish()
         }
 
-        // boton imprimir
-        val button4: Button = findViewById(R.id.button4)
-        button4.setOnClickListener {
-            irAImprimir()
-        }
-
-        // otro boton volver
-        val button1: Button = findViewById(R.id.button1)
-        button1.setOnClickListener {
-           irACarnets()
-        }
 
         // barra de navegacion Boton 1 Pagar
         val btn_pagar: Button = findViewById(R.id.image_low_menu_quad)
