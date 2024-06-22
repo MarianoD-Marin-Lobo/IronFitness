@@ -3047,6 +3047,7 @@ drawable editar_carnet_button
 drawable esta_seguro
 drawable estados_cuenta_todos_los_socios
 drawable estados_de_cuenta
+drawable fondo_imprimir_comprobante
 drawable gente_fit
 drawable ic_arrow_back_black_24
 drawable ic_call_answer
@@ -3072,6 +3073,8 @@ drawable icon_home
 drawable icon_person
 drawable iconmoney
 drawable icono_agregar1
+drawable icono_botonmas
+drawable icono_botonmenos
 drawable icono_confirmar
 drawable icono_correcto
 drawable icono_descarga
@@ -3079,6 +3082,7 @@ drawable icono_descarga2
 drawable icono_flecha_anterior
 drawable icono_imprimir
 drawable icono_siguiente
+drawable icono_spinner
 drawable image_back_button
 drawable image_filters_bar
 drawable image_icon_home
@@ -3089,6 +3093,7 @@ drawable image_vector
 drawable imageafiliado
 drawable imagecarnet
 drawable imagecuenta
+drawable impresion_spinner
 drawable imprimir_carnet_button
 drawable indeterminate_static
 drawable input_afiliado
@@ -3315,6 +3320,9 @@ id beginOnFirstDraw
 id beginning
 id bestChoice
 id blocking
+id boton_mas
+id boton_menor
+id boton_menos
 id bottom
 id bounce
 id bounceBoth
@@ -3327,6 +3335,7 @@ id btn_cancelar_icono
 id btn_confirmar_icono
 id btn_cuotas_vencer_dia
 id btn_estados_de_cuenta
+id btn_imprimir_icono
 id btn_pag5_container3
 id btn_pag5_container4
 id btn_siguiente
@@ -3351,6 +3360,7 @@ id center_vertical
 id chain
 id chain2
 id chains
+id checkBox
 id checkNoSocio
 id checkSocio
 id checkbox
@@ -3430,6 +3440,7 @@ id easeOut
 id east
 id edge
 id editText
+id editText_impresora
 id edit_query
 id edit_text_id
 id elastic
@@ -3488,7 +3499,14 @@ id horizontal_only
 id icon
 id icon_group
 id icono_agregar_cuota
+id icono_boton_mas
+id icono_boton_menos
 id icono_siguiente
+id icono_spinner1
+id icono_spinner2
+id icono_spinner4
+id icono_spinner5
+id icono_spinner6
 id ifRoom
 id ignore
 id ignoreRequest
@@ -3516,6 +3534,19 @@ id image_new_payment
 id image_rectangle_gris
 id image_vector
 id immediateStop
+id impresion_color_spinner
+id impresion_escala_spinner
+id impresion_impresora_spinner
+id impresion_input_color
+id impresion_input_copias
+id impresion_input_escala
+id impresion_input_impresora
+id impresion_input_paginas
+id impresion_input_pagxhoja
+id impresion_input_tamano
+id impresion_paginas_spinner
+id impresion_pagxhoja_spinner
+id impresion_tamano_spinner
 id included
 id indeterminate
 id info
@@ -3527,6 +3558,7 @@ id inputClave
 id inputUsuario
 id input_buscar_afiliado
 id input_fecha_nacimiento
+id input_nro
 id input_nro_afiliado
 id invisible
 id inward
@@ -4041,6 +4073,7 @@ layout activity_estado_cuenta3
 layout activity_gestion
 layout activity_historial_pagos
 layout activity_home
+layout activity_impresion_comprobantes
 layout activity_login
 layout activity_menu_pagos
 layout activity_nuevo_afiliado_pag1

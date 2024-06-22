@@ -255,7 +255,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_begin="528dp" />
+            app:layout_constraintGuide_begin="617dp" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline9"
@@ -582,7 +582,7 @@
             app:layout_constraintTop_toTopOf="@+id/impresion_input_copias" />
 
         <ImageView
-            android:id="+id/icono_boton_menos"
+            android:id="@+id/icono_boton_menos"
             android:background="@drawable/icono_botonmenos"
             android:elevation="4dp"
             android:translationZ="4dp"
@@ -606,7 +606,7 @@
             app:layout_constraintTop_toTopOf="@+id/impresion_input_copias" />
 
         <ImageView
-            android:id="+id/icono_boton_mas"
+            android:id="@+id/icono_boton_mas"
             android:background="@drawable/icono_botonmas"
             android:elevation="4dp"
             android:translationZ="4dp"
@@ -619,11 +619,9 @@
             android:id="@+id/input_nro"
             android:layout_width="89dp"
             android:layout_height="70dp"
-
             app:layout_constraintBottom_toBottomOf="@+id/impresion_input_copias"
             app:layout_constraintEnd_toStartOf="@+id/boton_mas"
             app:layout_constraintTop_toTopOf="@+id/impresion_input_copias" />
-
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

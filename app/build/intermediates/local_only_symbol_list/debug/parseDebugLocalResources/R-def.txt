@@ -49,6 +49,7 @@ drawable editar_carnet_button
 drawable esta_seguro
 drawable estados_cuenta_todos_los_socios
 drawable estados_de_cuenta
+drawable fondo_imprimir_comprobante
 drawable gente_fit
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -190,6 +191,8 @@ id guideline7
 id guideline8
 id guideline9
 id icono_agregar_cuota
+id icono_boton_mas
+id icono_boton_menos
 id icono_siguiente
 id icono_spinner1
 id icono_spinner2

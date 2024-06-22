@@ -7,6 +7,10 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import ar.madmaimarramsaz.ironFitness.HomeActivity
+import ar.madmaimarramsaz.ironFitness.GestionAfiliadoActivity
+import ar.madmaimarramsaz.ironFitness.Impresion_Comprobantes_Activity
+import ar.madmaimarramsaz.ironFitness.Menu_PagosActivity
 import ar.madmaimarramsaz.ironFitness.Afiliados_Carnet_Activity.Pantalla1Activity
 import ar.madmaimarramsaz.ironFitness.R
 
@@ -54,6 +58,7 @@ class Pantalla2Activity : AppCompatActivity() {
             irAGestionAfiliado()
         }
     }
+
     // Funciones
     private fun irAPagos(){
         val intent = Intent(this, Menu_PagosActivity::class.java)
