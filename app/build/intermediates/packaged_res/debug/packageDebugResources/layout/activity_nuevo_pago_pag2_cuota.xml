@@ -33,16 +33,17 @@
             app:layout_constraintStart_toStartOf="@+id/container_agr_cuota"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
+        <Button
             android:id="@+id/image_back_button"
-            android:layout_width="47dp"
-            android:layout_height="54dp"
+            android:layout_width="19dp"
+            android:layout_height="25dp"
+            app:backgroundTint="@null"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="29dp"
             android:scaleType="centerInside"
-            android:src="@drawable/image_back_button"
-            app:layout_constraintStart_toStartOf="@+id/image_rectangle_gris"
-            app:layout_constraintTop_toTopOf="@+id/image_rectangle_gris" />
+            android:background="@drawable/image_back_button"
+            app:layout_constraintStart_toStartOf="@id/image_rectangle_gris"
+            app:layout_constraintTop_toTopOf="@id/image_rectangle_gris" />
 
         <Button
             android:id="@+id/image_low_menu_quad"
@@ -452,7 +453,7 @@
 
         <ImageView
             android:id="@+id/icono_agregar_cuota"
-            android:layout_width="38dp"
+            android:layout_width="28dp"
             android:layout_height="28dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/icono_agregar1"
@@ -475,7 +476,6 @@
             app:layout_constraintStart_toStartOf="@+id/mes_selector_btn"
             app:layout_constraintTop_toTopOf="@+id/mes_selector_btn" />
 
-
         <TextView
             android:id="@+id/texto_anio"
             android:layout_width="wrap_content"
@@ -491,20 +491,60 @@
             app:layout_constraintTop_toTopOf="@+id/anio_selector_btn" />
 
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            app:layout_constraintBottom_toBottomOf="@+id/container_detalle_factura"
-            app:layout_constraintEnd_toEndOf="@+id/container_detalle_factura"
-            app:layout_constraintStart_toStartOf="@+id/container_detalle_factura"
-            app:layout_constraintTop_toTopOf="@+id/container_detalle_factura" />
-
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_begin="20dp" />
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayoutCuota"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="@+id/container_detalle_factura"
+            app:layout_constraintStart_toStartOf="@+id/container_detalle_factura"
+            app:layout_constraintTop_toTopOf="@+id/container_detalle_factura">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MESES QUE ABONA" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SUB-TOTAL" />
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPagerCuota"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toTopOf="@+id/tabLayoutCuotaTotal"
+            app:layout_constraintEnd_toEndOf="@+id/container_detalle_factura"
+            app:layout_constraintStart_toStartOf="@+id/container_detalle_factura"
+            app:layout_constraintTop_toBottomOf="@+id/tabLayoutCuota" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayoutCuotaTotal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="@+id/container_detalle_factura"
+            app:layout_constraintEnd_toEndOf="@+id/container_detalle_factura"
+            app:layout_constraintStart_toStartOf="@+id/container_detalle_factura">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOTAL" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="monto" />
+        </com.google.android.material.tabs.TabLayout>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

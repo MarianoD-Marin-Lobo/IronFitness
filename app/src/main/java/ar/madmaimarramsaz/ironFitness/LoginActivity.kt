@@ -31,7 +31,6 @@ class LoginActivity : AppCompatActivity() {
         inputClave = findViewById(R.id.inputClave)
         btnLogin = findViewById(R.id.btnLogin)
 
-
         // Agrega un TextChangedListener al EditText para inputUsuario
         inputUsuario.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
@@ -67,7 +66,7 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show()
 
                 // Se abre la ventana al home
-                val intent = Intent(this, Menu_PagosActivity::class.java)
+                val intent = Intent(this, HomeActivity::class.java)
                 startActivity(intent)
             } else {
 
@@ -90,8 +89,6 @@ class LoginActivity : AppCompatActivity() {
                 msjError1.visibility = View.VISIBLE
                 msjError2.visibility = View.VISIBLE
             }
-
-
         }
     }
 ///////////
