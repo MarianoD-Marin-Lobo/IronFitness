@@ -176,7 +176,7 @@
             android:elevation="1dp"
             android:lineHeight="19.36dp"
             android:textSize="14sp"
-            app:layout_constraintEnd_toStartOf="@id/nuevo_pago_pag1_text_nro_identificacion"
+            app:layout_constraintEnd_toStartOf="@id/inputDni"
             app:layout_constraintStart_toStartOf="@+id/pag3_container1"
             app:layout_constraintTop_toTopOf="@+id/guideline6" />
 

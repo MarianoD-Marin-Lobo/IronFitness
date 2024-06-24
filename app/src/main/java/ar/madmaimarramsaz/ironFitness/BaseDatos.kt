@@ -8,6 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper
 import android.util.Log
 import ar.madmaimarramsaz.ironFitness.Entidades.Administrador
 import ar.madmaimarramsaz.ironFitness.Entidades.Afiliado
+import ar.madmaimarramsaz.ironFitness.Entidades.Persona
 
 const val DB_NAME = "BaseDatos"
 const val DB_VERSION = 1
@@ -72,56 +73,42 @@ class BaseDatos(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB_
         return count > 0
     }
 
-    //guardar afiliado
-    fun guardarAfiliado(nombre:String,esSocio:Boolean,fechaAfiliacion:String):Long{
-        val db=this.writableDatabase
-        val values = ContentValues().apply {
-            put("Nombre",nombre)
-            put("EsSocio",esSocio)
-            put("FeachaAfiliacion",fechaAfiliacion)
-        }
-        return db.insert("Afiliado",null,values)
-
+    fun insertPersona(persona: Persona): Int {
+        // Lógica para insertar una nueva persona en la base de datos
+        // Retornar el ID de la persona recién creada
+        return TODO("Provide the return value")
     }
 
-    //listado de afiliados
-    fun listadoAfiliados(): List<Afiliado> {
-        val afiliados = ArrayList<Afiliado>()
-        val query = "SELECT * From Afiliado"
-        val db = this.readableDatabase
-        val cursor = db.rawQuery(query, null)
-        if (cursor.moveToFirst()) {
-            do {
-                val afiliado = Afiliado(
-                    cursor.getInt(cursor.getColumnIndexOrThrow("idAfiliado")),
-                    cursor.getString(cursor.getColumnIndexOrThrow("Nombre")),
-                    cursor.getInt(cursor.getColumnIndexOrThrow("EsSocio")) == 1,
-                    cursor.getString(cursor.getColumnIndexOrThrow("FechaAfiliacion"))
-                )
-                afiliados.add(afiliado)
-            } while (cursor.moveToNext())
-        }
-        cursor.close()
-        return afiliados
+    fun getPersonaById(id: Int): Persona? {
+        // Lógica para obtener una persona por su ID
+        return TODO("Provide the return value")
     }
 
-//borrar afiliado
-
-    fun borrarAfiliado(id:Int) {
-        val db = this.writableDatabase
-        db.delete("Afiliado", "idAfiliado = ?", arrayOf(id.toString()))
-
+    fun updatePersona(persona: Persona) {
+        // Lógica para actualizar una persona existente en la base de datos
     }
 
-    //editar afiliado
-    fun editarAfiliado(id:Int,nombre: String,esSocio: Boolean,fechaAfiliacion: String){
-        val db = this.writableDatabase
-        val values = ContentValues().apply {
-            put("Nombre",nombre)
-            put("EsSocio",if(esSocio) 1 else 0)
-            put("FechaAfiliacion",fechaAfiliacion)
-        }
-        db.update("Afiliado",values,"idAfiliado = ?", arrayOf(id.toString() ))
+    fun deletePersona(id: Int) {
+        // Lógica para eliminar una persona de la base de datos
+    }
+
+    fun insertAfiliado(afiliado: Afiliado): Int {
+        // Lógica para insertar un nuevo afiliado en la base de datos
+        // Retornar el ID del afiliado recién creado
+        return TODO("Provide the return value")
+    }
+
+    fun getAfiliadoById(id: Int): Afiliado? {
+        // Lógica para obtener un afiliado por su ID
+        return TODO("Provide the return value")
+    }
+
+    fun updateAfiliado(afiliado: Afiliado) {
+        // Lógica para actualizar un afiliado existente en la base de datos
+    }
+
+    fun deleteAfiliado(id: Int) {
+        // Lógica para eliminar un afiliado de la base de datos
     }
 
 

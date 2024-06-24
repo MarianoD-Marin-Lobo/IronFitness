@@ -4,7 +4,10 @@ import java.util.Date
 
 data class Afiliado (
     val idAfiliado:Int,
-    val nombre: String,
+    val aptoMedico:String,
     val esSocio: Boolean,
-    val fechaAfiliacion: String)
+    val fechaAfiliacion: String,
+    val personaId:Int
+
+)
 

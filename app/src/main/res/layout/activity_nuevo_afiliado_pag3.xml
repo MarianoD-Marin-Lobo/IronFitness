@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toStartOf="@+id/btn_siguiente"
         app:layout_constraintStart_toStartOf="@+id/btn_siguiente"
-        tools:context=".Nuevo_Pago_Pag1_Activity">
+        tools:context=".Nuevo_Afiliado_Pag3_Activity">
 
         <TextView
             android:id="@+id/text_btn_cancelar"
@@ -206,32 +206,18 @@
             android:background="@drawable/container1"
             android:scaleType="centerInside"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintHorizontal_bias="0.49"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="224dp" />
+            tools:layout_editor_absoluteY="222dp" />
 
         <EditText
-            android:id="@+id/nuevo_afiliado_input_adress"
+            android:id="@+id/inputCiudad"
             android:layout_width="310dp"
             android:layout_height="52dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="92dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="260dp"
             android:background="@drawable/nuevo_pago_pag1_container_rectangle5"
-            android:hint="Calle, Altura, Piso, Dpto."
-            android:paddingLeft="10dp"
-            android:textColor="#FF000000"
-            android:textSize="14sp"
-            app:layout_constraintStart_toStartOf="@+id/nuevo_pago_pag1_container_afiliados_complete_list"
-            app:layout_constraintTop_toTopOf="@+id/nuevo_pago_pag1_container_afiliados_complete_list" />
-
-        <EditText
-            android:id="@+id/nuevo_afiliado_input_cityAndPostCod"
-            android:layout_width="310dp"
-            android:layout_height="52dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="240dp"
-            android:background="@drawable/nuevo_pago_pag1_container_rectangle5"
-            android:hint="Ciudad, Provincia, Código Postal"
+            android:hint="Código postal"
             android:paddingLeft="10dp"
             android:textColor="#FF000000"
             android:textSize="14sp"
@@ -243,8 +229,8 @@
             android:layout_width="232dp"
             android:layout_height="25dp"
             android:layout_gravity="top|left"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="56dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
             android:gravity="left|center_vertical"
             android:includeFontPadding="false"
             android:maxLines="1"
@@ -256,19 +242,59 @@
             app:layout_constraintStart_toStartOf="@+id/nuevo_pago_pag1_container_afiliados_complete_list"
             app:layout_constraintTop_toTopOf="@+id/nuevo_pago_pag1_container_afiliados_complete_list" />
 
+        <EditText
+            android:id="@+id/inputDireccion"
+            android:layout_width="310dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/nuevo_pago_pag1_container_rectangle5"
+            android:hint="Calle, Altura, Piso, Dpto."
+            android:paddingLeft="10dp"
+            android:textColor="#FF000000"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/nuevo_pago_pag1_container_afiliados_complete_list"
+            app:layout_constraintTop_toTopOf="@+id/nuevo_pago_pag1_container_afiliados_complete_list" />
+
+        <EditText
+            android:id="@+id/inputCp"
+            android:layout_width="310dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="160dp"
+            android:background="@drawable/nuevo_pago_pag1_container_rectangle5"
+            android:hint="Ciudad, Provincia"
+            android:paddingLeft="10dp"
+            android:textColor="#FF000000"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/nuevo_pago_pag1_container_afiliados_complete_list"
+            app:layout_constraintTop_toTopOf="@+id/nuevo_pago_pag1_container_afiliados_complete_list" />
+
         <TextView
             android:id="@+id/nuevo_afiliado_lbl_cityAndPostCod"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="9dp"
-            android:layout_marginTop="187dp"
-            android:text="Ciudad y Código Postal"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="220dp"
+            android:text="Código Postal"
             android:textColor="#FF000000"
             android:textSize="20dp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/nuevo_pago_pag1_container_afiliados_complete_list"
             app:layout_constraintTop_toTopOf="@+id/nuevo_pago_pag1_container_afiliados_complete_list" />
 
+        <TextView
+            android:id="@+id/nuevo_afiliado_lbl_cityAndPostCod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="120dp"
+            android:text="Ciudad"
+            android:textColor="#FF000000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/nuevo_pago_pag1_container_afiliados_complete_list"
+            app:layout_constraintTop_toTopOf="@+id/nuevo_pago_pag1_container_afiliados_complete_list" />
 
         <ImageView
             android:id="@+id/nuevo_afiliado_pag1_container_alta_form_marker_pag1"
@@ -308,8 +334,8 @@
 
         <ImageView
             android:id="@+id/nuevo_afiliado_pag1_container_alta_form_marker_pag4"
-            android:layout_width="10dp"
-            android:layout_height="10dp"
+            android:layout_width="9dp"
+            android:layout_height="5dp"
             android:layout_gravity="top|left"
             android:layout_marginStart="116dp"
             android:layout_marginBottom="61dp"
@@ -319,11 +345,11 @@
             app:layout_constraintStart_toStartOf="@+id/nuevo_pago_pag1_container_afiliados_complete_list" />
 
         <EditText
-            android:id="@+id/nuevo_afiliado_input_email"
+            android:id="@+id/inputEmail"
             android:layout_width="310dp"
             android:layout_height="52dp"
             android:layout_gravity="top|left"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="378dp"
             android:background="@drawable/nuevo_pago_pag1_container_rectangle5"
             android:hint="Dirección de email"
@@ -366,7 +392,7 @@
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="2dp"
             app:layout_constraintBottom_toBottomOf="@+id/nuevo_pago_pag1_container_afiliados_complete_list"
-            app:layout_constraintEnd_toStartOf="@+id/imageButton10"
+            app:layout_constraintEnd_toStartOf="@+id/btnSiguiente"
             app:layout_constraintStart_toEndOf="@+id/imageButton9"
             app:srcCompat="@drawable/anterior_button_small" />
 
@@ -379,7 +405,7 @@
             app:srcCompat="@drawable/cancelar_button_small" />
 
         <ImageButton
-            android:id="@+id/imageButton10"
+            android:id="@+id/btnSiguiente"
             android:layout_width="94dp"
             android:layout_height="53dp"
             android:layout_marginEnd="2dp"
