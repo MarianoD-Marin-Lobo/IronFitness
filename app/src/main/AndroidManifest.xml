@@ -86,6 +86,16 @@
             android:name=".Afiliados_Carnet_Activity.Pantalla1Activity"
             android:exported="false" />
 
+
+        <activity android:name=".Nuevo_Afiliado_Pag1_Activity"
+            android:exported="false"/>
+        <activity android:name=".Nuevo_Afiliado_Pag2_Activity"
+            android:exported="false"/>
+        <activity android:name=".Nuevo_Afiliado_Pag3_Activity"
+            android:exported="false"/>
+        <activity android:name=".Nuevo_Afiliado_Pag4_Activity"
+            android:exported="false"/>
+
     </application>
 
 </manifest>
