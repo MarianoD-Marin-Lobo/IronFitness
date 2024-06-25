@@ -40,6 +40,7 @@ class BaseDatos(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB_
 
     override fun onCreate(db: SQLiteDatabase?) {
         // Creacion de la tabla Administrador
+        Log.d("BaseDatos", "Creando base de datos y tablas...")
         val creacionTablaAdmin =
             "CREATE TABLE Administrador (idAdmin INTEGER PRIMARY KEY AUTOINCREMENT, idRol INTEGER, UsuarioAdm VARCHAR(50), PassAdm VARCHAR(40))"
         db?.execSQL(creacionTablaAdmin)
@@ -60,6 +61,7 @@ class BaseDatos(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB_
                 + "$COLUMN_TELEFONO2 INTEGER,"
                 + "$COLUMN_ELIMINADO INTEGER DEFAULT 0"
                 + ")")
+        db?.execSQL(CREATE_PERSONAS_TABLE)
 
         val CREATE_AFILIADOS_TABLE = ("CREATE TABLE $TABLE_AFILIADOS ("
                 + "$COLUMN_AFILIADO_ID INTEGER PRIMARY KEY AUTOINCREMENT,"
@@ -69,9 +71,9 @@ class BaseDatos(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB_
                 + "$COLUMN_PERSONA_ID INTEGER,"
                 + "FOREIGN KEY($COLUMN_PERSONA_ID) REFERENCES $TABLE_PERSONAS($COLUMN_ID)"
                 + ")")
-        db?.execSQL(CREATE_PERSONAS_TABLE)
         db?.execSQL(CREATE_AFILIADOS_TABLE)
 
+        Log.d("BaseDatos", "Tablas creadas correctamente: Administrador, Personas, Afiliados")
 
         // Registra un administrador al iniciar la base de datos
         val contenedor = ContentValues().apply {
@@ -90,9 +92,9 @@ class BaseDatos(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB_
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
         db?.execSQL("DROP TABLE IF EXISTS $TABLE_PERSONAS")
+        db?.execSQL("DROP TABLE IF EXISTS $TABLE_AFILIADOS")
         onCreate(db)
     }
-
     // Funcion de agregar administrador a la bd
     fun agregarAdmin(admin: Administrador): String {
         val db = this.writableDatabase

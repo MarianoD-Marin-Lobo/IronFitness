@@ -40,7 +40,7 @@ class Nuevo_Afiliado_Pag1_Activity : AppCompatActivity() {
                 else -> false
             }
             val aptoMed = nuevo_afiliado_pag1_input_aptoMed.text.toString()
-            val fechaAfil= input_fecha_afiliacion.text.toString()
+            val fechaAfil = input_fecha_afiliacion.text.toString()
 
             val intent = Intent(this, Nuevo_Afiliado_Pag2_Activity::class.java).apply {
                 putExtra("esSocio", esSocio)

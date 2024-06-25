@@ -366,7 +366,7 @@
             app:layout_constraintStart_toStartOf="@+id/nuevo_pago_pag1_container_afiliados_complete_list" />
 
         <EditText
-            android:id="@+id/inputFechaNaciamiento"
+            android:id="@+id/inputFechaNacimiento"
             android:layout_width="310dp"
             android:layout_height="52dp"
             android:layout_gravity="top|left"

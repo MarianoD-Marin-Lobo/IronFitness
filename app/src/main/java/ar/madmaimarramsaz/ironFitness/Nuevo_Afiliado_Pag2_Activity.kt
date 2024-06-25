@@ -2,6 +2,7 @@ package ar.madmaimarramsaz.ironFitness
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
@@ -24,9 +25,13 @@ class Nuevo_Afiliado_Pag2_Activity : AppCompatActivity() {
         inputNombre = findViewById(R.id.inputNombre)
         inputApellido = findViewById(R.id.inputApellido)
         inputDni = findViewById(R.id.inputDni)
+        inputFechaNacimiento = findViewById(R.id.inputFechaNacimiento)
         btnSiguiente = findViewById(R.id.btnSiguiente)
 
-        // Boton siguiente
+
+        val esSocio = intent.getBooleanExtra("esSocio", false)
+        val aptoMed = intent.getStringExtra("aptoMed") ?: ""
+        val fechaAfil = intent.getStringExtra("fechaAfil") ?: ""
 
         btnSiguiente.setOnClickListener {
             val nombre = inputNombre.text.toString()
@@ -39,8 +44,12 @@ class Nuevo_Afiliado_Pag2_Activity : AppCompatActivity() {
                 putExtra("apellido", apellido)
                 putExtra("dni", dni)
                 putExtra("fechaNacimiento", fechaNacimiento)
+                putExtra("esSocio", esSocio)
+                putExtra("aptoMed", aptoMed)
+                putExtra("fechaAfil", fechaAfil)
             }
             startActivity(intent)
+
         }
 
         // boton volver a la ventana anterior

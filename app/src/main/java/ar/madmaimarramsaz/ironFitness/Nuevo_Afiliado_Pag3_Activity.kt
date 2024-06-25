@@ -21,24 +21,42 @@ class Nuevo_Afiliado_Pag3_Activity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_nuevo_afiliado_pag3)
 
-        inputDireccion= findViewById(R.id.inputDireccion)
-        inputCiudad= findViewById(R.id.inputCiudad)
-        inputCp= findViewById(R.id.inputCp)
-        inputEmail= findViewById(R.id.inputEmail)
-        btnSiguiente= findViewById(R.id.btnSiguiente)
+        inputDireccion = findViewById(R.id.inputDireccion)
+        inputCiudad = findViewById(R.id.inputCiudad)
+        inputCp = findViewById(R.id.inputCp)
+        inputEmail = findViewById(R.id.inputEmail)
+        btnSiguiente = findViewById(R.id.btnSiguiente)
+
+        val esSocio = intent.getBooleanExtra("esSocio", false)
+        val aptoMed = intent.getStringExtra("aptoMed") ?: ""
+        val fechaAfil = intent.getStringExtra("fechaAfil") ?: ""
+        val nombre = intent.getStringExtra("nombre") ?: ""
+        val apellido = intent.getStringExtra("apellido") ?: ""
+        val dni = intent.getStringExtra("dni") ?: ""
+        val fechaNacimiento = intent.getStringExtra("fechaNacimiento") ?: ""
+
 
         btnSiguiente.setOnClickListener {
-            val Direccion = inputDireccion.text.toString()
-            val Ciudad = inputCiudad.text.toString()
-            val Cp = inputCp.text.toString()
-            val Email = inputEmail.text.toString()
+            val direccion = inputDireccion.text.toString()
+            val ciudad = inputCiudad.text.toString()
+            val cp = inputCp.text.toString()
+            val email = inputEmail.text.toString()
 
             val intent = Intent(this, Nuevo_Afiliado_Pag4_Activity::class.java).apply {
-                putExtra("Direccion", Direccion)
-                putExtra("Ciudad", Ciudad)
-                putExtra("Cp", Cp)
-                putExtra("Email", Email)
+                putExtra("direccion", direccion)
+                putExtra("ciudad", ciudad)
+                putExtra("codigoPostal", cp)
+                putExtra("email", email)
+                putExtra("esSocio", esSocio)
+                putExtra("aptoMed", aptoMed)
+                putExtra("fechaAfil", fechaAfil)
+                putExtra("nombre", nombre)
+                putExtra("apellido", apellido)
+                putExtra("dni", dni)
+                putExtra("fechaNacimiento", fechaNacimiento)
             }
+
+            startActivity(intent)
         }
 
 
