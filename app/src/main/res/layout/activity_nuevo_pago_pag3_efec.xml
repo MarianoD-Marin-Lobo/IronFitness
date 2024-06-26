@@ -34,16 +34,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
+        <Button
             android:id="@+id/image_back_button"
-            android:layout_width="47dp"
-            android:layout_height="54dp"
+            android:layout_width="19dp"
+            android:layout_height="25dp"
+            app:backgroundTint="@null"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="29dp"
             android:scaleType="centerInside"
-            android:src="@drawable/image_back_button"
-            app:layout_constraintStart_toStartOf="@+id/image_rectangle_gris"
-            app:layout_constraintTop_toTopOf="@+id/image_rectangle_gris" />
+            android:background="@drawable/image_back_button"
+            app:layout_constraintStart_toStartOf="@id/image_rectangle_gris"
+            app:layout_constraintTop_toTopOf="@id/image_rectangle_gris" />
 
         <Button
             android:id="@+id/image_low_menu_quad"
@@ -216,6 +217,7 @@
             android:id="@+id/container_btn_efectivo"
             android:layout_width="100dp"
             android:layout_height="60dp"
+            android:layout_marginStart="16dp"
             android:background="@drawable/container1_gris"
             android:elevation="1dp"
             app:backgroundTint="@null"
@@ -238,6 +240,7 @@
             android:id="@+id/container_btn_credito"
             android:layout_width="100dp"
             android:layout_height="60dp"
+            android:layout_marginEnd="16dp"
             android:background="@drawable/container1"
             android:elevation="1dp"
             app:backgroundTint="@null"
@@ -366,7 +369,7 @@
             app:layout_constraintTop_toTopOf="@+id/container_btn_credito" />
 
         <Button
-            android:id="@+id/container_btn_siguiente"
+            android:id="@+id/container_btn_anterior"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginEnd="2dp"
@@ -387,11 +390,11 @@
             app:backgroundTint="#FDFDFD"
             app:layout_constraintBottom_toBottomOf="@+id/nuevo_pago_pag3_container_gris"
             app:layout_constraintEnd_toEndOf="@+id/nuevo_pago_pag3_container_gris"
-            app:layout_constraintStart_toEndOf="@+id/container_btn_siguiente" />
+            app:layout_constraintStart_toEndOf="@+id/container_btn_anterior" />
 
 
         <TextView
-            android:id="@+id/text_btn_siguiente"
+            android:id="@+id/text_btn_anterior"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -400,10 +403,10 @@
             android:textColor="#656363"
             android:textSize="12dp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/container_btn_siguiente"
-            app:layout_constraintEnd_toEndOf="@+id/container_btn_siguiente"
-            app:layout_constraintStart_toStartOf="@+id/container_btn_siguiente"
-            app:layout_constraintTop_toTopOf="@+id/container_btn_siguiente" />
+            app:layout_constraintBottom_toBottomOf="@+id/container_btn_anterior"
+            app:layout_constraintEnd_toEndOf="@+id/container_btn_anterior"
+            app:layout_constraintStart_toStartOf="@+id/container_btn_anterior"
+            app:layout_constraintTop_toTopOf="@+id/container_btn_anterior" />
 
 
         <ImageView
@@ -421,7 +424,7 @@
             app:layout_constraintTop_toTopOf="@+id/container_btn_cancelar" />
 
         <ImageView
-            android:id="@+id/btn_siguiente_icono"
+            android:id="@+id/btn_anterior_icono"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -429,10 +432,10 @@
             android:layout_marginBottom="1dp"
             android:background="@drawable/icono_flecha_anterior"
             android:scaleType="centerInside"
-            app:layout_constraintBottom_toTopOf="@+id/text_btn_siguiente"
-            app:layout_constraintEnd_toEndOf="@+id/container_btn_siguiente"
-            app:layout_constraintStart_toStartOf="@+id/container_btn_siguiente"
-            app:layout_constraintTop_toTopOf="@+id/container_btn_siguiente" />
+            app:layout_constraintBottom_toTopOf="@+id/text_btn_anterior"
+            app:layout_constraintEnd_toEndOf="@+id/container_btn_anterior"
+            app:layout_constraintStart_toStartOf="@+id/container_btn_anterior"
+            app:layout_constraintTop_toTopOf="@+id/container_btn_anterior" />
 
         <ImageView
             android:id="@+id/btn_confirmar_icono"
@@ -450,7 +453,7 @@
 
 
         <TextView
-            android:id="@+id/text_btn_siguiente"
+            android:id="@+id/text_btn_confirmar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"

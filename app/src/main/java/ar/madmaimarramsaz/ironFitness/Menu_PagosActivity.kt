@@ -6,10 +6,14 @@ import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
+import ar.madmaimarramsaz.ironFitness.GestionAfiliadoActivity
+import ar.madmaimarramsaz.ironFitness.HomeActivity
+import ar.madmaimarramsaz.ironFitness.Menu_PagosActivity
+import ar.madmaimarramsaz.ironFitness.Nuevo_Pago_Pag1_Activity
+import ar.madmaimarramsaz.ironFitness.Historial_Pagos_Activity
+import ar.madmaimarramsaz.ironFitness.R
+
 class Menu_PagosActivity : AppCompatActivity() {
-    private lateinit var btnPagoMensualSocio: Button
-    private lateinit var btnPagoActividadDiaria: Button
-    private lateinit var btnVerHistorialPagos: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,29 +21,81 @@ class Menu_PagosActivity : AppCompatActivity() {
         setContentView(R.layout.activity_menu_pagos)
 
 
-        btnPagoMensualSocio = findViewById(R.id.menu_pagos_pago_cuota_mensual_socio_button)
-        btnPagoActividadDiaria = findViewById(R.id.menu_pagos_pago_activ_diaria_button)
-        btnVerHistorialPagos = findViewById(R.id.menu_pagos_historial_pagos_button)
-
-        // Boton de pago cuota Mensual
-        btnPagoMensualSocio.setOnClickListener {
-            // Se abre la ventana a la pagina de pagos
-            val intent = Intent(this, Nuevo_Pago_Pag1_Activity::class.java)
-            startActivity(intent)
+        // boton volver a la ventana anterior
+        val btn_volver: Button = findViewById(R.id.image_back_button)
+        btn_volver.setOnClickListener {
+            finish()
         }
 
-        // Boton de pago Actividad Diaria
-        btnPagoActividadDiaria.setOnClickListener {
-            // Se abre la ventana a la pagina de pagos
-            val intent = Intent(this, Nuevo_Pago_Pag1_Activity::class.java)
-            startActivity(intent)
+        // boton pago cuota mensual
+        val btn_mensual: Button = findViewById(R.id.menu_pagos_pago_cuota_mensual_socio_button)
+        btn_mensual.setOnClickListener {
+            irAPagoCuotaMensual()
         }
 
-        // Boton Ver Historial de Pagos
-        btnVerHistorialPagos.setOnClickListener {
-            // Se abre la ventana al Historial de Pagos
-            val intent = Intent(this, Historial_Pagos_Activity::class.java)
-            startActivity(intent)
+        // boton pago activ diaria
+        val btn_actividad: Button = findViewById(R.id.menu_pagos_pago_activ_diaria_button)
+        btn_actividad.setOnClickListener {
+            irAPagoActividadDiaria()
         }
+
+        // boton ver historial de pagos
+        val btn_historial: Button = findViewById(R.id.menu_pagos_historial_pagos_button)
+        btn_historial.setOnClickListener {
+            irAVerHistorialPagos()
+        }
+
+        // barra de navegacion Boton 1 Pagar
+        val btn_pagar: Button = findViewById(R.id.image_low_menu_quad)
+        btn_pagar.setOnClickListener {
+            irAPagos()
+        }
+
+        // barra de navegacion Boton 2 ir a Home
+        val btn_home: Button = findViewById(R.id.image_low_menu_quad1)
+        btn_home.setOnClickListener {
+            irAHome()
+        }
+
+        // barra de navegacion Boton 3 ir a Gestión Afiliados
+        val btn_gestionAfiliado: Button = findViewById(R.id.image_low_menu_quad2)
+
+        btn_gestionAfiliado.setOnClickListener {
+            irAGestionAfiliado()
+        }
+    }
+
+    // Funciones
+
+    private fun irAPagoCuotaMensual(){
+        val intent = Intent(this, Nuevo_Pago_Pag1_Activity::class.java)
+        startActivity(intent)
+    }
+
+    private fun irAPagoActividadDiaria(){
+        val intent = Intent(this, Nuevo_Pago_Pag1_Activity::class.java)
+        startActivity(intent)
+    }
+
+    private fun irAVerHistorialPagos(){
+        val intent = Intent(this, Historial_Pagos_Activity::class.java)
+        startActivity(intent)
+    }
+
+    // Funciones barra nav
+
+    private fun irAPagos(){
+        val intent = Intent(this, Menu_PagosActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun irAHome(){
+        val intent = Intent(this, HomeActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun irAGestionAfiliado(){
+        val intent = Intent(this, GestionAfiliadoActivity::class.java)
+        startActivity(intent)
     }
 }

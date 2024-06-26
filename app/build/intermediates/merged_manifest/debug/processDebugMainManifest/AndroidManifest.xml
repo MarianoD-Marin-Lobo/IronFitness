@@ -28,6 +28,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.IronFitness" >
         <activity
+            android:name="ar.madmaimarramsaz.ironFitness.Impresion_Comprobantes_Activity"
+            android:exported="false" />
+        <activity
             android:name="ar.madmaimarramsaz.ironFitness.Historial_Pagos_Activity"
             android:exported="false" />
         <activity
@@ -55,6 +58,9 @@
             android:name="ar.madmaimarramsaz.ironFitness.HomeActivity"
             android:exported="false" />
         <activity
+            android:name="ar.madmaimarramsaz.ironFitness.GestionAfiliadoActivity"
+            android:exported="false" />
+        <activity
             android:name="ar.madmaimarramsaz.ironFitness.LoginActivity"
             android:exported="true" >
             <intent-filter>
@@ -62,7 +68,41 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            />
         </activity>
+        <activity
+            android:name="ar.madmaimarramsaz.ironFitness.Ver_datos_afiliados_activity.Datos_Afiliado_Configuracion"
+            android:exported="false" />
+        <activity
+            android:name="ar.madmaimarramsaz.ironFitness.Ver_datos_afiliados_activity.Datos_Afiliado_Editar"
+            android:exported="false" />
+        <activity
+            android:name="ar.madmaimarramsaz.ironFitness.Ver_datos_afiliados_activity.Datos_Afiliado_Ver"
+            android:exported="false" />
+        <activity
+            android:name="ar.madmaimarramsaz.ironFitness.Estados_Cuenta_Activity.EstadoCuenta3Activity"
+            android:exported="false" />
+        <activity
+            android:name="ar.madmaimarramsaz.ironFitness.Estados_Cuenta_Activity.EstadoCuenta2Activity"
+            android:exported="false" />
+        <activity
+            android:name="ar.madmaimarramsaz.ironFitness.Estados_Cuenta_Activity.EstadoCuenta1Activity"
+            android:exported="false" />
+        <activity
+            android:name="ar.madmaimarramsaz.ironFitness.Afiliados_Carnet_Activity.Pantalla4Activity"
+            android:exported="false" />
+        <activity
+            android:name="ar.madmaimarramsaz.ironFitness.Afiliados_Carnet_Activity.Pantalla3Activity"
+            android:exported="false" />
+        <activity
+            android:name="ar.madmaimarramsaz.ironFitness.Afiliados_Carnet_Activity.Pantalla2Activity"
+            android:exported="false" />
+        <activity
+            android:name="ar.madmaimarramsaz.ironFitness.Afiliados_Carnet_Activity.Pantalla1Activity"
+            android:exported="false" />
+        <activity
+            android:name="ar.madmaimarramsaz.ironFitness.MainActivity"
+            android:exported="false" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"
