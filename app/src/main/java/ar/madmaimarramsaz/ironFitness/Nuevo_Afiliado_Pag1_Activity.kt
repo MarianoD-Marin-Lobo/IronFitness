@@ -3,15 +3,52 @@ package ar.madmaimarramsaz.ironFitness
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
+import android.widget.ImageButton
+import android.widget.RadioButton
+import android.widget.RadioGroup
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
 class Nuevo_Afiliado_Pag1_Activity : AppCompatActivity() {
 
+
+    //CRUD
+    private lateinit var radioGroupSocio: RadioGroup
+    private lateinit var selector_socio_radbtn: RadioButton
+    private lateinit var selectornoSocioradbtn: RadioButton
+    private lateinit var nuevo_afiliado_pag1_input_aptoMed: EditText
+    private lateinit var input_fecha_afiliacion: EditText
+    private lateinit var btnSiguiente: ImageButton
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_nuevo_afiliado_pag1)
+
+        radioGroupSocio = findViewById(R.id.radioGroupSocio)
+        selector_socio_radbtn = findViewById(R.id.selector_socio_radbtn)
+        selectornoSocioradbtn = findViewById(R.id.selectornoSocioradbtn)
+        nuevo_afiliado_pag1_input_aptoMed = findViewById(R.id.nuevo_afiliado_pag1_input_aptoMed)
+        input_fecha_afiliacion = findViewById(R.id.inputFechaAfiliacion)
+        btnSiguiente = findViewById(R.id.btnSiguiente)
+
+        btnSiguiente.setOnClickListener {
+            val esSocio = when (radioGroupSocio.checkedRadioButtonId) {
+                R.id.selector_socio_radbtn -> true
+                R.id.selectornoSocioradbtn -> false
+                else -> false
+            }
+            val aptoMed = nuevo_afiliado_pag1_input_aptoMed.text.toString()
+            val fechaAfil = input_fecha_afiliacion.text.toString()
+
+            val intent = Intent(this, Nuevo_Afiliado_Pag2_Activity::class.java).apply {
+                putExtra("esSocio", esSocio)
+                putExtra("aptoMed", aptoMed)
+                putExtra("fechaAfil", fechaAfil)
+            }
+            startActivity(intent)
+        }
 
         // boton volver a la ventana anterior
         val btn_volver: Button = findViewById(R.id.image_back_button)
@@ -58,4 +95,8 @@ class Nuevo_Afiliado_Pag1_Activity : AppCompatActivity() {
         val intent = Intent(this, GestionAfiliadoActivity::class.java)
         startActivity(intent)
     }
+
+
+
+
 }

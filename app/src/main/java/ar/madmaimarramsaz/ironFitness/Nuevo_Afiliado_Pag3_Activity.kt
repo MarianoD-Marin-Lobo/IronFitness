@@ -3,15 +3,62 @@ package ar.madmaimarramsaz.ironFitness
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
+import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
 class Nuevo_Afiliado_Pag3_Activity : AppCompatActivity() {
 
+    private lateinit var inputDireccion: EditText
+    private lateinit var inputCiudad: EditText
+    private lateinit var inputCp: EditText
+    private lateinit var inputEmail: EditText
+    private lateinit var btnSiguiente: ImageButton
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_nuevo_afiliado_pag3)
+
+        inputDireccion = findViewById(R.id.inputDireccion)
+        inputCiudad = findViewById(R.id.inputCiudad)
+        inputCp = findViewById(R.id.inputCp)
+        inputEmail = findViewById(R.id.inputEmail)
+        btnSiguiente = findViewById(R.id.btnSiguiente)
+
+        val esSocio = intent.getBooleanExtra("esSocio", false)
+        val aptoMed = intent.getStringExtra("aptoMed") ?: ""
+        val fechaAfil = intent.getStringExtra("fechaAfil") ?: ""
+        val nombre = intent.getStringExtra("nombre") ?: ""
+        val apellido = intent.getStringExtra("apellido") ?: ""
+        val dni = intent.getStringExtra("dni") ?: ""
+        val fechaNacimiento = intent.getStringExtra("fechaNacimiento") ?: ""
+
+
+        btnSiguiente.setOnClickListener {
+            val direccion = inputDireccion.text.toString()
+            val ciudad = inputCiudad.text.toString()
+            val cp = inputCp.text.toString()
+            val email = inputEmail.text.toString()
+
+            val intent = Intent(this, Nuevo_Afiliado_Pag4_Activity::class.java).apply {
+                putExtra("direccion", direccion)
+                putExtra("ciudad", ciudad)
+                putExtra("codigoPostal", cp)
+                putExtra("email", email)
+                putExtra("esSocio", esSocio)
+                putExtra("aptoMed", aptoMed)
+                putExtra("fechaAfil", fechaAfil)
+                putExtra("nombre", nombre)
+                putExtra("apellido", apellido)
+                putExtra("dni", dni)
+                putExtra("fechaNacimiento", fechaNacimiento)
+            }
+
+            startActivity(intent)
+        }
+
 
         // boton volver a la ventana anterior
         val btn_volver: Button = findViewById(R.id.image_back_button)

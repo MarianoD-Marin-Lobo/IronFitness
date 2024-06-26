@@ -53,7 +53,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            />
+
         </activity>
         <activity
             android:name=".Ver_datos_afiliados_activity.Datos_Afiliado_Configuracion"
@@ -85,9 +85,17 @@
         <activity
             android:name=".Afiliados_Carnet_Activity.Pantalla1Activity"
             android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
+
+
+        <activity android:name=".Nuevo_Afiliado_Pag1_Activity"
+            android:exported="false"/>
+        <activity android:name=".Nuevo_Afiliado_Pag2_Activity"
+            android:exported="false"/>
+        <activity android:name=".Nuevo_Afiliado_Pag3_Activity"
+            android:exported="false"/>
+        <activity android:name=".Nuevo_Afiliado_Pag4_Activity"
+            android:exported="false"/>
+
     </application>
 
 </manifest>

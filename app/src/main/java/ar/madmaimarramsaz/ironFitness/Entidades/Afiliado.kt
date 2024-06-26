@@ -3,8 +3,11 @@ package ar.madmaimarramsaz.ironFitness.Entidades
 import java.util.Date
 
 data class Afiliado (
-    val Id: Int = 0,
-    val fechaAfiliacion: Date? = null,
-    val idPersona: Int? = null,
-    val eliminado: Boolean = false
+
+    val aptoMedico:String,
+    val esSocio: Boolean,
+    val fechaAfiliacion: String,
+    val personaId:Long
+
 )
+

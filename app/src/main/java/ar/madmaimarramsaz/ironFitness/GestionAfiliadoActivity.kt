@@ -23,6 +23,12 @@ class GestionAfiliadoActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_gestion)
 
+        val btnNuevoAfiliado: ImageButton = findViewById(R.id.agregarAfiliado)
+        btnNuevoAfiliado.setOnClickListener{
+            val intent  = Intent(this,Nuevo_Afiliado_Pag1_Activity::class.java)
+            startActivity(intent)
+        }
+
         val viewPager: ViewPager2 = findViewById(R.id.viewPager)
         val tabLayout: TabLayout = findViewById(R.id.tabLayout)
 

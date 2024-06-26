@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toStartOf="@+id/btn_siguiente"
         app:layout_constraintStart_toStartOf="@+id/btn_siguiente"
-        tools:context=".Nuevo_Pago_Pag1_Activity">
+        tools:context=".Nuevo_Afiliado_Pag2_Activity">
 
         <TextView
             android:id="@+id/text_btn_cancelar"
@@ -24,7 +24,8 @@
             android:textSize="12dp"
             android:textStyle="bold"
             tools:layout_editor_absoluteX="62dp"
-            tools:layout_editor_absoluteY="27dp" />
+            tools:layout_editor_absoluteY="27dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/text_btn_siguiente"
@@ -39,7 +40,8 @@
             app:layout_constraintBottom_toBottomOf="@+id/container_btn_siguiente"
             app:layout_constraintEnd_toEndOf="@+id/container_btn_siguiente"
             app:layout_constraintStart_toStartOf="@+id/container_btn_siguiente"
-            app:layout_constraintTop_toTopOf="@+id/container_btn_siguiente" />
+            app:layout_constraintTop_toTopOf="@+id/container_btn_siguiente"
+            tools:ignore="UnknownIdInLayout" />
 
         <ImageView
             android:id="@+id/nuevoAfiliado_image_rectangle"
@@ -206,18 +208,32 @@
             android:background="@drawable/container1"
             android:scaleType="centerInside"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintHorizontal_bias="0.454"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="224dp" />
+            tools:layout_editor_absoluteY="222dp" />
 
         <EditText
-            android:id="@+id/nuevo_afiliado_pag1_input_nombre_apellido_afiliado"
+            android:id="@+id/inputNombre"
             android:layout_width="310dp"
             android:layout_height="52dp"
             android:layout_marginStart="12dp"
-            android:layout_marginTop="92dp"
+            android:layout_marginTop="56dp"
             android:background="@drawable/nuevo_pago_pag1_container_rectangle5"
-            android:hint="Nombre/s del Afiliado"
+            android:hint="Nombre del Afiliado"
+            android:paddingLeft="10dp"
+            android:textColor="#FF000000"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/nuevo_pago_pag1_container_afiliados_complete_list"
+            app:layout_constraintTop_toTopOf="@+id/nuevo_pago_pag1_container_afiliados_complete_list" />
+
+        <EditText
+            android:id="@+id/inputApellido"
+            android:layout_width="310dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="112dp"
+            android:background="@drawable/nuevo_pago_pag1_container_rectangle5"
+            android:hint="Apellido del Afiliado"
             android:paddingLeft="10dp"
             android:textColor="#FF000000"
             android:textSize="14sp"
@@ -230,12 +246,12 @@
             android:layout_height="25dp"
             android:layout_gravity="top|left"
             android:layout_marginStart="12dp"
-            android:layout_marginTop="56dp"
+            android:layout_marginTop="24dp"
             android:gravity="left|center_vertical"
             android:includeFontPadding="false"
             android:maxLines="1"
             android:singleLine="true"
-            android:text="Nombre/s  y  Apellido/s"
+            android:text="Nombre y  Apellido"
             android:textColor="#FF000000"
             android:textSize="20dp"
             android:textStyle="bold"
@@ -285,7 +301,7 @@
             app:layout_constraintVertical_bias="0.513" />
 
         <EditText
-            android:id="@+id/nuevo_pago_pag1_text_nro_identificacion"
+            android:id="@+id/inputDni"
             android:layout_width="200dp"
             android:layout_height="52dp"
             android:layout_marginTop="234dp"
@@ -350,7 +366,7 @@
             app:layout_constraintStart_toStartOf="@+id/nuevo_pago_pag1_container_afiliados_complete_list" />
 
         <EditText
-            android:id="@+id/input_fecha_nacimiento"
+            android:id="@+id/inputFechaNacimiento"
             android:layout_width="310dp"
             android:layout_height="52dp"
             android:layout_gravity="top|left"
@@ -397,7 +413,7 @@
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="2dp"
             app:layout_constraintBottom_toBottomOf="@+id/nuevo_pago_pag1_container_afiliados_complete_list"
-            app:layout_constraintEnd_toStartOf="@+id/imageButton10"
+            app:layout_constraintEnd_toStartOf="@+id/btnSiguiente"
             app:layout_constraintStart_toEndOf="@+id/imageButton9"
             app:srcCompat="@drawable/anterior_button_small" />
 
@@ -410,7 +426,7 @@
             app:srcCompat="@drawable/cancelar_button_small" />
 
         <ImageButton
-            android:id="@+id/imageButton10"
+            android:id="@+id/btnSiguiente"
             android:layout_width="94dp"
             android:layout_height="53dp"
             android:layout_marginEnd="2dp"

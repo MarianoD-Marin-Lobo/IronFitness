@@ -2,16 +2,55 @@ package ar.madmaimarramsaz.ironFitness
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
+import android.widget.EditText
+import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
 class Nuevo_Afiliado_Pag2_Activity : AppCompatActivity() {
 
+    private lateinit var inputNombre: EditText
+    private lateinit var inputApellido: EditText
+    private lateinit var inputDni: EditText
+    private lateinit var inputFechaNacimiento: EditText
+    private lateinit var btnSiguiente: ImageButton
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_nuevo_afiliado_pag2)
+
+        inputNombre = findViewById(R.id.inputNombre)
+        inputApellido = findViewById(R.id.inputApellido)
+        inputDni = findViewById(R.id.inputDni)
+        inputFechaNacimiento = findViewById(R.id.inputFechaNacimiento)
+        btnSiguiente = findViewById(R.id.btnSiguiente)
+
+
+        val esSocio = intent.getBooleanExtra("esSocio", false)
+        val aptoMed = intent.getStringExtra("aptoMed") ?: ""
+        val fechaAfil = intent.getStringExtra("fechaAfil") ?: ""
+
+        btnSiguiente.setOnClickListener {
+            val nombre = inputNombre.text.toString()
+            val apellido = inputApellido.text.toString()
+            val dni = inputDni.text.toString()
+            val fechaNacimiento = inputFechaNacimiento.text.toString()
+
+            val intent = Intent(this, Nuevo_Afiliado_Pag3_Activity::class.java).apply {
+                putExtra("nombre", nombre)
+                putExtra("apellido", apellido)
+                putExtra("dni", dni)
+                putExtra("fechaNacimiento", fechaNacimiento)
+                putExtra("esSocio", esSocio)
+                putExtra("aptoMed", aptoMed)
+                putExtra("fechaAfil", fechaAfil)
+            }
+            startActivity(intent)
+
+        }
 
         // boton volver a la ventana anterior
         val btn_volver: Button = findViewById(R.id.image_back_button)
