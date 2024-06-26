@@ -187,7 +187,82 @@ class BaseDatos(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB_
         // Lógica para eliminar un afiliado de la base de datos
     }
 
+    fun getAllAfiliados(): List<Triple<Boolean, String, String>>{
+        val db = this.readableDatabase
+        val cursor: Cursor = db.query(
+            "afiliados a JOIN personas p ON a.personaId = p.id",
+            arrayOf("a.esSocio", "p.nombre","p.apellido"),
+            null,
+            null,
+            null,
+            null,
+            null
+        )
 
+        val allSocios = mutableListOf<Triple<Boolean, String,String>>()
+        if (cursor.moveToFirst()) {
+            do{
+                val esSocio = cursor.getInt(cursor.getColumnIndexOrThrow("esSocio")) >0
+                val nombre = cursor.getString(cursor.getColumnIndexOrThrow("nombre"))
+                val apellido = cursor.getString(cursor.getColumnIndexOrThrow("apellido"))
+                allSocios.add(Triple(esSocio,nombre,apellido))
+            }while (cursor.moveToNext())
+        }
+        cursor.close()
+        db.close()
+        return allSocios
+    }
+
+    fun getAllSocios(): List<Triple<Boolean, String, String>> {
+
+        val db = this.readableDatabase
+        val cursor: Cursor = db.query(
+            "afiliados a JOIN personas p ON a.personaId = p.id",
+            arrayOf("a.esSocio", "p.nombre", "p.apellido"),
+            "a.esSocio = ?",
+            arrayOf("1"),
+            null,
+            null,
+            null
+        )
+        val socios = mutableListOf<Triple<Boolean, String, String>>()
+        if (cursor.moveToFirst()) {
+            do {
+                val esSocio = cursor.getInt(cursor.getColumnIndexOrThrow("esSocio")) > 0
+                val nombre = cursor.getString(cursor.getColumnIndexOrThrow("nombre"))
+                val apellido = cursor.getString(cursor.getColumnIndexOrThrow("apellido"))
+                socios.add(Triple(esSocio, nombre, apellido))
+            } while (cursor.moveToNext())
+        }
+        cursor.close()
+        db.close()
+        return socios
+    }
+    fun getAllNoSocios(): List<Triple<Boolean, String, String>> {
+
+        val db = this.readableDatabase
+        val cursor: Cursor = db.query(
+            "afiliados a JOIN personas p ON a.personaId = p.id",
+            arrayOf("a.esSocio", "p.nombre", "p.apellido"),
+            "a.esSocio = ?",
+            arrayOf("0"),
+            null,
+            null,
+            null
+        )
+        val noSocios  = mutableListOf<Triple<Boolean, String, String>>()
+        if (cursor.moveToFirst()) {
+            do {
+                val esSocio = cursor.getInt(cursor.getColumnIndexOrThrow("esSocio")) > 0
+                val nombre = cursor.getString(cursor.getColumnIndexOrThrow("nombre"))
+                val apellido = cursor.getString(cursor.getColumnIndexOrThrow("apellido"))
+                noSocios.add(Triple(esSocio, nombre, apellido))
+            } while (cursor.moveToNext())
+        }
+        cursor.close()
+        db.close()
+        return noSocios
+    }
 }
 
 

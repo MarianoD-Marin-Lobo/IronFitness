@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class TableAdapter(private val data: List<Pair<Boolean, String>>) : RecyclerView.Adapter<TableAdapter.TableViewHolder>() {
+class TableAdapter(private val data: List<Triple<Boolean, String,String>>) : RecyclerView.Adapter<TableAdapter.TableViewHolder>() {
 
 
         private val imagenSocioId = R.drawable.socio_icon
@@ -20,19 +20,12 @@ class TableAdapter(private val data: List<Pair<Boolean, String>>) : RecyclerView
     }
 
     override fun onBindViewHolder(holder: TableViewHolder, position: Int) {
-        val (esSocio, nombre) = data[position]
+        val (esSocio, nombre, apellido) = data[position]
 
-        // Selecciona la imagen según si es socio o no socio
-        val imagenId =
+        val imagenId = if (esSocio) imagenSocioId else imagenNoSocioId
 
-            if (esSocio) {
-            imagenSocioId
-        } else imagenNoSocioId
-
-        // Establece la imagen y el nombre en la fila de la tabla
         holder.imageColumn.setImageResource(imagenId)
-        holder.nombreColumn.text = nombre.toString()
-
+        holder.nombreColumn.text = "$nombre $apellido"
     }
 
     override fun getItemCount(): Int {
