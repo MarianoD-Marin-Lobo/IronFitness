@@ -6,13 +6,20 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import ar.madmaimarramsaz.ironFitness.Entidades.Afiliado
 
-class TableAdapter(private val data: List<Triple<Boolean, String,String>>) : RecyclerView.Adapter<TableAdapter.TableViewHolder>() {
+class TableAdapter(
+    private val data: List<Afiliado>,
+    private val listener: OnItemClickListener
+) : RecyclerView.Adapter<TableAdapter.TableViewHolder>()  {
 
 
         private val imagenSocioId = R.drawable.socio_icon
         private val imagenNoSocioId = R.drawable.nosocio_icon
 
+    interface OnItemClickListener {
+        fun onItemClick(position: Int)
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TableViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.tabla_item, parent, false)
@@ -20,12 +27,14 @@ class TableAdapter(private val data: List<Triple<Boolean, String,String>>) : Rec
     }
 
     override fun onBindViewHolder(holder: TableViewHolder, position: Int) {
-        val (esSocio, nombre, apellido) = data[position]
-
-        val imagenId = if (esSocio) imagenSocioId else imagenNoSocioId
+        val afiliado = data[position]
+        val imagenId = if (afiliado.esSocio) imagenSocioId else imagenNoSocioId
 
         holder.imageColumn.setImageResource(imagenId)
-        holder.nombreColumn.text = "$nombre $apellido"
+        holder.nombreColumn.text = "${afiliado.persona.nombre} ${afiliado.persona.apellido}"
+        holder.itemView.setOnClickListener {
+            listener.onItemClick(position)
+        }
     }
 
     override fun getItemCount(): Int {

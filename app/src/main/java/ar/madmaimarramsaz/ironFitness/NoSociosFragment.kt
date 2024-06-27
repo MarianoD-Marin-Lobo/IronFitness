@@ -1,5 +1,6 @@
 package ar.madmaimarramsaz.ironFitness
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,9 +8,10 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import ar.madmaimarramsaz.ironFitness.Ver_datos_afiliados_activity.Datos_Afiliado_Ver
 import ar.madmaimarramsaz.ironFitness.repositories.AfiliadoRepository
 
-class NoSociosFragment: Fragment() {
+class NoSociosFragment : Fragment(), TableAdapter.OnItemClickListener {
 
     private lateinit var afiliadoRepository: AfiliadoRepository
 
@@ -22,10 +24,19 @@ class NoSociosFragment: Fragment() {
 
         val db = BaseDatos(requireContext())
         afiliadoRepository = AfiliadoRepository(db)
+
         val noSocios = afiliadoRepository.getAllNoSocios()
         recyclerView.layoutManager = LinearLayoutManager(context)
-        recyclerView.adapter = TableAdapter(noSocios)
+        recyclerView.adapter = TableAdapter(noSocios, this)
 
         return view
+    }
+
+    override fun onItemClick(position: Int) {
+        val afiliado = afiliadoRepository.getAllNoSocios()[position]
+        val intent = Intent(context, Datos_Afiliado_Ver::class.java).apply {
+            putExtra("SOCIO_ID", afiliado.id)
+        }
+        startActivity(intent)
     }
 }

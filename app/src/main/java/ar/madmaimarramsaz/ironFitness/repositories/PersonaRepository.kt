@@ -8,4 +8,9 @@ class PersonaRepository (private val database: BaseDatos) {
     fun createPersona(persona: Persona): Long {
         return database.insertPersona(persona)
     }
+
+    fun getPersona(personaId: Long): Persona? {
+        return database.getPersona(personaId)
+
+    }
 }

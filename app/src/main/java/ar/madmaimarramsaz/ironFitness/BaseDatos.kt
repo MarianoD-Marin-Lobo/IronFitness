@@ -161,17 +161,26 @@ class BaseDatos(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB_
     }
 
     fun insertAfiliado(afiliado: Afiliado): Long {
-        val db = this.writableDatabase
-        val contentValues = ContentValues().apply {
-            put(COLUMN_APTO_MEDICO, afiliado.aptoMedico)
-            put(COLUMN_ES_SOCIO, if (afiliado.esSocio) 1 else 0)
-            put(COLUMN_FECHA_AFILIACION, afiliado.fechaAfiliacion)
-            put(COLUMN_PERSONA_ID, afiliado.personaId)
-        }
+        // Primero, insertar la persona asociada
+        val personaId = insertPersona(afiliado.persona)
 
-        val id = db.insert(TABLE_AFILIADOS, null, contentValues)
-        db.close()
-        return id
+        if (personaId > 0) {
+            // Luego, insertar el afiliado con la referencia a la persona insertada
+            val db = this.writableDatabase
+            val contentValues = ContentValues().apply {
+                put(COLUMN_APTO_MEDICO, afiliado.aptoMedico)
+                put(COLUMN_ES_SOCIO, if (afiliado.esSocio) 1 else 0)
+                put(COLUMN_FECHA_AFILIACION, afiliado.fechaAfiliacion)
+                put(COLUMN_PERSONA_ID, personaId)  // Aquí se usa el ID de la persona insertada
+            }
+
+            val id = db.insert(TABLE_AFILIADOS, null, contentValues)
+            db.close()
+            return id
+        } else {
+            // Manejar el caso donde no se pudo insertar la persona
+            return -1
+        }
     }
 
     fun getAfiliadoById(id: Int): Afiliado? {
@@ -187,83 +196,236 @@ class BaseDatos(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB_
         // Lógica para eliminar un afiliado de la base de datos
     }
 
-    fun getAllAfiliados(): List<Triple<Boolean, String, String>>{
+    fun getAllAfiliados(): List<Afiliado> {
         val db = this.readableDatabase
-        val cursor: Cursor = db.query(
-            "afiliados a JOIN personas p ON a.personaId = p.id",
-            arrayOf("a.esSocio", "p.nombre","p.apellido"),
-            null,
-            null,
-            null,
-            null,
-            null
-        )
+        val query = """
+        SELECT a.$COLUMN_AFILIADO_ID as id, 
+               a.$COLUMN_APTO_MEDICO as aptoMedico, 
+               a.$COLUMN_ES_SOCIO as esSocio, 
+               a.$COLUMN_FECHA_AFILIACION as fechaAfiliacion, 
+               a.$COLUMN_PERSONA_ID as personaId,
+               p.$COLUMN_ID as personaId, 
+               p.$COLUMN_ID_ROL as idRol, 
+               p.$COLUMN_NOMBRE as nombre, 
+               p.$COLUMN_APELLIDO as apellido, 
+               p.$COLUMN_TIPO_DOC as tipoDoc, 
+               p.$COLUMN_DNI as dni, 
+               p.$COLUMN_FECHA_NACIMIENTO as fechaNacimiento, 
+               p.$COLUMN_DIRECCION as direccion, 
+               p.$COLUMN_CP as cp, 
+               p.$COLUMN_LOCALIDAD as localidad, 
+               p.$COLUMN_CORREO_ELECT as correoElect, 
+               p.$COLUMN_TELEFONO1 as telefono1, 
+               p.$COLUMN_TELEFONO2 as telefono2, 
+               p.$COLUMN_ELIMINADO as eliminado 
+        FROM $TABLE_AFILIADOS a 
+        JOIN $TABLE_PERSONAS p ON a.$COLUMN_PERSONA_ID = p.$COLUMN_ID
+    """.trimIndent()
 
-        val allSocios = mutableListOf<Triple<Boolean, String,String>>()
-        if (cursor.moveToFirst()) {
-            do{
-                val esSocio = cursor.getInt(cursor.getColumnIndexOrThrow("esSocio")) >0
-                val nombre = cursor.getString(cursor.getColumnIndexOrThrow("nombre"))
-                val apellido = cursor.getString(cursor.getColumnIndexOrThrow("apellido"))
-                allSocios.add(Triple(esSocio,nombre,apellido))
-            }while (cursor.moveToNext())
-        }
-        cursor.close()
-        db.close()
-        return allSocios
-    }
-
-    fun getAllSocios(): List<Triple<Boolean, String, String>> {
-
-        val db = this.readableDatabase
-        val cursor: Cursor = db.query(
-            "afiliados a JOIN personas p ON a.personaId = p.id",
-            arrayOf("a.esSocio", "p.nombre", "p.apellido"),
-            "a.esSocio = ?",
-            arrayOf("1"),
-            null,
-            null,
-            null
-        )
-        val socios = mutableListOf<Triple<Boolean, String, String>>()
+        val cursor: Cursor = db.rawQuery(query, null)
+        val allAfiliados = mutableListOf<Afiliado>()
         if (cursor.moveToFirst()) {
             do {
-                val esSocio = cursor.getInt(cursor.getColumnIndexOrThrow("esSocio")) > 0
-                val nombre = cursor.getString(cursor.getColumnIndexOrThrow("nombre"))
-                val apellido = cursor.getString(cursor.getColumnIndexOrThrow("apellido"))
-                socios.add(Triple(esSocio, nombre, apellido))
+                val persona = Persona(
+                    id = cursor.getLong(cursor.getColumnIndexOrThrow("personaId")),
+                    idRol = cursor.getInt(cursor.getColumnIndexOrThrow("idRol")),
+                    nombre = cursor.getString(cursor.getColumnIndexOrThrow("nombre")),
+                    apellido = cursor.getString(cursor.getColumnIndexOrThrow("apellido")),
+                    tipoDoc = cursor.getString(cursor.getColumnIndexOrThrow("tipoDoc")),
+                    dni = cursor.getString(cursor.getColumnIndexOrThrow("dni")),
+                    fechaNacimiento = cursor.getString(cursor.getColumnIndexOrThrow("fechaNacimiento")),
+                    direccion = cursor.getString(cursor.getColumnIndexOrThrow("direccion")),
+                    cp = cursor.getString(cursor.getColumnIndexOrThrow("cp")),
+                    localidad = cursor.getString(cursor.getColumnIndexOrThrow("localidad")),
+                    correoElect = cursor.getString(cursor.getColumnIndexOrThrow("correoElect")),
+                    telefono1 = cursor.getString(cursor.getColumnIndexOrThrow("telefono1")),
+                    telefono2 = cursor.getString(cursor.getColumnIndexOrThrow("telefono2")),
+                    eliminado = cursor.getInt(cursor.getColumnIndexOrThrow("eliminado")) > 0
+                )
+
+                val afiliado = Afiliado(
+                    id = cursor.getLong(cursor.getColumnIndexOrThrow("id")),
+                    aptoMedico = cursor.getString(cursor.getColumnIndexOrThrow("aptoMedico")),
+                    esSocio = cursor.getInt(cursor.getColumnIndexOrThrow("esSocio")) > 0,
+                    fechaAfiliacion = cursor.getString(cursor.getColumnIndexOrThrow("fechaAfiliacion")),
+                    personaId = cursor.getLong(cursor.getColumnIndexOrThrow("personaId")),
+                    persona = persona
+                )
+
+                allAfiliados.add(afiliado)
             } while (cursor.moveToNext())
         }
         cursor.close()
         db.close()
+        return allAfiliados
+    }
+
+    // Obtener todos los socios
+    fun getAllSocios(): List<Afiliado> {
+        val db = this.readableDatabase
+        val query = """
+        SELECT a.$COLUMN_AFILIADO_ID as id,
+               a.$COLUMN_APTO_MEDICO as aptoMedico,
+               a.$COLUMN_ES_SOCIO as esSocio,
+               a.$COLUMN_FECHA_AFILIACION as fechaAfiliacion,
+               a.$COLUMN_PERSONA_ID as personaId,
+               p.$COLUMN_ID_ROL as idRol,
+               p.$COLUMN_NOMBRE as nombre,
+               p.$COLUMN_APELLIDO as apellido,
+               p.$COLUMN_TIPO_DOC as tipoDoc,
+               p.$COLUMN_DNI as dni,
+               p.$COLUMN_FECHA_NACIMIENTO as fechaNacimiento,
+               p.$COLUMN_DIRECCION as direccion,
+               p.$COLUMN_CP as cp,
+               p.$COLUMN_LOCALIDAD as localidad,
+               p.$COLUMN_CORREO_ELECT as correoElect,
+               p.$COLUMN_TELEFONO1 as telefono1,
+               p.$COLUMN_TELEFONO2 as telefono2,
+               p.$COLUMN_ELIMINADO as eliminado
+        FROM $TABLE_AFILIADOS a
+        JOIN $TABLE_PERSONAS p ON a.$COLUMN_PERSONA_ID = p.$COLUMN_ID
+        WHERE a.$COLUMN_ES_SOCIO = 1
+    """.trimIndent()
+
+        val cursor: Cursor = db.rawQuery(query, null)
+        val socios = mutableListOf<Afiliado>()
+        if (cursor.moveToFirst()) {
+            do {
+                val persona = Persona(
+                    id = cursor.getLong(cursor.getColumnIndexOrThrow("personaId")),
+                    idRol = cursor.getInt(cursor.getColumnIndexOrThrow("idRol")),
+                    nombre = cursor.getString(cursor.getColumnIndexOrThrow("nombre")),
+                    apellido = cursor.getString(cursor.getColumnIndexOrThrow("apellido")),
+                    tipoDoc = cursor.getString(cursor.getColumnIndexOrThrow("tipoDoc")),
+                    dni = cursor.getString(cursor.getColumnIndexOrThrow("dni")),
+                    fechaNacimiento = cursor.getString(cursor.getColumnIndexOrThrow("fechaNacimiento")),
+                    direccion = cursor.getString(cursor.getColumnIndexOrThrow("direccion")),
+                    cp = cursor.getString(cursor.getColumnIndexOrThrow("cp")),
+                    localidad = cursor.getString(cursor.getColumnIndexOrThrow("localidad")),
+                    correoElect = cursor.getString(cursor.getColumnIndexOrThrow("correoElect")),
+                    telefono1 = cursor.getString(cursor.getColumnIndexOrThrow("telefono1")),
+                    telefono2 = cursor.getString(cursor.getColumnIndexOrThrow("telefono2")),
+                    eliminado = cursor.getInt(cursor.getColumnIndexOrThrow("eliminado")) > 0
+                )
+
+                val afiliado = Afiliado(
+                    id = cursor.getLong(cursor.getColumnIndexOrThrow("id")),
+                    aptoMedico = cursor.getString(cursor.getColumnIndexOrThrow("aptoMedico")),
+                    esSocio = true, // esSocio siempre será true en este método
+                    fechaAfiliacion = cursor.getString(cursor.getColumnIndexOrThrow("fechaAfiliacion")),
+                    personaId = cursor.getLong(cursor.getColumnIndexOrThrow("personaId")),
+                    persona = persona
+                )
+
+                socios.add(afiliado)
+            } while (cursor.moveToNext())
+        }
+        cursor.close()
         return socios
     }
-    fun getAllNoSocios(): List<Triple<Boolean, String, String>> {
 
+    // Obtener todos los no socios
+    fun getAllNoSocios(): List<Afiliado> {
         val db = this.readableDatabase
-        val cursor: Cursor = db.query(
-            "afiliados a JOIN personas p ON a.personaId = p.id",
-            arrayOf("a.esSocio", "p.nombre", "p.apellido"),
-            "a.esSocio = ?",
-            arrayOf("0"),
-            null,
-            null,
-            null
-        )
-        val noSocios  = mutableListOf<Triple<Boolean, String, String>>()
+
+        // Consulta SQL para obtener todos los no socios con JOIN entre afiliados y personas
+        val query = """
+        SELECT a.$COLUMN_AFILIADO_ID as id,
+               a.$COLUMN_APTO_MEDICO as aptoMedico,
+               a.$COLUMN_ES_SOCIO as esSocio,
+               a.$COLUMN_FECHA_AFILIACION as fechaAfiliacion,
+               a.$COLUMN_PERSONA_ID as personaId,
+               p.$COLUMN_ID_ROL as idRol,
+               p.$COLUMN_NOMBRE as nombre,
+               p.$COLUMN_APELLIDO as apellido,
+               p.$COLUMN_TIPO_DOC as tipoDoc,
+               p.$COLUMN_DNI as dni,
+               p.$COLUMN_FECHA_NACIMIENTO as fechaNacimiento,
+               p.$COLUMN_DIRECCION as direccion,
+               p.$COLUMN_CP as cp,
+               p.$COLUMN_LOCALIDAD as localidad,
+               p.$COLUMN_CORREO_ELECT as correoElect,
+               p.$COLUMN_TELEFONO1 as telefono1,
+               p.$COLUMN_TELEFONO2 as telefono2,
+               p.$COLUMN_ELIMINADO as eliminado
+        FROM $TABLE_AFILIADOS a
+        JOIN $TABLE_PERSONAS p ON a.$COLUMN_PERSONA_ID = p.$COLUMN_ID
+        WHERE a.$COLUMN_ES_SOCIO = 0
+    """.trimIndent()
+
+        val cursor = db.rawQuery(query, null)
+        val noSocios = mutableListOf<Afiliado>()
+
         if (cursor.moveToFirst()) {
             do {
-                val esSocio = cursor.getInt(cursor.getColumnIndexOrThrow("esSocio")) > 0
-                val nombre = cursor.getString(cursor.getColumnIndexOrThrow("nombre"))
-                val apellido = cursor.getString(cursor.getColumnIndexOrThrow("apellido"))
-                noSocios.add(Triple(esSocio, nombre, apellido))
+                val persona = Persona(
+                    id = cursor.getLong(cursor.getColumnIndexOrThrow("personaId")),
+                    idRol = cursor.getInt(cursor.getColumnIndexOrThrow("idRol")),
+                    nombre = cursor.getString(cursor.getColumnIndexOrThrow("nombre")),
+                    apellido = cursor.getString(cursor.getColumnIndexOrThrow("apellido")),
+                    tipoDoc = cursor.getString(cursor.getColumnIndexOrThrow("tipoDoc")),
+                    dni = cursor.getString(cursor.getColumnIndexOrThrow("dni")),
+                    fechaNacimiento = cursor.getString(cursor.getColumnIndexOrThrow("fechaNacimiento")),
+                    direccion = cursor.getString(cursor.getColumnIndexOrThrow("direccion")),
+                    cp = cursor.getString(cursor.getColumnIndexOrThrow("cp")),
+                    localidad = cursor.getString(cursor.getColumnIndexOrThrow("localidad")),
+                    correoElect = cursor.getString(cursor.getColumnIndexOrThrow("correoElect")),
+                    telefono1 = cursor.getString(cursor.getColumnIndexOrThrow("telefono1")),
+                    telefono2 = cursor.getString(cursor.getColumnIndexOrThrow("telefono2")),
+                    eliminado = cursor.getInt(cursor.getColumnIndexOrThrow("eliminado")) > 0
+                )
+
+                val afiliado = Afiliado(
+                    id = cursor.getLong(cursor.getColumnIndexOrThrow("id")),
+                    aptoMedico = cursor.getString(cursor.getColumnIndexOrThrow("aptoMedico")),
+                    esSocio = false, // En getAllNoSocios siempre es no socio
+                    fechaAfiliacion = cursor.getString(cursor.getColumnIndexOrThrow("fechaAfiliacion")),
+                    personaId = cursor.getLong(cursor.getColumnIndexOrThrow("personaId")),
+                    persona = persona
+                )
+
+                noSocios.add(afiliado)
             } while (cursor.moveToNext())
         }
         cursor.close()
         db.close()
+
         return noSocios
     }
+
+    fun getPersona(personaId: Long): Persona? {
+        val db = this.readableDatabase
+
+        var persona: Persona? = null
+
+        val query = "SELECT * FROM $TABLE_PERSONAS WHERE $COLUMN_ID = ?"
+        val selectionArgs = arrayOf(personaId.toString())
+
+        val cursor = db.rawQuery(query, selectionArgs)
+
+        if (cursor.moveToFirst()) {
+            persona = Persona(
+                id = cursor.getLong(cursor.getColumnIndexOrThrow(COLUMN_ID)),
+                nombre = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_NOMBRE)),
+                apellido = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_APELLIDO)),
+                tipoDoc = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_TIPO_DOC)),
+                dni = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_DNI)),
+                fechaNacimiento = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_FECHA_NACIMIENTO)),
+                direccion = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_DIRECCION)),
+                cp = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_CP)),
+                localidad = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_LOCALIDAD)),
+                correoElect = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_CORREO_ELECT)),
+                telefono1 = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_TELEFONO1)),
+                telefono2 = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_TELEFONO2)),
+                eliminado = cursor.getInt(cursor.getColumnIndexOrThrow(COLUMN_ELIMINADO)) > 0
+            )
+        }
+
+        cursor.close()
+        return persona
+    }
 }
+
 
 
 

@@ -22,18 +22,21 @@ class Nuevo_Afiliado_Pag4_Activity : AppCompatActivity() {
     private lateinit var inputTelefono2: EditText
     private lateinit var btnGuardar: ImageButton
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_nuevo_afiliado_pag4)
-        Log.d("NuevoAfiliado", "Entrando en NuevoAfiliadoActivity")
 
+        // Inicialización de vistas
+        inputTelefono = findViewById(R.id.inputTelefono)
+        inputTelefono2 = findViewById(R.id.inputTelefonoEmerg)
+        btnGuardar = findViewById(R.id.btnGuardar)
 
-        Log.e("NuevoAfiliado", "Entrando en NuevoAfiliadoActivity")
-        Log.e("nombre", intent.getStringExtra("nombre") ?: "")
+        // Inicialización de repositorios
+        personaRepository = PersonaRepository(BaseDatos(this))
+        afiliadoRepository = AfiliadoRepository(BaseDatos(this))
 
-        // Recopilación de información anterior desde el intent
+        // Obtención de datos del intent
         val esSocio = intent.getBooleanExtra("esSocio", false)
         val aptoMed = intent.getStringExtra("aptoMed") ?: ""
         val fechaAfiliacion = intent.getStringExtra("fechaAfil") ?: ""
@@ -46,19 +49,12 @@ class Nuevo_Afiliado_Pag4_Activity : AppCompatActivity() {
         val codigoPostal = intent.getStringExtra("codigoPostal") ?: ""
         val email = intent.getStringExtra("email") ?: ""
 
-        Log.e("nombre", intent.getStringExtra("nombre") ?: "")
-        inputTelefono = findViewById(R.id.inputTelefono)
-        inputTelefono2 = findViewById(R.id.inputTelefonoEmerg)
-        btnGuardar = findViewById(R.id.btnGuardar)
-
-        personaRepository = PersonaRepository(BaseDatos(this))
-        afiliadoRepository = AfiliadoRepository(BaseDatos(this))
-
+        // Configuración del botón de guardar
         btnGuardar.setOnClickListener {
-            val telefono1 = inputTelefono.text.toString().toIntOrNull()
-            val telefono2 = inputTelefono2.text.toString().toIntOrNull()
+            val telefono1 = inputTelefono.text.toString()
+            val telefono2 = inputTelefono2.text.toString()
 
-            // Crear objeto Persona con todos los datos necesarios
+            // Crear objeto Persona
             val persona = Persona(
                 nombre = nombre,
                 apellido = apellido,
@@ -73,52 +69,73 @@ class Nuevo_Afiliado_Pag4_Activity : AppCompatActivity() {
                 eliminado = false
             )
 
-            // Insertar la persona en la base de datos
-            val personaId = personaRepository.createPersona(persona)
-            Log.d("NuevoAfiliado", "Persona insertada con ID: $personaId")
+            try {
+                // Insertar la persona en la base de datos
+                val personaId = personaRepository.createPersona(persona)
+                Log.d("NuevoAfiliado", "Persona insertada con ID: $personaId")
 
-            // Verificar si se insertó correctamente antes de proceder con el afiliado
-            if (personaId > 0) {
-                // Crear objeto Afiliado
-                val afiliado = Afiliado(
-                    esSocio = esSocio,
-                    aptoMedico = aptoMed,
-                    fechaAfiliacion = fechaAfiliacion,
-                    personaId = personaId
-                )
+                // Verificar si se insertó correctamente antes de proceder con el afiliado
+                if (personaId > 0) {
+                    // Obtener la persona creada desde la base de datos
+                    val personaCreada = personaRepository.getPersona(personaId)
 
-                // Insertar el afiliado en la base de datos
-                val afiliadoId = afiliadoRepository.createAfiliado(afiliado)
+                    // Verificar si se encontró la persona creada
+                    if (personaCreada != null) {
+                        // Crear objeto Afiliado con referencia a la persona creada
+                        val afiliado = Afiliado(
+                            esSocio = esSocio,
+                            aptoMedico = aptoMed,
+                            fechaAfiliacion = fechaAfiliacion,
+                            personaId = personaCreada.id,
+                            persona = personaCreada
+                        )
 
-                // Verificar si se insertó correctamente el afiliado
-                if (afiliadoId > 0) {
-                    Toast.makeText(
-                        this,
-                        "Persona y afiliado guardados con éxito",
-                        Toast.LENGTH_LONG
-                    ).show()
-                    val intent = Intent(this, GestionAfiliadoActivity::class.java)
-                    intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
-                    startActivity(intent)
-                    finish()
+                        // Insertar el afiliado en la base de datos
+                        val afiliadoId = afiliadoRepository.createAfiliado(afiliado)
+
+                        // Verificar si se insertó correctamente el afiliado
+                        if (afiliadoId > 0) {
+                            Toast.makeText(
+                                this,
+                                "Persona y afiliado guardados con éxito",
+                                Toast.LENGTH_LONG
+                            ).show()
+                            val intent = Intent(this, GestionAfiliadoActivity::class.java)
+                            intent.flags =
+                                Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
+                            startActivity(intent)
+                            finish()
+                        } else {
+                            Toast.makeText(
+                                this,
+                                "Error al guardar el afiliado",
+                                Toast.LENGTH_LONG
+                            ).show()
+                        }
+                    } else {
+                        Toast.makeText(
+                            this,
+                            "Error al obtener la persona creada",
+                            Toast.LENGTH_LONG
+                        ).show()
+                    }
                 } else {
                     Toast.makeText(
                         this,
-                        "Error al guardar el afiliado",
+                        "Error al guardar la persona",
                         Toast.LENGTH_LONG
                     ).show()
                 }
-            } else {
+            } catch (e: Exception) {
+                Log.e("NuevoAfiliado", "Error al insertar persona y/o afiliado: ${e.message}", e)
                 Toast.makeText(
                     this,
-                    "Error al guardar la persona",
+                    "Error al guardar persona y/o afiliado",
                     Toast.LENGTH_LONG
                 ).show()
             }
-
-            // Finalizar la actividad
-            finish()
         }
+
         // Botón para volver a la ventana anterior
         val btn_volver: Button = findViewById(R.id.image_back_button)
         btn_volver.setOnClickListener {

@@ -9,15 +9,15 @@ class AfiliadoRepository(private val database: BaseDatos) {
         return database.insertAfiliado(afiliado)
     }
 
-    fun getAllAfiliados(): List<Triple<Boolean, String, String>> {
+    fun getAllAfiliados(): List<Afiliado> {
         return database.getAllAfiliados()
     }
 
-    fun getAllSocios(): List<Triple<Boolean, String, String>> {
+    fun getAllSocios(): List<Afiliado> {
         return database.getAllSocios()
     }
 
-    fun getAllNoSocios(): List<Triple<Boolean, String, String>> {
+    fun getAllNoSocios(): List<Afiliado> {
         return database.getAllNoSocios()
     }
 }
