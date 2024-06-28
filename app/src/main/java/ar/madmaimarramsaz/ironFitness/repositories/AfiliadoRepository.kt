@@ -4,6 +4,9 @@ import ar.madmaimarramsaz.ironFitness.BaseDatos
 import ar.madmaimarramsaz.ironFitness.Entidades.Afiliado
 
 class AfiliadoRepository(private val database: BaseDatos) {
+    fun getAfiliadoById(id: Long): Afiliado? {
+        return database.getAfiliadoById(id)
+    }
 
     fun createAfiliado(afiliado: Afiliado): Long {
         return database.insertAfiliado(afiliado)
@@ -20,4 +23,10 @@ class AfiliadoRepository(private val database: BaseDatos) {
     fun getAllNoSocios(): List<Afiliado> {
         return database.getAllNoSocios()
     }
+
+    fun borrarAfiliadoYPersona(idAfiliado: Long) {
+        database.borrarAfiliadoYPersona(idAfiliado)
+    }
+
+
 }

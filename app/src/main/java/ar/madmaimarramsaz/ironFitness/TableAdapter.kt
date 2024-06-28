@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import ar.madmaimarramsaz.ironFitness.Entidades.Afiliado
 
 class TableAdapter(
-    private val data: List<Afiliado>,
+    private var data: List<Afiliado>,
     private val listener: OnItemClickListener
 ) : RecyclerView.Adapter<TableAdapter.TableViewHolder>()  {
 
@@ -44,5 +44,10 @@ class TableAdapter(
     inner class TableViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imageColumn: ImageView = itemView.findViewById(R.id.image_column)
         val nombreColumn: TextView = itemView.findViewById(R.id.nombre_column)
+    }
+
+    fun updateData(newData: List<Afiliado>) {
+        data = newData
+        notifyDataSetChanged()
     }
 }

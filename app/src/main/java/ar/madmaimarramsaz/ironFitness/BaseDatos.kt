@@ -1,6 +1,7 @@
 package ar.madmaimarramsaz.ironFitness
 
 import android.content.ContentValues
+import android.content.ContentValues.TAG
 import android.content.Context
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
@@ -149,6 +150,8 @@ class BaseDatos(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB_
 
     fun getPersonaById(id: Int): Persona? {
         // Lógica para obtener una persona por su ID
+
+
         return TODO("Provide the return value")
     }
 
@@ -183,18 +186,122 @@ class BaseDatos(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB_
         }
     }
 
-    fun getAfiliadoById(id: Int): Afiliado? {
-        // Lógica para obtener un afiliado por su ID
-        return TODO("Provide the return value")
+    fun getAfiliadoById(id: Long): Afiliado? {
+        val db = this.readableDatabase
+        var afiliado: Afiliado? = null
+        val query = "SELECT * FROM $TABLE_AFILIADOS WHERE $COLUMN_AFILIADO_ID = ?"
+        val selectionArgs = arrayOf(id.toString())
+
+        val cursor = db.rawQuery(query, selectionArgs)
+
+        try {
+            if (cursor.moveToFirst()) {
+                val afiliadoId = cursor.getLong(cursor.getColumnIndexOrThrow(COLUMN_AFILIADO_ID))
+                val aptoMedico = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_APTO_MEDICO))
+                val esSocio = cursor.getInt(cursor.getColumnIndexOrThrow(COLUMN_ES_SOCIO)) == 1
+                val fechaAfiliacion = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_FECHA_AFILIACION))
+                val personaId = cursor.getLong(cursor.getColumnIndexOrThrow(COLUMN_PERSONA_ID))
+
+                // Obtener la persona asociada al afiliado
+                val persona = getPersona(personaId)
+
+                afiliado = Afiliado(
+                    id = afiliadoId,
+                    aptoMedico = aptoMedico,
+                    esSocio = esSocio,
+                    fechaAfiliacion = fechaAfiliacion,
+                    personaId = personaId,
+                    persona = persona ?: throw IllegalStateException("Persona asociada no encontrada")
+                )
+            }
+        } catch (e: Exception) {
+            Log.e(TAG, "Error al obtener el afiliado por ID: $id", e)
+        } finally {
+            cursor.close()
+            db.close()
+        }
+
+        return afiliado
+    }
+    fun getPersona(personaId: Long): Persona? {
+        val db = this.readableDatabase
+        var persona: Persona? = null
+        val query = "SELECT * FROM $TABLE_PERSONAS WHERE $COLUMN_ID = ?"
+        val selectionArgs = arrayOf(personaId.toString())
+        val cursor = db.rawQuery(query, selectionArgs)
+        if (cursor.moveToFirst()) {
+            persona = Persona(
+                id = cursor.getLong(cursor.getColumnIndexOrThrow(COLUMN_ID)),
+                nombre = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_NOMBRE)),
+                apellido = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_APELLIDO)),
+                tipoDoc = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_TIPO_DOC)),
+                dni = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_DNI)),
+                fechaNacimiento = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_FECHA_NACIMIENTO)),
+                direccion = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_DIRECCION)),
+                cp = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_CP)),
+                localidad = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_LOCALIDAD)),
+                correoElect = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_CORREO_ELECT)),
+                telefono1 = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_TELEFONO1)),
+                telefono2 = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_TELEFONO2)),
+                eliminado = cursor.getInt(cursor.getColumnIndexOrThrow(COLUMN_ELIMINADO)) > 0
+            )
+        }
+        cursor.close()
+        return persona
     }
 
     fun updateAfiliado(afiliado: Afiliado) {
         // Lógica para actualizar un afiliado existente en la base de datos
     }
 
-    fun deleteAfiliado(id: Int) {
-        // Lógica para eliminar un afiliado de la base de datos
+    fun borrarAfiliadoYPersona(idAfiliado: Long) {
+        val db = writableDatabase
+
+        db.beginTransaction()
+        try {
+            // Obtener el ID de la persona asociada al afiliado
+            val personaId = getPersonaIdPorAfiliadoId(idAfiliado, db)
+
+            // Borrar el afiliado
+            val whereClauseAfiliado = "$COLUMN_AFILIADO_ID = ?"
+            val whereArgsAfiliado = arrayOf(idAfiliado.toString())
+            db.delete(TABLE_AFILIADOS, whereClauseAfiliado, whereArgsAfiliado)
+
+            // Borrar la persona asociada si se encontró su ID
+            personaId?.let {
+                val whereClausePersona = "$COLUMN_ID = ?"
+                val whereArgsPersona = arrayOf(it.toString())
+                db.delete(TABLE_PERSONAS, whereClausePersona, whereArgsPersona)
+            }
+
+            db.setTransactionSuccessful()
+        } catch (e: Exception) {
+            Log.e(TAG, "Error al borrar el afiliado con ID: $idAfiliado", e)
+        } finally {
+            db.endTransaction()
+            db.close()
+        }
     }
+
+    private fun getPersonaIdPorAfiliadoId(idAfiliado: Long, db: SQLiteDatabase): Long? {
+        val query = "SELECT $COLUMN_PERSONA_ID FROM $TABLE_AFILIADOS WHERE $COLUMN_AFILIADO_ID = ?"
+        val selectionArgs = arrayOf(idAfiliado.toString())
+        val cursor = db.rawQuery(query, selectionArgs)
+
+        var personaId: Long? = null
+        try {
+            if (cursor.moveToFirst()) {
+                personaId = cursor.getLong(cursor.getColumnIndexOrThrow(COLUMN_PERSONA_ID))
+            }
+        } catch (e: Exception) {
+            Log.e(TAG, "Error al obtener el ID de persona por ID de afiliado: $idAfiliado", e)
+        } finally {
+            cursor.close()
+        }
+
+        return personaId
+    }
+
 
     fun getAllAfiliados(): List<Afiliado> {
         val db = this.readableDatabase
@@ -393,37 +500,9 @@ class BaseDatos(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB_
         return noSocios
     }
 
-    fun getPersona(personaId: Long): Persona? {
-        val db = this.readableDatabase
 
-        var persona: Persona? = null
 
-        val query = "SELECT * FROM $TABLE_PERSONAS WHERE $COLUMN_ID = ?"
-        val selectionArgs = arrayOf(personaId.toString())
 
-        val cursor = db.rawQuery(query, selectionArgs)
-
-        if (cursor.moveToFirst()) {
-            persona = Persona(
-                id = cursor.getLong(cursor.getColumnIndexOrThrow(COLUMN_ID)),
-                nombre = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_NOMBRE)),
-                apellido = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_APELLIDO)),
-                tipoDoc = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_TIPO_DOC)),
-                dni = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_DNI)),
-                fechaNacimiento = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_FECHA_NACIMIENTO)),
-                direccion = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_DIRECCION)),
-                cp = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_CP)),
-                localidad = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_LOCALIDAD)),
-                correoElect = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_CORREO_ELECT)),
-                telefono1 = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_TELEFONO1)),
-                telefono2 = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_TELEFONO2)),
-                eliminado = cursor.getInt(cursor.getColumnIndexOrThrow(COLUMN_ELIMINADO)) > 0
-            )
-        }
-
-        cursor.close()
-        return persona
-    }
 }
 
 

@@ -1,6 +1,10 @@
 package ar.madmaimarramsaz.ironFitness
 
+import android.content.BroadcastReceiver
+import android.content.Context
 import android.content.Intent
+import android.content.IntentFilter
+import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -14,6 +18,8 @@ import ar.madmaimarramsaz.ironFitness.repositories.AfiliadoRepository
 class NoSociosFragment : Fragment(), TableAdapter.OnItemClickListener {
 
     private lateinit var afiliadoRepository: AfiliadoRepository
+    private lateinit var adapter: TableAdapter
+    private lateinit var broadcastReceiver: BroadcastReceiver
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -27,16 +33,47 @@ class NoSociosFragment : Fragment(), TableAdapter.OnItemClickListener {
 
         val noSocios = afiliadoRepository.getAllNoSocios()
         recyclerView.layoutManager = LinearLayoutManager(context)
-        recyclerView.adapter = TableAdapter(noSocios, this)
+        adapter = TableAdapter(noSocios, this)
+        recyclerView.adapter = adapter
+
+        // Registrar el BroadcastReceiver
+        broadcastReceiver = object : BroadcastReceiver() {
+            override fun onReceive(context: Context?, intent: Intent?) {
+                // Refrescar la lista de no socios
+                val updatedNoSocios = afiliadoRepository.getAllNoSocios()
+                adapter.updateData(updatedNoSocios)
+            }
+        }
+        val intentFilter = IntentFilter("afiliado_borrado")
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            requireContext().registerReceiver(broadcastReceiver, intentFilter, Context.RECEIVER_NOT_EXPORTED)
+        } else {
+            requireContext().registerReceiver(broadcastReceiver, intentFilter)
+        }
 
         return view
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        // Desregistrar el BroadcastReceiver
+        requireContext().unregisterReceiver(broadcastReceiver)
     }
 
     override fun onItemClick(position: Int) {
         val afiliado = afiliadoRepository.getAllNoSocios()[position]
         val intent = Intent(context, Datos_Afiliado_Ver::class.java).apply {
-            putExtra("SOCIO_ID", afiliado.id)
+            putExtra("idAfiliado", afiliado.id)
         }
         startActivity(intent)
     }
+
 }
+//override fun onItemClick(position: Int) {
+//    val afiliado = afiliadoRepository.getAllNoSocios()[position]
+//    val intent = Intent(context, Datos_Afiliado_Ver::class.java).apply {
+//        putExtra("idAfiliado", afiliado.id)
+//    }
+//    startActivity(intent)
+//}

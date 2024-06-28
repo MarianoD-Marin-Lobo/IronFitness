@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Ver_datos_afiliados_activity.Datos_Afiliado_Ver">
+
     <ImageView
         android:id="@+id/menu_pagos_image_rectangle"
         android:layout_width="match_parent"
@@ -78,29 +79,34 @@
 
 
     <!-- FrameLayout con borde redondeado -->
+
+
+    <!-- Contenido debajo del FrameLayout -->
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="48dp"
         android:orientation="vertical"
         android:padding="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_pagos_image_rectangle"
+        tools:layout_editor_absoluteX="0dp">
 
         <!-- Label and Input for the first field -->
-          <TextView
+        <TextView
             android:id="@+id/labelRol"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:gravity="center"
             android:text="Rol"
             android:textColor="@android:color/black"
             android:textSize="16sp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginBottom="0dp"
-            android:gravity="center"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <!-- CheckBox: Socio -->
         <CheckBox
@@ -109,8 +115,8 @@
             android:layout_height="wrap_content"
             android:text="Socio"
             android:textColor="@android:color/black"
-            app:layout_constraintTop_toBottomOf="@+id/labelRol"
-            app:layout_constraintStart_toStartOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelRol" />
 
         <!-- CheckBox: No Socio -->
         <CheckBox
@@ -119,62 +125,63 @@
             android:layout_height="wrap_content"
             android:text="No Socio"
             android:textColor="@android:color/black"
-            app:layout_constraintTop_toBottomOf="@+id/labelRol"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/checkSocio"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintTop_toBottomOf="@+id/labelRol" />
 
         <TextView
             android:id="@+id/label3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Apto Médico"
-            android:padding="8dp"/>
+            android:padding="8dp"
+            android:text="Apto Médico" />
 
         <EditText
             android:id="@+id/input3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="123456"/>
+            android:hint="123456" />
 
         <!-- Label and Input for the fourth field -->
         <TextView
             android:id="@+id/label4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Fecha de afiliación"
-            android:padding="8dp"/>
+            android:padding="8dp"
+            android:text="Fecha de afiliación" />
 
+        <!-- Label and Input for the second field -->
         <EditText
             android:id="@+id/input4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="20/06/2024"/>
-        <!-- Label and Input for the second field -->
+            android:hint="20/06/2024" />
+
         <TextView
             android:id="@+id/label2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nombre/s"
-            android:padding="8dp"/>
+            android:padding="8dp"
+            android:text="Nombre/s" />
+
+        <!-- Label and Input for the third field -->
 
         <EditText
             android:id="@+id/input2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Inserte su/s nombre/s"/>
-
-        <!-- Label and Input for the third field -->
+            android:hint="Inserte su/s nombre/s" />
 
         <LinearLayout
             android:id="@+id/buttonRow"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
             android:gravity="center"
-            app:layout_constraintTop_toBottomOf="@+id/input4"
-            app:layout_constraintStart_toStartOf="parent"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="16dp">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input4">
 
 
             <Button
@@ -183,8 +190,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/volver_afiliado_button"
-                app:backgroundTint="@null"
-                android:text="" />
+                android:text=""
+                app:backgroundTint="@null" />
 
             <Button
                 android:id="@+id/button2"
@@ -192,8 +199,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/borrar_afiliado_button"
-                app:backgroundTint="@null"
-                android:text="" />
+                android:text=""
+                app:backgroundTint="@null" />
 
             <Button
                 android:id="@+id/button3"
@@ -201,38 +208,18 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/editar_afiliado_button"
-                app:backgroundTint="@null"
-                android:text="" />
-
+                android:text=""
+                app:backgroundTint="@null" />
 
 
         </LinearLayout>
     </LinearLayout>
 
-
-
-    <!-- Contenido debajo del FrameLayout -->
-
-    <Button
-        android:id="@+id/image_low_menu_quad"
-        android:layout_width="60dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/new_payment_4"
-        android:scaleType="centerInside"
-        app:backgroundTint="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/image_low_menu_quad1"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.521" />
-
     <Button
         android:id="@+id/image_low_menu_quad1"
         android:layout_width="60dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginBottom="24dp"
         android:background="@drawable/icon_home"
         android:scaleType="centerInside"
         app:backgroundTint="@null"
@@ -241,10 +228,23 @@
         app:layout_constraintStart_toEndOf="@+id/image_low_menu_quad" />
 
     <Button
+        android:id="@+id/image_low_menu_quad"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/new_payment_4"
+        android:scaleType="centerInside"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/image_low_menu_quad1"
+
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
         android:id="@+id/image_low_menu_quad2"
         android:layout_width="60dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginBottom="24dp"
         android:background="@drawable/icon_person"
         android:scaleType="centerInside"
         app:backgroundTint="@null"
