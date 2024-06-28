@@ -5,30 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <ImageView
         android:id="@+id/image_rectangle_gris"
         android:layout_width="0dp"
-        android:elevation="1dp"
         android:layout_height="wrap_content"
         android:background="@drawable/image_rectangle_gris"
+        android:elevation="1dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-
-    <Button
-        android:id="@+id/image_back_button"
-        android:layout_width="19dp"
-        android:layout_height="25dp"
-        app:backgroundTint="@null"
-        android:background="@drawable/image_back_button"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="29dp"
-        android:elevation="2dp"
-        android:translationZ="2dp"
-        android:scaleType="centerInside"
-        app:layout_constraintStart_toStartOf="@id/image_rectangle_gris"
-        app:layout_constraintTop_toTopOf="@id/image_rectangle_gris" />
 
     <TextView
         android:id="@+id/text_registro"
@@ -191,6 +178,21 @@
         app:layout_constraintBottom_toBottomOf="@+id/input_buscar_afiliado"
         app:layout_constraintStart_toStartOf="@+id/input_buscar_afiliado"
         app:layout_constraintTop_toTopOf="@+id/input_buscar_afiliado" />
+
+    <Button
+        android:id="@+id/image_back_button"
+        android:layout_width="19dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/image_back_button"
+        android:elevation="20dp"
+        android:scaleType="centerInside"
+        android:translationZ="1dp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonAfiliado"
+        app:layout_constraintStart_toStartOf="@id/image_rectangle_gris"
+        app:layout_constraintTop_toTopOf="@id/image_rectangle_gris" />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
