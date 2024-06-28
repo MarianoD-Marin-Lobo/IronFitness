@@ -27,16 +27,11 @@ class Menu_PagosActivity : AppCompatActivity() {
             finish()
         }
 
-        // boton pago cuota mensual
-        val btn_mensual: Button = findViewById(R.id.menu_pagos_pago_cuota_mensual_socio_button)
-        btn_mensual.setOnClickListener {
-            irAPagoCuotaMensual()
-        }
-
-        // boton pago activ diaria
-        val btn_actividad: Button = findViewById(R.id.menu_pagos_pago_activ_diaria_button)
-        btn_actividad.setOnClickListener {
-            irAPagoActividadDiaria()
+        // boton pago cuota mensual o diaria
+        val btn_pagoCuota: Button = findViewById(R.id.menuPagos_pagoCuota_btn)
+        btn_pagoCuota.setOnClickListener {
+            val intent = Intent(this, Nuevo_Pago_Pag1_Activity::class.java)
+            startActivity(intent)
         }
 
         // boton ver historial de pagos
@@ -67,10 +62,7 @@ class Menu_PagosActivity : AppCompatActivity() {
 
     // Funciones
 
-    private fun irAPagoCuotaMensual(){
-        val intent = Intent(this, Nuevo_Pago_Pag1_Activity::class.java)
-        startActivity(intent)
-    }
+
 
     private fun irAPagoActividadDiaria(){
         val intent = Intent(this, Nuevo_Pago_Pag1_Activity::class.java)

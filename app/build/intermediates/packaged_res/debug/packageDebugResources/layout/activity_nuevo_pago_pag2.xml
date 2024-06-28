@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toStartOf="@+id/btn_siguiente"
         app:layout_constraintStart_toStartOf="@+id/btn_siguiente"
-        tools:context=".Nuevo_Pago_Pag2_Actividad_Activity">
+        tools:context=".Nuevo_Pago_Pag2_Activity">
 
         <ImageView
             android:id="@+id/menu_pagos_image_rectangle"
@@ -38,11 +38,11 @@
             android:id="@+id/image_back_button"
             android:layout_width="19dp"
             android:layout_height="25dp"
-            app:backgroundTint="@null"
             android:layout_marginStart="16dp"
             android:layout_marginTop="29dp"
-            android:scaleType="centerInside"
             android:background="@drawable/image_back_button"
+            android:scaleType="centerInside"
+            app:backgroundTint="@null"
             app:layout_constraintStart_toStartOf="@id/image_rectangle_gris"
             app:layout_constraintTop_toTopOf="@id/image_rectangle_gris" />
 
@@ -187,6 +187,36 @@
             app:layout_constraintStart_toStartOf="@+id/pag3_container1"
             app:layout_constraintTop_toBottomOf="@+id/textView_comentario" />
 
+        <TextView
+            android:id="@+id/importeAPagar_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="14dp"
+            android:text="Importe a Pagar"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/pag3_container1"
+            app:layout_constraintTop_toBottomOf="@+id/container_fecha_factura" />
+
+        <EditText
+            android:id="@+id/np_pag2_input_importe"
+            android:layout_width="300dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="11dp"
+            android:layout_weight="1"
+            android:background="@drawable/container1"
+            android:elevation="1dp"
+            android:hint="Importe a pagar por Cuota Mensual o Diaria"
+            android:lineHeight="19.36dp"
+            android:paddingLeft="10dp"
+            android:textColor="#FF000000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/pag3_container1"
+            app:layout_constraintHorizontal_bias="0.55"
+            app:layout_constraintStart_toStartOf="@+id/pag3_container1"
+            app:layout_constraintTop_toBottomOf="@+id/importeAPagar_lbl" />
+
         <ImageView
             android:id="@+id/nuevo_pago_pag3_container_gris"
             android:layout_width="340dp"
@@ -201,18 +231,18 @@
 
 
         <Spinner
-            android:id="@+id/nuevo_pago_actividad_spinner"
+            android:id="@+id/nuevo_pago_itemACobrar_spinner"
             android:layout_width="310dp"
             android:layout_height="52dp"
-            android:layout_marginTop="15dp"
             android:layout_weight="1"
             android:background="@drawable/nuevo_pago_pag1_spinner"
             android:elevation="1dp"
             android:lineHeight="19.36dp"
             android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/container_agr_actividad"
             app:layout_constraintEnd_toEndOf="@+id/container_agr_actividad"
-            app:layout_constraintStart_toStartOf="@+id/container_agr_actividad"
-            app:layout_constraintTop_toTopOf="@+id/pag3_container1" />
+            app:layout_constraintHorizontal_bias="0.54"
+            app:layout_constraintStart_toStartOf="@+id/container_agr_actividad" />
 
         <Button
             android:id="@+id/container_agr_actividad"
@@ -223,20 +253,21 @@
             android:elevation="1dp"
             app:backgroundTint="@null"
             app:layout_constraintEnd_toEndOf="@+id/pag3_container1"
+            app:layout_constraintHorizontal_bias="0.4"
             app:layout_constraintStart_toStartOf="@+id/pag3_container1"
             app:layout_constraintTop_toTopOf="@+id/pag3_container1" />
 
         <Button
-            android:id="@+id/container_detalle_factura"
-            android:layout_width="300dp"
-            android:layout_height="190dp"
+            android:id="@+id/container_fecha_factura"
+            android:layout_width="296dp"
+            android:layout_height="72dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/container1"
             android:elevation="1dp"
             app:backgroundTint="@null"
             app:layout_constraintEnd_toEndOf="@+id/pag3_container1"
             app:layout_constraintStart_toStartOf="@+id/pag3_container1"
-            app:layout_constraintTop_toBottomOf="@+id/textView_detalle" />
+            app:layout_constraintTop_toBottomOf="@+id/fechaPago_lbl" />
 
 
         <ImageView
@@ -428,19 +459,19 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
+            android:text="Comentario / Equipamiento"
             android:textSize="18dp"
             android:textStyle="bold"
-            android:text="Comentario / Equipamiento"
             app:layout_constraintStart_toStartOf="@+id/pag3_container1"
             app:layout_constraintTop_toBottomOf="@+id/container_agr_actividad" />
 
         <TextView
-            android:id="@+id/textView_detalle"
+            android:id="@+id/fechaPago_lbl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:text="Detalle Factura"
+            android:text="Fecha de Pago"
             android:textSize="18dp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/pag3_container1"
@@ -448,29 +479,17 @@
 
 
         <TextView
-            android:id="@+id/texto_agregar_actividad"
+            android:id="@+id/lbl_agregar_itemACobrar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            android:text="AGREGAR ACTIVIDAD"
+            android:layout_marginStart="86dp"
+            android:layout_marginTop="9dp"
+            android:text="Detalle de Items"
             android:textColor="#656363"
-            android:textStyle="bold"
             android:textSize="18dp"
-            app:layout_constraintBottom_toBottomOf="@+id/container_agr_actividad"
-            app:layout_constraintEnd_toEndOf="@+id/container_agr_actividad"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/container_agr_actividad"
-            app:layout_constraintTop_toBottomOf="@+id/nuevo_pago_actividad_spinner" />
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="38dp"
-            android:layout_height="28dp"
-            android:layout_marginBottom="10dp"
-            app:layout_constraintBottom_toBottomOf="@+id/container_agr_actividad"
-            app:layout_constraintEnd_toEndOf="@+id/container_agr_actividad"
-            app:layout_constraintStart_toEndOf="@+id/texto_agregar_actividad"
-            app:srcCompat="@drawable/icono_agregar1" />
-
+            app:layout_constraintTop_toTopOf="@+id/container_agr_actividad" />
 
         <ImageView
             android:id="@+id/np_pag2_spinner_icono1"
@@ -480,17 +499,20 @@
             android:background="@drawable/spinner_icono"
             android:elevation="1dp"
             android:scaleType="centerInside"
-            app:layout_constraintBottom_toBottomOf="@+id/nuevo_pago_actividad_spinner"
-            app:layout_constraintEnd_toEndOf="@+id/nuevo_pago_actividad_spinner"
-            app:layout_constraintTop_toTopOf="@+id/nuevo_pago_actividad_spinner" />
+            app:layout_constraintBottom_toBottomOf="@+id/nuevo_pago_itemACobrar_spinner"
+            app:layout_constraintEnd_toEndOf="@+id/nuevo_pago_itemACobrar_spinner"
+            app:layout_constraintTop_toTopOf="@+id/nuevo_pago_itemACobrar_spinner" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            app:layout_constraintBottom_toBottomOf="@+id/container_detalle_factura"
-            app:layout_constraintEnd_toEndOf="@+id/container_detalle_factura"
-            app:layout_constraintStart_toStartOf="@+id/container_detalle_factura"
-            app:layout_constraintTop_toTopOf="@+id/container_detalle_factura" />
+        <EditText
+            android:id="@+id/np_pag2_fechaPago"
+            android:layout_width="263dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="date"
+            app:layout_constraintStart_toStartOf="@+id/container_fecha_factura"
+            app:layout_constraintTop_toTopOf="@+id/container_fecha_factura" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
