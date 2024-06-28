@@ -44,7 +44,7 @@ class NoSociosFragment : Fragment(), TableAdapter.OnItemClickListener {
                 adapter.updateData(updatedNoSocios)
             }
         }
-        val intentFilter = IntentFilter("afiliado_borrado")
+        val intentFilter = IntentFilter("afiliado_guardado")
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             requireContext().registerReceiver(broadcastReceiver, intentFilter, Context.RECEIVER_NOT_EXPORTED)

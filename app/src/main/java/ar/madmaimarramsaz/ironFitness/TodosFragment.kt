@@ -39,13 +39,14 @@ class TodosFragment : Fragment(), TableAdapter.OnItemClickListener {
         // Registrar el BroadcastReceiver
         broadcastReceiver = object : BroadcastReceiver() {
             override fun onReceive(context: Context?, intent: Intent?) {
-                // Refrescar la lista de todos los afiliados
-                val updatedAfiliados = afiliadoRepository.getAllAfiliados()
-                adapter.updateData(updatedAfiliados)
+                if (intent?.action == "afiliado_guardado") {
+                    // Refrescar la lista de todos los afiliados
+                    val updatedAfiliados = afiliadoRepository.getAllAfiliados()
+                    adapter.updateData(updatedAfiliados)
+                }
             }
         }
-        val intentFilter = IntentFilter("afiliado_borrado")
-
+        val intentFilter = IntentFilter("afiliado_guardado")
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             requireContext().registerReceiver(broadcastReceiver, intentFilter, Context.RECEIVER_NOT_EXPORTED)
         } else {

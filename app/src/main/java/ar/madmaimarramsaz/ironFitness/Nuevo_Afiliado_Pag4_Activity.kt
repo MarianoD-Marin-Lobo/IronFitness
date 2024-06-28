@@ -100,6 +100,8 @@ class Nuevo_Afiliado_Pag4_Activity : AppCompatActivity() {
                                 "Persona y afiliado guardados con éxito",
                                 Toast.LENGTH_LONG
                             ).show()
+                            val broadcastIntent = Intent("afiliado_guardado")
+                            sendBroadcast(broadcastIntent)
                             val intent = Intent(this, GestionAfiliadoActivity::class.java)
                             intent.flags =
                                 Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
