@@ -22,7 +22,7 @@ class Nuevo_Pago_Pag1_Activity : AppCompatActivity() {
         var nroIdentificacion: EditText
         var spinnerTipoIdentif: Spinner
         var nroAfiliado: EditText
-        var btnSiguiente: ImageButton
+        var btnSiguiente: Button
 
         nombresApellidos = findViewById(R.id.nuevo_pago_pag1_input_nombre_apellido_afiliado)
         nroIdentificacion = findViewById(R.id.inputNroIdentificacion)
