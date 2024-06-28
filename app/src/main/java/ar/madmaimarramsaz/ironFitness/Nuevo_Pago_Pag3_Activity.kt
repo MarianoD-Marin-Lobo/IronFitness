@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity
 import ar.madmaimarramsaz.ironFitness.Entidades.Pago
 import ar.madmaimarramsaz.ironFitness.repositories.PagoRepository
 import ar.madmaimarramsaz.ironFitness.repositories.PersonaRepository
+import android.widget.Toast
 
 class Nuevo_Pago_Pag3_Activity : AppCompatActivity() {
     private lateinit var pagoRepository: PagoRepository
@@ -64,6 +65,11 @@ class Nuevo_Pago_Pag3_Activity : AppCompatActivity() {
         val btn_confirmar: Button = findViewById(R.id.container_btn_confirmar)
         btn_confirmar.setOnClickListener {
             val modPago = spinnerModalPago.selectedItem.toString()
+            if (modPago == "Seleccione modalidad de Pago") {
+                Toast.makeText(this, "Por favor complete la modalidad de pago.", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
 
             val pago = Pago (
                 nombresApellidos = nombApell,
@@ -81,15 +87,15 @@ class Nuevo_Pago_Pag3_Activity : AppCompatActivity() {
             Log.d("NuevoPagoo", "Pago registrado con ID: $pagoId")
 
             if (pagoId > 0) {
-                // Payment inserted successfully
                 Log.d("PagoRepository", "Pago registrado con ID: $pagoId")
+                Toast.makeText(this, "Pago registrado correctamente.", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, Nuevo_Pago_Pag4_Confirm_Impres_Activity::class.java)
+                startActivity(intent)
             } else {
-                // Error inserting payment
                 Log.e("PagoRepository", "Error al insertar el pago")
+                Toast.makeText(this, "Error al registrar el pago. Inténtelo nuevamente.", Toast.LENGTH_SHORT).show()
             }
 
-            val intent = Intent(this, Nuevo_Pago_Pag3_Activity::class.java).apply {}
-            startActivity(intent)
         }
 
 

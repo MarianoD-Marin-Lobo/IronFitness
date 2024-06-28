@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.widget.Spinner
 import android.widget.ArrayAdapter
 import android.widget.Button
+import android.widget.Toast
 import android.widget.ImageButton
 
 class Nuevo_Pago_Pag1_Activity : AppCompatActivity() {
@@ -51,7 +52,22 @@ class Nuevo_Pago_Pag1_Activity : AppCompatActivity() {
                 putExtra("nroAfil", nroAfil)
             }
 
+            if (nombApell.isEmpty() ) {
+                Toast.makeText(this, "Nombre y apellido son requeridos.", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }  else if (nroIdentif.isEmpty() ) {
+                Toast.makeText(this, "El nro de ID es requerido.", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            } else if (tipoIdentif == "TIPO Id." ) {
+                Toast.makeText(this, "Por favor ingrese un tipo de ID", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+            else if (nroAfil.isEmpty() ) {
+                Toast.makeText(this, "El nro de afiliado requerido.", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            } else{
             startActivity(intent)
+            }
         }
 
 

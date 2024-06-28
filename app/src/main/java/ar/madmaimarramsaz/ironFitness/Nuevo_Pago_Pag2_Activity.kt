@@ -8,6 +8,7 @@ import android.widget.EditText
 import android.widget.Spinner
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import android.widget.Toast
 
 
 class Nuevo_Pago_Pag2_Activity : AppCompatActivity() {
@@ -52,7 +53,12 @@ class Nuevo_Pago_Pag2_Activity : AppCompatActivity() {
                 putExtra("fechaPag", fechaPag)
                 putExtra("importeAPag", importeAPag)
             }
-            startActivity(intent)
+            if (tipoCuota == "Item a cobrar" || fechaPag.isEmpty() || importeAPag.isEmpty()) {
+                Toast.makeText(this, "Por favor complete todos los campos antes de continuar.", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }else {
+                startActivity(intent)
+            }
         }
 
 
