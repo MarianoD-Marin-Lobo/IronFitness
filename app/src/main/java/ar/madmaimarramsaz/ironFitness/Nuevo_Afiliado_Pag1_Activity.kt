@@ -19,7 +19,7 @@ class Nuevo_Afiliado_Pag1_Activity : AppCompatActivity() {
     private lateinit var selectornoSocioradbtn: RadioButton
     private lateinit var nuevo_afiliado_pag1_input_aptoMed: EditText
     private lateinit var input_fecha_afiliacion: EditText
-    private lateinit var btnSiguiente: ImageButton
+    private lateinit var btnSiguiente: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,7 +31,7 @@ class Nuevo_Afiliado_Pag1_Activity : AppCompatActivity() {
         selectornoSocioradbtn = findViewById(R.id.selectornoSocioradbtn)
         nuevo_afiliado_pag1_input_aptoMed = findViewById(R.id.nuevo_afiliado_pag1_input_aptoMed)
         input_fecha_afiliacion = findViewById(R.id.inputFechaAfiliacion)
-        btnSiguiente = findViewById(R.id.btnSiguiente)
+        btnSiguiente = findViewById(R.id.container_btn_siguiente)
 
         btnSiguiente.setOnClickListener {
             val esSocio = when (radioGroupSocio.checkedRadioButtonId) {
