@@ -27,6 +27,7 @@ class Nuevo_Pago_Pag4_Activity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_nuevo_pago_pag4)
 
+        /*
         // Obtiene el ID del pago del intent
         val pagoId = intent.getIntExtra("pagoId", 0)
         //--------------------------------
@@ -83,7 +84,7 @@ class Nuevo_Pago_Pag4_Activity : AppCompatActivity() {
         buttonGenerarPDF.setOnClickListener {
             savePaymentRecordAsPDF(pago)
         }
-
+    */
         // boton volver a la ventana anterior
         val btn_volver: Button = findViewById(R.id.image_back_button)
         btn_volver.setOnClickListener {

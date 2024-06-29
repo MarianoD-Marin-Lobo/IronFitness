@@ -277,34 +277,6 @@ class BaseDatos(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB_
         return datos
     }
 
-
-
-    /*
-    // fechapago1
-    @SuppressLint("Range")
-    fun obtenerDatosComoLista(): List<List<String>>{
-        val datos:MutableList<List<String>> = mutableListOf()
-
-        //Realizar la consulta y obtener Cursor
-        val db: SQLiteDatabase = readableDatabase
-        val sql: String = "SELECT nroAfiliado, nroIdentificacion, nombresApellidos FROM $TABLE_PAGOS WHERE itemACobrar = 'Cuota MENSUAL'"
-
-        val cursor: Cursor = db.rawQuery(sql, arrayOf(id.toString()))
-
-        //Iterar sobre el Cursor y agregar los datos a la lista
-        while(cursor.moveToNext()){
-            val fila:MutableList<String> = mutableListOf()
-            fila.add(cursor.getString(cursor.getColumnIndex(columnName:"nroAfiliado")))
-            fila.add(cursor.getString(cursor.getColumnIndex(columnName:"dni")))
-            fila.add(cursor.getString(cursor.getColumnIndex(columnName:"nombresApellidos")))
-            datos.add(fila)
-        }
-        //Cerrar el cursor
-        cursor.close()
-        return datos
-        //obtener datos como Lista
-    }
-*/
     //actualizar
     fun updateRegistroPago(registroPago: Pago): Int {
         val db = this.writableDatabase

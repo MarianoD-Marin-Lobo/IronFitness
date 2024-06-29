@@ -1,3 +1,0 @@
-ar.madmaimarramsaz.ironFitness.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme
