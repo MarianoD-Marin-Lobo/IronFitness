@@ -116,10 +116,6 @@
         "source": "ar.madmaimarramsaz.ironFitness.app-main-33:/drawable/imagecarnet.png"
     },
     {
-        "merged": "ar.madmaimarramsaz.ironFitness.app-debug-31:/layout_activity_nuevo_pago_pag4_confirm_impres.xml.flat",
-        "source": "ar.madmaimarramsaz.ironFitness.app-main-33:/layout/activity_nuevo_pago_pag4_confirm_impres.xml"
-    },
-    {
         "merged": "ar.madmaimarramsaz.ironFitness.app-debug-31:/drawable_icono_spinner.png.flat",
         "source": "ar.madmaimarramsaz.ironFitness.app-main-33:/drawable/icono_spinner.png"
     },
@@ -484,16 +480,20 @@
         "source": "ar.madmaimarramsaz.ironFitness.app-main-33:/drawable/editar_carnet_button.png"
     },
     {
+        "merged": "ar.madmaimarramsaz.ironFitness.app-debug-31:/layout_activity_nuevo_pago_pag4.xml.flat",
+        "source": "ar.madmaimarramsaz.ironFitness.app-main-33:/layout/activity_nuevo_pago_pag4.xml"
+    },
+    {
         "merged": "ar.madmaimarramsaz.ironFitness.app-debug-31:/layout_activity_estado_cuenta1.xml.flat",
         "source": "ar.madmaimarramsaz.ironFitness.app-main-33:/layout/activity_estado_cuenta1.xml"
     },
     {
-        "merged": "ar.madmaimarramsaz.ironFitness.app-debug-31:/layout_activity_pantalla2.xml.flat",
-        "source": "ar.madmaimarramsaz.ironFitness.app-main-33:/layout/activity_pantalla2.xml"
-    },
-    {
         "merged": "ar.madmaimarramsaz.ironFitness.app-debug-31:/drawable_nuevo_pago_pag1_container_rectangle3.xml.flat",
         "source": "ar.madmaimarramsaz.ironFitness.app-main-33:/drawable/nuevo_pago_pag1_container_rectangle3.xml"
+    },
+    {
+        "merged": "ar.madmaimarramsaz.ironFitness.app-debug-31:/layout_activity_pantalla2.xml.flat",
+        "source": "ar.madmaimarramsaz.ironFitness.app-main-33:/layout/activity_pantalla2.xml"
     },
     {
         "merged": "ar.madmaimarramsaz.ironFitness.app-debug-31:/drawable_icono_siguiente.png.flat",
@@ -546,6 +546,10 @@
     {
         "merged": "ar.madmaimarramsaz.ironFitness.app-debug-31:/mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "ar.madmaimarramsaz.ironFitness.app-main-33:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "ar.madmaimarramsaz.ironFitness.app-debug-31:/drawable_icono_descarga3.png.flat",
+        "source": "ar.madmaimarramsaz.ironFitness.app-main-33:/drawable/icono_descarga3.png"
     },
     {
         "merged": "ar.madmaimarramsaz.ironFitness.app-debug-31:/drawable_btn_siguiente_icon.xml.flat",
@@ -658,10 +662,6 @@
     {
         "merged": "ar.madmaimarramsaz.ironFitness.app-debug-31:/layout_activity_nuevo_afiliado_pag2.xml.flat",
         "source": "ar.madmaimarramsaz.ironFitness.app-main-33:/layout/activity_nuevo_afiliado_pag2.xml"
-    },
-    {
-        "merged": "ar.madmaimarramsaz.ironFitness.app-debug-31:/layout-land_activity_nuevo_pago_pag4_confirm_impres.xml.flat",
-        "source": "ar.madmaimarramsaz.ironFitness.app-main-33:/layout-land/activity_nuevo_pago_pag4_confirm_impres.xml"
     },
     {
         "merged": "ar.madmaimarramsaz.ironFitness.app-debug-31:/drawable_cuotas_a_vencer_en_el_dia.png.flat",

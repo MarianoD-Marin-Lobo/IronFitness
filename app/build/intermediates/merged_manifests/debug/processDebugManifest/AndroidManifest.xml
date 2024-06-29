@@ -37,7 +37,7 @@
             android:name="ar.madmaimarramsaz.ironFitness.Nuevo_Pago_Descargando_Comprob_Activity"
             android:exported="false" />
         <activity
-            android:name="ar.madmaimarramsaz.ironFitness.Nuevo_Pago_Pag4_Confirm_Impres_Activity"
+            android:name="ar.madmaimarramsaz.ironFitness.Nuevo_Pago_Pag4_Activity"
             android:exported="false" />
         <activity
             android:name="ar.madmaimarramsaz.ironFitness.Nuevo_Pago_Pag3_Activity"

@@ -13,7 +13,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import ar.madmaimarramsaz.ironFitness.Entidades.Pago
 import ar.madmaimarramsaz.ironFitness.repositories.PagoRepository
-import ar.madmaimarramsaz.ironFitness.repositories.PersonaRepository
 import android.widget.Toast
 
 class Nuevo_Pago_Pag3_Activity : AppCompatActivity() {
@@ -84,12 +83,13 @@ class Nuevo_Pago_Pag3_Activity : AppCompatActivity() {
             )
 
             val pagoId = pagoRepository.createPago(pago)
-            Log.d("NuevoPagoo", "Pago registrado con ID: $pagoId")
+            Log.d("NuevoPago", "Pago registrado con ID: $pagoId")
 
             if (pagoId > 0) {
                 Log.d("PagoRepository", "Pago registrado con ID: $pagoId")
                 Toast.makeText(this, "Pago registrado correctamente.", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this, Nuevo_Pago_Pag4_Confirm_Impres_Activity::class.java)
+                intent.putExtra("pagoId", pagoId)
+                val intent = Intent(this, Nuevo_Pago_Pag4_Activity::class.java)
                 startActivity(intent)
             } else {
                 Log.e("PagoRepository", "Error al insertar el pago")
@@ -97,7 +97,6 @@ class Nuevo_Pago_Pag3_Activity : AppCompatActivity() {
             }
 
         }
-
 
 
         // boton volver a la ventana anterior

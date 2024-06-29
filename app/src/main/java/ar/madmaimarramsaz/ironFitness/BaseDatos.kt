@@ -223,7 +223,7 @@ class BaseDatos(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB_
     }
 
     @SuppressLint("Range")
-    fun getRegistroPagoById(id: Int): Pago? {
+    fun getPagoById(id: Int): Pago? {
         val db = this.readableDatabase
         val cursor = db.rawQuery("SELECT * FROM $TABLE_PAGOS WHERE id = ?", arrayOf(id.toString()))
 

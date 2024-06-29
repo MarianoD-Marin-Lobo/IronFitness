@@ -3079,6 +3079,7 @@ drawable icono_confirmar
 drawable icono_correcto
 drawable icono_descarga
 drawable icono_descarga2
+drawable icono_descarga3
 drawable icono_flecha_anterior
 drawable icono_imprimir
 drawable icono_siguiente
@@ -3337,9 +3338,8 @@ id btn_cancelar_icono
 id btn_confirmar_icono
 id btn_cuotas_vencer_dia
 id btn_estados_de_cuenta
+id btn_generar_PDF
 id btn_imprimir_icono
-id btn_pag5_container3
-id btn_pag5_container4
 id btn_siguiente
 id btn_siguiente_icono
 id btn_volver_gris
@@ -3418,6 +3418,7 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id detalleNuevoPago_container
 id dialog_button
 id dimensions
 id direct
@@ -3518,6 +3519,7 @@ id imageButton8
 id imageButton9
 id imageButtonAfiliado
 id imageView
+id imageView2
 id image_back_button
 id image_column
 id image_home
@@ -3704,9 +3706,6 @@ id nuevo_afiliado_pag1_label_nombres_apellidos
 id nuevo_afiliado_pag1_label_nro_afiliado_socio
 id nuevo_pago_container_descargando
 id nuevo_pago_descargando_icono
-id nuevo_pago_icono_correcto
-id nuevo_pago_icono_descarga2
-id nuevo_pago_icono_imprimir
 id nuevo_pago_itemACobrar_spinner
 id nuevo_pago_pag1_container2
 id nuevo_pago_pag1_container_afiliados_complete_list
@@ -3720,7 +3719,6 @@ id nuevo_pago_pag1_label_nombres_apellidos
 id nuevo_pago_pag1_label_nro_afiliado_socio
 id nuevo_pago_pag1_spinner_icono
 id nuevo_pago_pag3_container_gris
-id nuevo_pago_pag5_container2
 id off
 id on
 id onInterceptTouchReturnSwipe
@@ -3851,6 +3849,7 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id tblLyt_detallePago
 id text
 id text2
 id textEnd
@@ -3869,17 +3868,13 @@ id text_btn_cancelar
 id text_btn_confirmar
 id text_btn_siguiente
 id text_btn_volver_menu
-id text_comprobante
 id text_consulte
 id text_descargando_comp
-id text_descargar_pdf
-id text_imprimir
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
 id text_no_socios
 id text_pagos
-id text_registrado_exito
 id text_registro
 id text_socios
 id textinput_counter
@@ -3916,6 +3911,7 @@ id tvIniciarSesion
 id tvPreguntaR
 id tvRRHH
 id tvUsuario
+id txt_detallePago
 id txt_showPrice
 id txt_warningMsg
 id unchecked
@@ -4076,7 +4072,7 @@ layout activity_nuevo_pago_descargando_comprob
 layout activity_nuevo_pago_pag1
 layout activity_nuevo_pago_pag2
 layout activity_nuevo_pago_pag3
-layout activity_nuevo_pago_pag4_confirm_impres
+layout activity_nuevo_pago_pag4
 layout activity_pantalla1
 layout activity_pantalla2
 layout activity_pantalla3
