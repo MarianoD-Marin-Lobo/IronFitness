@@ -29,7 +29,7 @@ class Nuevo_Pago_Pag3_Activity : AppCompatActivity() {
         val nroAfil = intent.getStringExtra("nroAfil") ?: ""
         val tipoDeCuota = intent.getStringExtra("tipoCuota") ?: ""
         val comentEquip = intent.getStringExtra("comentEquip") ?: ""
-        val fechaPago = intent.getStringExtra("fechaPago") ?: ""
+        val fechaPago = intent.getStringExtra("fechaPag") ?: ""
         val importeAPag = intent.getStringExtra("importeAPag") ?: ""
 
         val txtShowPrice = findViewById<TextView>(R.id.txt_showPrice)

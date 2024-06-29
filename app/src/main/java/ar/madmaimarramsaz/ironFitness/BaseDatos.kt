@@ -13,7 +13,7 @@ import ar.madmaimarramsaz.ironFitness.Entidades.Pago
 import ar.madmaimarramsaz.ironFitness.Entidades.Persona
 
 const val DB_NAME = "BaseDatos"
-const val DB_VERSION = 1
+const val DB_VERSION = 2
 private const val TABLE_PERSONAS = "personas"
 private const val TABLE_AFILIADOS = "afiliados"
 private const val TABLE_PAGOS = "pagos"
@@ -93,7 +93,7 @@ class BaseDatos(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB_
                 + "$COLUMN_NOMBRES_APELLIDOS TEXT,"
                 + "$COLUMN_NRO_IDENTIFICACION TEXT,"
                 + "$COLUMN_TIPO_IDENTIFICACION TEXT,"
-                + "$COLUMN_NRO_AFILIADO INTEGER,"
+                + "$COLUMN_NRO_AFILIADO TEXT,"
                 + "$COLUMN_ITEM_ACOBRA TEXT,"
                 + "$COLUMN_COMENTARIO_EQUIPAMIENTO TEXT,"
                 + "$COLUMN_FECHA_PAGO TEXT,"
@@ -122,6 +122,8 @@ class BaseDatos(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB_
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
         db?.execSQL("DROP TABLE IF EXISTS $TABLE_PERSONAS")
         db?.execSQL("DROP TABLE IF EXISTS $TABLE_AFILIADOS")
+        db?.execSQL("DROP TABLE IF EXISTS $TABLE_PAGOS")
+        db?.execSQL("DROP TABLE IF EXISTS Administrador")
         onCreate(db)
     }
     // Funcion de agregar administrador a la bd
@@ -247,7 +249,7 @@ class BaseDatos(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB_
             return null
         }
     }
-    //fechapago 2
+    // obtener socios con cuotas que vencen en el dia de hoy
     fun obtenerDatosComoLista(): List<List<String>> {
         val datos: MutableList<List<String>> = mutableListOf()
         val db = this.readableDatabase

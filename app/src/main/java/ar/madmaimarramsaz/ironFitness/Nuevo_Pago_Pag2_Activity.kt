@@ -42,6 +42,7 @@ class Nuevo_Pago_Pag2_Activity : AppCompatActivity() {
         val tipoIdentif = intent.getStringExtra("tipoIdentif") ?: ""
         val nroAfil = intent.getStringExtra("nroAfil") ?: ""
 
+
         //seleccion calendario
         fechaPago.setOnClickListener {
             mostrarCalendario()
@@ -151,7 +152,7 @@ private fun mostrarCalendario() {
             calendarioSeleccionado.set(Calendar.MONTH, mes)
             calendarioSeleccionado.set(Calendar.DAY_OF_MONTH, día)
 
-            val formatoFecha = SimpleDateFormat("dd-MM-yyyy", Locale.getDefault())
+            val formatoFecha = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
             val fechaFormateada = formatoFecha.format(calendarioSeleccionado.time)
 
             // Establecer el texto formateado en el EditText

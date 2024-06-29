@@ -146,7 +146,6 @@
             android:id="@+id/menuPagos_pagoCuota_btn"
             android:layout_width="360dp"
             android:layout_height="180dp"
-            android:layout_marginStart="25dp"
             android:layout_marginTop="36dp"
             android:background="@drawable/menu_pagos_pagos_border_button"
             android:gravity="center_horizontal|center_vertical"
@@ -156,6 +155,7 @@
             android:textColor="#FF656363"
             android:textSize="35dp"
             app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/menu_pagos_image_rectangle" />
 
@@ -164,7 +164,6 @@
             android:id="@+id/menu_pagos_historial_pagos_button"
             android:layout_width="360dp"
             android:layout_height="180dp"
-            android:layout_marginStart="25dp"
             android:layout_marginTop="29dp"
             android:background="@drawable/menu_pagos_pagos_border_button"
             android:gravity="center_horizontal|center_vertical"
@@ -174,6 +173,7 @@
             android:textColor="#FF656363"
             android:textSize="35dp"
             app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/menuPagos_pagoCuota_btn" />
 
