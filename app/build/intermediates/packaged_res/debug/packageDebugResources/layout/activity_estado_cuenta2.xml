@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -11,7 +10,11 @@
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_siguiente"
+        app:layout_constraintStart_toStartOf="@+id/btn_siguiente"
         tools:context=".Estados_Cuenta_Activity.EstadoCuenta2Activity">
+
+
         <ImageView
             android:id="@+id/menu_pagos_image_rectangle"
             android:layout_width="match_parent"
@@ -20,6 +23,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/image_rectangle_gris" />
+
         <ImageView
             android:id="@+id/image_rectangle_gris"
             android:layout_width="match_parent"
@@ -35,52 +39,49 @@
             android:id="@+id/image_back_button"
             android:layout_width="19dp"
             android:layout_height="25dp"
-            app:backgroundTint="@null"
             android:layout_marginStart="16dp"
             android:layout_marginTop="29dp"
-            android:scaleType="centerInside"
             android:background="@drawable/image_back_button"
+            android:scaleType="centerInside"
+            app:backgroundTint="@null"
             app:layout_constraintStart_toStartOf="@id/image_rectangle_gris"
             app:layout_constraintTop_toTopOf="@id/image_rectangle_gris" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/editText_buscar"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_marginStart="70dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="64dp"
             android:hint="Buscar por DNI, N° de socio..."
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            app:layout_constraintTop_toBottomOf="@+id/texto_cuotas_a_vencer" />
 
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="52dp"
-            android:layout_height="42dp"
+            android:id="@+id/icono_buscar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="390dp"
             android:src="@drawable/lupa"
             app:layout_constraintBottom_toBottomOf="@+id/editText"
-            app:layout_constraintEnd_toStartOf="@+id/editText"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/editText"
-            tools:srcCompat="@tools:sample/avatars" />
+            app:layout_constraintStart_toStartOf="@+id/editText"
+            app:layout_constraintTop_toTopOf="@+id/editText" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/texto_cuotas_a_vencer"
             android:layout_width="310dp"
             android:layout_height="25dp"
             android:layout_marginTop="220dp"
-            android:fontFamily="sans-serif"
             android:background="@drawable/cuotas_a_vencer_en_el_dia"
+            android:fontFamily="sans-serif"
             android:text=" "
             android:textAlignment="center"
             android:textSize="20sp"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/text_registro"
@@ -107,168 +108,89 @@
             android:textStyle="bold|italic"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/image_rectangle_gris" />
-        <FrameLayout
-            android:id="@+id/frameLayout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingTop="3dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/rounded_border"
-            app:layout_constraintTop_toBottomOf="@+id/editText"
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/container1"
+            app:layout_constraintBottom_toTopOf="@+id/guideline11"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
+            app:layout_constraintTop_toTopOf="@+id/guideline10" />
 
-            <!-- TableLayout para mostrar los datos -->
-            <TableLayout
-                android:id="@+id/tableLayout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="16dp"
-                android:stretchColumns="0,1,2">
+        <TextView
+            android:id="@+id/boton_pago_cuota_socio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pago_cuota_socio_1"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline11" />
 
-                <!-- Header Row -->
-                <TableRow
-                    android:background="#CCCCCC"
-                    android:padding="8dp">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="N° CARNET"
-                        android:textStyle="bold"
-                        android:padding="8dp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="N° DNI"
-                        android:textStyle="bold"
-                        android:padding="8dp" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="Nombre/s y Apellido/s"
-                        android:textStyle="bold"
-                        android:padding="8dp" />
-                </TableRow>
-
-                <!-- Ejemplo de fila con datos -->
-                <TableRow
-                    android:padding="8dp">
-
-                    <EditText
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:hint="123456"
-                        android:padding="8dp" />
-
-                    <EditText
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:hint="12345678"
-                        android:padding="8dp" />
-
-                    <EditText
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:hint="Nombre Apellido"
-                        android:padding="8dp" />
-                </TableRow>
-
-                <!-- Otras filas de datos -->
-                <TableRow
-                    android:padding="8dp">
-
-                    <EditText
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:hint="789012"
-                        android:padding="8dp" />
-
-                    <EditText
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:hint="87654321"
-                        android:padding="8dp" />
-
-                    <EditText
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:hint="Otro Nombre Apellido"
-                        android:padding="8dp" />
-                </TableRow>
-
-                <!-- Puedes añadir más filas según sea necesario -->
-            </TableLayout>
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="326dp"
-                android:fontFamily="sans-serif"
-                android:background="@drawable/pago_cuota_socio_1"
-                android:text=" "
-                android:textAlignment="center"
-                android:textSize="18dp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
-        </FrameLayout>
         <Button
             android:id="@+id/image_low_menu_quad"
             android:layout_width="60dp"
             android:layout_height="40dp"
-            android:layout_marginBottom="5dp"
+            android:layout_marginTop="16dp"
             android:background="@drawable/new_payment_4"
             android:scaleType="centerInside"
             app:backgroundTint="@null"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/frameLayout"
             app:layout_constraintEnd_toStartOf="@+id/image_low_menu_quad1"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_vector" />
 
         <Button
             android:id="@+id/image_low_menu_quad1"
             android:layout_width="60dp"
             android:layout_height="40dp"
-            android:layout_marginBottom="5dp"
+            android:layout_marginTop="16dp"
             android:background="@drawable/icon_home"
             android:scaleType="centerInside"
             app:backgroundTint="@null"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/image_low_menu_quad2"
-            app:layout_constraintStart_toEndOf="@+id/image_low_menu_quad" />
+            app:layout_constraintStart_toEndOf="@+id/image_low_menu_quad"
+            app:layout_constraintTop_toBottomOf="@+id/image_vector" />
 
         <Button
             android:id="@+id/image_low_menu_quad2"
             android:layout_width="60dp"
             android:layout_height="40dp"
-            android:layout_marginBottom="5dp"
+            android:layout_marginTop="16dp"
             android:background="@drawable/icon_person"
             android:scaleType="centerInside"
             app:backgroundTint="@null"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/image_low_menu_quad1" />
+            app:layout_constraintStart_toEndOf="@+id/image_low_menu_quad1"
+            app:layout_constraintTop_toBottomOf="@+id/image_vector" />
+
+        <ImageView
+            android:id="@+id/image_vector"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/image_vector"
+            android:scaleType="centerInside"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/boton_pago_cuota_socio" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="322dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="531dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

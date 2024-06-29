@@ -13,9 +13,8 @@ class TableAdapter(
     private val listener: OnItemClickListener
 ) : RecyclerView.Adapter<TableAdapter.TableViewHolder>()  {
 
-
-        private val imagenSocioId = R.drawable.socio_icon
-        private val imagenNoSocioId = R.drawable.nosocio_icon
+    private val imagenSocioId = R.drawable.socio_icon
+    private val imagenNoSocioId = R.drawable.nosocio_icon
 
     interface OnItemClickListener {
         fun onItemClick(position: Int)

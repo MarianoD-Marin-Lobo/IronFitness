@@ -9,9 +9,18 @@ import android.widget.Spinner
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.Toast
+import android.app.DatePickerDialog
+import java.util.*
+import java.text.SimpleDateFormat
+import java.util.Calendar
+import java.util.Locale
 
 
 class Nuevo_Pago_Pag2_Activity : AppCompatActivity() {
+
+    private lateinit var fechaPago : EditText
+    private lateinit var calendar: Calendar
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -25,7 +34,7 @@ class Nuevo_Pago_Pag2_Activity : AppCompatActivity() {
         spinnerItemACobrar.prompt = "Item a cobrar"
 
         var comentarioEquipamiento: EditText = findViewById(R.id.np_pag2_input_comentarios)
-        var fechaPago: EditText = findViewById(R.id.np_pag2_fechaPago)
+        fechaPago = findViewById(R.id.fechaPago)
         var importeAPagar: EditText = findViewById(R.id.np_pag2_input_importe)
 
         val nombApell = intent.getStringExtra("nombApell") ?: ""
@@ -34,6 +43,10 @@ class Nuevo_Pago_Pag2_Activity : AppCompatActivity() {
         val nroAfil = intent.getStringExtra("nroAfil") ?: ""
 
 
+        //seleccion calendario
+        fechaPago.setOnClickListener {
+            mostrarCalendario()
+        }
 
         // boton siguiente
         val btn_siguiente: Button = findViewById(R.id.container_btn_siguiente)
@@ -62,6 +75,7 @@ class Nuevo_Pago_Pag2_Activity : AppCompatActivity() {
         }
 
 
+
         // boton volver a la ventana anterior
         val btn_volver: Button = findViewById(R.id.image_back_button)
         btn_volver.setOnClickListener {
@@ -75,13 +89,11 @@ class Nuevo_Pago_Pag2_Activity : AppCompatActivity() {
         }
 
 
-
         // boton cancelar ?
         val btn_cancelar: Button = findViewById(R.id.container_btn_cancelar)
         btn_cancelar.setOnClickListener {
             irAPag1Actividad()
         }
-
 
         // Barra de Navegacion
         // barra de navegacion Boton 1 Pagar
@@ -124,5 +136,34 @@ class Nuevo_Pago_Pag2_Activity : AppCompatActivity() {
         startActivity(intent)
     }
 
+//mostrar calendario
+private fun mostrarCalendario() {
+    val calendario = Calendar.getInstance()
+    val añoActual = calendario.get(Calendar.YEAR)
+    val mesActual = calendario.get(Calendar.MONTH)
+    val diaActual = calendario.get(Calendar.DAY_OF_MONTH)
 
+    val datePicker = DatePickerDialog(
+        this,
+        { _, año, mes, día ->
+            // Formatear la fecha seleccionada
+            val calendarioSeleccionado = Calendar.getInstance()
+            calendarioSeleccionado.set(Calendar.YEAR, año)
+            calendarioSeleccionado.set(Calendar.MONTH, mes)
+            calendarioSeleccionado.set(Calendar.DAY_OF_MONTH, día)
+
+            val formatoFecha = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+            val fechaFormateada = formatoFecha.format(calendarioSeleccionado.time)
+
+            // Establecer el texto formateado en el EditText
+            fechaPago.setText(fechaFormateada)
+        },
+        añoActual,
+        mesActual,
+        diaActual
+    )
+
+    // Mostrar el diálogo de selección de fecha
+    datePicker.show()
+}
 }

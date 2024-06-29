@@ -3324,6 +3324,7 @@ id blocking
 id boton_mas
 id boton_menor
 id boton_menos
+id boton_pago_cuota_socio
 id bottom
 id bounce
 id bounceBoth
@@ -3339,6 +3340,7 @@ id btn_confirmar_icono
 id btn_cuotas_vencer_dia
 id btn_estados_de_cuenta
 id btn_generar_PDF
+id btn_generar_pdf
 id btn_imprimir_icono
 id btn_siguiente
 id btn_siguiente_icono
@@ -3441,6 +3443,7 @@ id easeOut
 id east
 id edge
 id editText
+id editText_buscar
 id editText_impresora
 id edit_query
 id edit_text_id
@@ -3455,6 +3458,7 @@ id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id fade
+id fechaPago
 id fechaPago_lbl
 id fill
 id fill_horizontal
@@ -3483,6 +3487,8 @@ id group_divider
 id grouping
 id groups
 id guideline
+id guideline10
+id guideline11
 id guideline2
 id guideline3
 id guideline4
@@ -3502,6 +3508,7 @@ id icon
 id icon_group
 id icono_boton_mas
 id icono_boton_menos
+id icono_buscar
 id icono_spinner1
 id icono_spinner2
 id icono_spinner4
@@ -3680,7 +3687,6 @@ id notification_main_column
 id notification_main_column_container
 id np_pag1_tipoIdentif_spinner
 id np_pag2_container_gris
-id np_pag2_fechaPago
 id np_pag2_input_comentarios
 id np_pag2_input_importe
 id np_pag2_spinner_icono1
@@ -3760,6 +3766,7 @@ id radio
 id radioGroupSocio
 id ratio
 id rectangles
+id recyclerView
 id recycler_view
 id report_drawn
 id reverseSawtooth
@@ -3858,6 +3865,9 @@ id textTop
 id textView
 id textView3
 id textView4
+id textViewNombresApellidos
+id textViewNroAfiliado
+id textViewNroIdentificacion
 id textView_comentario
 id text_afiliados
 id text_alta_nuevo_afiliado
@@ -3883,6 +3893,7 @@ id textinput_prefix_text
 id textinput_suffix_text
 id texto_btn_anterior
 id texto_btn_cancelar
+id texto_cuotas_a_vencer
 id texto_efectivo
 id texto_importe_total
 id time
@@ -4099,6 +4110,7 @@ layout fragment_subtotal
 layout fragment_todos
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_pago
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

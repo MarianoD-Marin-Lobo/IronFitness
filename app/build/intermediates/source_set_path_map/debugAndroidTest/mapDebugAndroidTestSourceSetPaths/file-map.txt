@@ -1,6 +1,0 @@
-ar.madmaimarramsaz.ironFitness.test.app-core-1.5.0-0 C:\Users\admin\.gradle\caches\transforms-4\5ab51a8be43d97b5de6cbc21a49bfb38\transformed\core-1.5.0\res
-ar.madmaimarramsaz.ironFitness.test.app-annotation-experimental-1.4.0-1 C:\Users\admin\.gradle\caches\transforms-4\5dba7c7c5b68d9b9b6829f74401f9dd0\transformed\annotation-experimental-1.4.0\res
-ar.madmaimarramsaz.ironFitness.test.app-androidTest-2 C:\Users\admin\Downloads\IronFitness\app\build\generated\res\resValues\androidTest\debug
-ar.madmaimarramsaz.ironFitness.test.app-mergeDebugAndroidTestResources-3 C:\Users\admin\Downloads\IronFitness\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
-ar.madmaimarramsaz.ironFitness.test.app-mergeDebugAndroidTestResources-4 C:\Users\admin\Downloads\IronFitness\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
-ar.madmaimarramsaz.ironFitness.test.app-debugAndroidTest-5 C:\Users\admin\Downloads\IronFitness\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources
