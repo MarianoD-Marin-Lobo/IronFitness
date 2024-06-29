@@ -79,7 +79,7 @@ class Nuevo_Pago_Pag4_Activity : AppCompatActivity() {
 
 
         // Configura el listener del clic para el botón "Generar PDF"
-        val buttonGenerarPDF = findViewById<Button>(R.id.btn_generar_PDF)
+        val buttonGenerarPDF = findViewById<Button>(R.id.btn_generar_pdf)
         buttonGenerarPDF.setOnClickListener {
             savePaymentRecordAsPDF(pago)
         }

@@ -2,8 +2,8 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_width="match_parent"
     android:background="@color/colorBase">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -181,7 +181,7 @@
             app:layout_constraintTop_toBottomOf="@+id/menu_pagos_image_rectangle" />
 
         <Button
-            android:id="@+id/btn_generar_PDF"
+            android:id="@+id/btn_generar_pdf"
             android:layout_width="340dp"
             android:layout_height="65dp"
             android:layout_gravity="top|left"
