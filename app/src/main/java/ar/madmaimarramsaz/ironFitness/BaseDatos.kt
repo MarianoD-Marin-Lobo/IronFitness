@@ -247,7 +247,65 @@ class BaseDatos(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB_
             return null
         }
     }
+    //fechapago 2
+    fun obtenerDatosComoLista(): List<List<String>> {
+        val datos: MutableList<List<String>> = mutableListOf()
+        val db = this.readableDatabase
 
+        val query = """
+        SELECT pa.$COLUMN_NRO_AFILIADO as nroAfiliado,
+               pa.$COLUMN_NOMBRES_APELLIDOS as "Nombre/s y Apellido/s",
+               pa.$COLUMN_NRO_IDENTIFICACION as nroIdentificacion
+        FROM $TABLE_PAGOS pa
+        WHERE date(pa.$COLUMN_FECHA_PAGO) <= date('now', '-30 days')
+        AND $COLUMN_ITEM_ACOBRA = "Cuota MENSUAL"
+    """.trimIndent()
+
+        val cursor: Cursor = db.rawQuery(query, null)
+
+        while (cursor.moveToNext()) {
+            val fila: MutableList<String> = mutableListOf()
+            fila.add(cursor.getString(cursor.getColumnIndex("nroAfiliado")))
+            fila.add(cursor.getString(cursor.getColumnIndex("Nombre/s y Apellido/s")))
+            fila.add(cursor.getString(cursor.getColumnIndex("nroIdentificacion")))
+            datos.add(fila)
+        }
+
+        cursor.close()
+        db.close()
+
+        return datos
+    }
+
+
+
+    /*
+    // fechapago1
+    @SuppressLint("Range")
+    fun obtenerDatosComoLista(): List<List<String>>{
+        val datos:MutableList<List<String>> = mutableListOf()
+
+        //Realizar la consulta y obtener Cursor
+        val db: SQLiteDatabase = readableDatabase
+        val sql: String = "SELECT nroAfiliado, nroIdentificacion, nombresApellidos FROM $TABLE_PAGOS WHERE itemACobrar = 'Cuota MENSUAL'"
+
+        val cursor: Cursor = db.rawQuery(sql, arrayOf(id.toString()))
+
+        //Iterar sobre el Cursor y agregar los datos a la lista
+        while(cursor.moveToNext()){
+            val fila:MutableList<String> = mutableListOf()
+            fila.add(cursor.getString(cursor.getColumnIndex(columnName:"nroAfiliado")))
+            fila.add(cursor.getString(cursor.getColumnIndex(columnName:"dni")))
+            fila.add(cursor.getString(cursor.getColumnIndex(columnName:"nombresApellidos")))
+            datos.add(fila)
+        }
+        //Cerrar el cursor
+        cursor.close()
+        return datos
+        //obtener datos como Lista
+    }
+*/
+    //actualizar
     fun updateRegistroPago(registroPago: Pago): Int {
         val db = this.writableDatabase
         val contentValues = ContentValues().apply {

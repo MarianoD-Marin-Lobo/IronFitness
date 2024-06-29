@@ -9,9 +9,8 @@ import androidx.recyclerview.widget.RecyclerView
 
 class TableAdapter(private val data: List<Pair<Boolean, String>>) : RecyclerView.Adapter<TableAdapter.TableViewHolder>() {
 
-
-        private val imagenSocioId = R.drawable.socio_icon
-        private val imagenNoSocioId = R.drawable.nosocio_icon
+    private val imagenSocioId = R.drawable.socio_icon
+    private val imagenNoSocioId = R.drawable.nosocio_icon
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TableViewHolder {

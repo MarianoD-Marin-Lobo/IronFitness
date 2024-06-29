@@ -140,6 +140,7 @@ id barrier
 id boton_mas
 id boton_menor
 id boton_menos
+id boton_pago_cuota_socio
 id btnGuardar
 id btnLogin
 id btnSiguiente
@@ -180,11 +181,15 @@ id credencialesError1
 id credencialesError2
 id detalleNuevoPago_container
 id editText
+id editText_buscar
 id editText_impresora
+id fechaPago
 id fechaPago_lbl
 id frameLayout
 id frameLayout3
 id guideline
+id guideline10
+id guideline11
 id guideline2
 id guideline3
 id guideline4
@@ -195,6 +200,7 @@ id guideline8
 id guideline9
 id icono_boton_mas
 id icono_boton_menos
+id icono_buscar
 id icono_spinner1
 id icono_spinner2
 id icono_spinner4
@@ -271,7 +277,6 @@ id menu_pagos_image_rectangle
 id nombre_column
 id np_pag1_tipoIdentif_spinner
 id np_pag2_container_gris
-id np_pag2_fechaPago
 id np_pag2_input_comentarios
 id np_pag2_input_importe
 id np_pag2_spinner_icono1
@@ -311,6 +316,7 @@ id nuevo_pago_pag1_spinner_icono
 id nuevo_pago_pag3_container_gris
 id pag3_container1
 id radioGroupSocio
+id recyclerView
 id recycler_view
 id selector_socio_radbtn
 id selectornoSocioradbtn
@@ -320,6 +326,9 @@ id tblLyt_detallePago
 id textView
 id textView3
 id textView4
+id textViewNombresApellidos
+id textViewNroAfiliado
+id textViewNroIdentificacion
 id textView_comentario
 id text_afiliados
 id text_alta_nuevo_afiliado
@@ -336,6 +345,7 @@ id text_registro
 id text_socios
 id texto_btn_anterior
 id texto_btn_cancelar
+id texto_cuotas_a_vencer
 id texto_efectivo
 id texto_importe_total
 id tvContrasena
@@ -378,6 +388,7 @@ layout fragment_no_socios
 layout fragment_socios
 layout fragment_subtotal
 layout fragment_todos
+layout item_pago
 layout tabla_item
 mipmap ic_launcher
 mipmap ic_launcher_round
