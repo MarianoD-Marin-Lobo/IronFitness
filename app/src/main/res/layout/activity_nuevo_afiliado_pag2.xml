@@ -273,7 +273,7 @@
             app:layout_constraintTop_toTopOf="@+id/nuevo_pago_pag1_container_afiliados_complete_list" />
 
         <Spinner
-            android:id="@+id/nuevo_pago_pag1_spinner"
+            android:id="@+id/np_pag1_tipoIdentif_spinner"
             android:layout_width="110dp"
             android:layout_height="52dp"
             android:layout_marginStart="12dp"
@@ -295,11 +295,11 @@
             android:background="@drawable/spinner_icono"
             android:elevation="1dp"
             android:scaleType="centerInside"
-            app:layout_constraintBottom_toBottomOf="@+id/nuevo_pago_pag1_spinner"
-            app:layout_constraintEnd_toEndOf="@+id/nuevo_pago_pag1_spinner"
+            app:layout_constraintBottom_toBottomOf="@+id/np_pag1_tipoIdentif_spinner"
+            app:layout_constraintEnd_toEndOf="@+id/np_pag1_tipoIdentif_spinner"
             app:layout_constraintHorizontal_bias="0.487"
-            app:layout_constraintStart_toStartOf="@+id/nuevo_pago_pag1_spinner"
-            app:layout_constraintTop_toTopOf="@+id/nuevo_pago_pag1_spinner"
+            app:layout_constraintStart_toStartOf="@+id/np_pag1_tipoIdentif_spinner"
+            app:layout_constraintTop_toTopOf="@+id/np_pag1_tipoIdentif_spinner"
             app:layout_constraintVertical_bias="0.513" />
 
         <EditText

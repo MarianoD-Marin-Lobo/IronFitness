@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -22,16 +24,13 @@
             android:name=".Nuevo_Pago_Descargando_Comprob_Activity"
             android:exported="false" />
         <activity
-            android:name=".Nuevo_Pago_Pag4_Confirm_Impres_Activity"
+            android:name=".Nuevo_Pago_Pag4_Activity"
             android:exported="false" />
         <activity
-            android:name=".Nuevo_Pago_Pag3_Efec_Activity"
+            android:name=".Nuevo_Pago_Pag3_Activity"
             android:exported="false" />
         <activity
-            android:name=".Nuevo_Pago_Pag2_Cuota_Activity"
-            android:exported="false" />
-        <activity
-            android:name=".Nuevo_Pago_Pag2_Actividad_Activity"
+            android:name=".Nuevo_Pago_Pag2_Activity"
             android:exported="false" />
         <activity
             android:name=".Nuevo_Pago_Pag1_Activity"

@@ -156,37 +156,50 @@
         tools:layout_editor_absoluteX="1dp" />
 
     <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="64dp"
-        android:hint="Buscar por Nombre, Apellido ó DNI..."
+        android:id="@+id/input_buscar_afiliado"
+        android:layout_width="330dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/nuevo_pago_pag1_drawable_shape_1"
+        android:hint="Buscar datos por Nombre, DNI ó Nº Afiliado"
+        android:paddingLeft="40dp"
+        android:textSize="14sp"
+        android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="52dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="8dp"
-        android:src="@drawable/lupa"
-        app:layout_constraintBottom_toBottomOf="@+id/editText"
-        app:layout_constraintEnd_toStartOf="@+id/editText"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editText"
-        tools:srcCompat="@tools:sample/avatars" />
+    <ImageButton
+        android:id="@+id/agregarAfiliado"
+        android:layout_width="50dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/icono_agregar1"
+        app:layout_constraintBottom_toBottomOf="@+id/input_buscar_afiliado"
+        app:layout_constraintStart_toEndOf="@+id/input_buscar_afiliado"
+        app:layout_constraintTop_toTopOf="@+id/input_buscar_afiliado" />
+
+    <Button
+        android:id="@+id/btn_buscar_icon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/btn_buscar_icon"
+        android:scaleType="centerInside"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/input_buscar_afiliado"
+        app:layout_constraintStart_toStartOf="@+id/input_buscar_afiliado"
+        app:layout_constraintTop_toTopOf="@+id/input_buscar_afiliado" />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="17dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText">
+        app:layout_constraintTop_toBottomOf="@+id/input_buscar_afiliado">
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"

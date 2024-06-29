@@ -5,28 +5,71 @@ import android.os.Bundle
 import android.widget.EditText
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import android.widget.Spinner
 import android.widget.ArrayAdapter
-import android.text.Html
 import android.widget.Button
+import android.widget.Toast
+import android.widget.ImageButton
 
 class Nuevo_Pago_Pag1_Activity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_nuevo_pago_pag1)
 
-        val spinner: Spinner = findViewById(R.id.nuevo_pago_pag1_spinner)
-        val items = arrayOf("TIPO Id.", "DNI", "Nº Afiliado")
+        var nombresApellidos: EditText
+        var nroIdentificacion: EditText
+        var spinnerTipoIdentif: Spinner
+        var nroAfiliado: EditText
+        var btnSiguiente: Button
 
+        nombresApellidos = findViewById(R.id.nuevo_pago_pag1_input_nombre_apellido_afiliado)
+        nroIdentificacion = findViewById(R.id.inputNroIdentificacion)
+        spinnerTipoIdentif = findViewById(R.id.np_pag1_tipoIdentif_spinner)
+        nroAfiliado = findViewById(R.id.input_nro_afiliado)
+        btnSiguiente = findViewById(R.id.container_btn_siguiente)
+
+        val items = arrayOf("TIPO Id.", "DNI", "Pasaporte", "Carnet Conducir")
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, items)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        spinnerTipoIdentif.adapter = adapter
+        spinnerTipoIdentif.prompt = "TIPO Id."
 
-        spinner.adapter = adapter
-        spinner.prompt = "TIPO Id."
+
+        // boton siguiente
+        btnSiguiente.setOnClickListener {
+            val nombApell = nombresApellidos.text.toString()
+            val nroIdentif = nroIdentificacion.text.toString()
+            val tipoIdentif = spinnerTipoIdentif.selectedItem.toString()
+            val nroAfil = nroAfiliado.text.toString()
+
+            val intent = Intent(this, Nuevo_Pago_Pag2_Activity::class.java).apply {
+                putExtra("nombApell", nombApell)
+                putExtra("nroIdentif", nroIdentif)
+                putExtra("tipoIdentif", tipoIdentif)
+                putExtra("nroAfil", nroAfil)
+            }
+
+            if (nombApell.isEmpty() ) {
+                Toast.makeText(this, "Nombre y apellido son requeridos.", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }  else if (nroIdentif.isEmpty() ) {
+                Toast.makeText(this, "El nro de ID es requerido.", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            } else if (tipoIdentif == "TIPO Id." ) {
+                Toast.makeText(this, "Por favor ingrese un tipo de ID", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+            else if (nroAfil.isEmpty() ) {
+                Toast.makeText(this, "El nro de afiliado requerido.", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            } else{
+            startActivity(intent)
+            }
+        }
+
 
         // boton volver a la ventana anterior
         val btn_volver: Button = findViewById(R.id.image_back_button)
@@ -40,11 +83,9 @@ class Nuevo_Pago_Pag1_Activity : AppCompatActivity() {
             irAMenuPagos()
         }
 
-        // boton siguiente
-        val btn_siguiente: Button = findViewById(R.id.container_btn_siguiente)
-        btn_siguiente.setOnClickListener {
-            irAPag2Actividad()
-        }
+
+
+
 
         // Barra de navegacion
         // barra de navegacion Boton 1 Pagar
@@ -87,8 +128,9 @@ class Nuevo_Pago_Pag1_Activity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    private fun irAPag2Actividad(){
-        val intent = Intent(this, Nuevo_Pago_Pag2_Actividad_Activity::class.java)
-        startActivity(intent)
-    }
+
+    // Dentro de Nuevo_Pago_Pag1_Activity.kt
+
+
+
 }

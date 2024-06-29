@@ -3,24 +3,24 @@
 3    package="ar.madmaimarramsaz.ironFitness.test" >
 4
 5    <uses-sdk
-5-->C:\Users\admin\Downloads\IronFitness\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest14675054287306922570.xml:5:5-74
+5-->C:\Users\admin\Downloads\IronFitness\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest5411166821985428850.xml:5:5-74
 6        android:minSdkVersion="25"
-6-->C:\Users\admin\Downloads\IronFitness\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest14675054287306922570.xml:5:15-41
+6-->C:\Users\admin\Downloads\IronFitness\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest5411166821985428850.xml:5:15-41
 7        android:targetSdkVersion="34" />
-7-->C:\Users\admin\Downloads\IronFitness\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest14675054287306922570.xml:5:42-71
+7-->C:\Users\admin\Downloads\IronFitness\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest5411166821985428850.xml:5:42-71
 8
 9    <instrumentation
-9-->C:\Users\admin\Downloads\IronFitness\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest14675054287306922570.xml:11:5-15:80
+9-->C:\Users\admin\Downloads\IronFitness\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest5411166821985428850.xml:11:5-15:80
 10        android:name="androidx.test.runner.AndroidJUnitRunner"
-10-->C:\Users\admin\Downloads\IronFitness\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest14675054287306922570.xml:11:22-76
+10-->C:\Users\admin\Downloads\IronFitness\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest5411166821985428850.xml:11:22-76
 11        android:functionalTest="false"
-11-->C:\Users\admin\Downloads\IronFitness\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest14675054287306922570.xml:14:22-52
+11-->C:\Users\admin\Downloads\IronFitness\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest5411166821985428850.xml:14:22-52
 12        android:handleProfiling="false"
-12-->C:\Users\admin\Downloads\IronFitness\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest14675054287306922570.xml:13:22-53
+12-->C:\Users\admin\Downloads\IronFitness\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest5411166821985428850.xml:13:22-53
 13        android:label="Tests for ar.madmaimarramsaz.ironFitness"
-13-->C:\Users\admin\Downloads\IronFitness\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest14675054287306922570.xml:15:22-78
+13-->C:\Users\admin\Downloads\IronFitness\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest5411166821985428850.xml:15:22-78
 14        android:targetPackage="ar.madmaimarramsaz.ironFitness" />
-14-->C:\Users\admin\Downloads\IronFitness\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest14675054287306922570.xml:12:22-76
+14-->C:\Users\admin\Downloads\IronFitness\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest5411166821985428850.xml:12:22-76
 15
 16    <uses-permission android:name="android.permission.REORDER_TASKS" />
 16-->[androidx.test:core:1.5.0] C:\Users\admin\.gradle\caches\transforms-4\5ab51a8be43d97b5de6cbc21a49bfb38\transformed\core-1.5.0\AndroidManifest.xml:24:5-72
@@ -40,12 +40,12 @@
 22    </queries>
 23
 24    <application
-24-->C:\Users\admin\Downloads\IronFitness\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest14675054287306922570.xml:7:5-9:19
+24-->C:\Users\admin\Downloads\IronFitness\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest5411166821985428850.xml:7:5-9:19
 25        android:debuggable="true"
 26        android:extractNativeLibs="false" >
 27        <uses-library android:name="android.test.runner" />
-27-->C:\Users\admin\Downloads\IronFitness\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest14675054287306922570.xml:8:9-60
-27-->C:\Users\admin\Downloads\IronFitness\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest14675054287306922570.xml:8:23-57
+27-->C:\Users\admin\Downloads\IronFitness\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest5411166821985428850.xml:8:9-60
+27-->C:\Users\admin\Downloads\IronFitness\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest5411166821985428850.xml:8:23-57
 28
 29        <activity
 29-->[androidx.test:core:1.5.0] C:\Users\admin\.gradle\caches\transforms-4\5ab51a8be43d97b5de6cbc21a49bfb38\transformed\core-1.5.0\AndroidManifest.xml:27:9-34:20

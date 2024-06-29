@@ -231,7 +231,7 @@
 
 
         <Spinner
-            android:id="@+id/nuevo_pago_pag1_spinner"
+            android:id="@+id/np_pag1_tipoIdentif_spinner"
             android:layout_width="110dp"
             android:layout_height="52dp"
             android:layout_marginStart="13dp"
@@ -240,13 +240,13 @@
             android:elevation="1dp"
             android:lineHeight="19.36dp"
             android:textSize="14sp"
-            app:layout_constraintEnd_toStartOf="@id/nuevo_pago_pag1_text_nro_identificacion"
+            app:layout_constraintEnd_toStartOf="@id/inputNroIdentificacion"
             app:layout_constraintStart_toStartOf="@+id/nuevo_pago_pag1_container_afiliados_complete_list"
             app:layout_constraintTop_toTopOf="@+id/guideline6" />
 
 
         <EditText
-            android:id="@+id/nuevo_pago_pag1_text_nro_identificacion"
+            android:id="@+id/inputNroIdentificacion"
             android:layout_width="200dp"
             android:layout_height="52dp"
             android:layout_marginEnd="20dp"
@@ -259,7 +259,7 @@
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="@+id/nuevo_pago_pag1_container_afiliados_complete_list"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/nuevo_pago_pag1_spinner"
+            app:layout_constraintStart_toEndOf="@+id/np_pag1_tipoIdentif_spinner"
             app:layout_constraintTop_toBottomOf="@+id/guideline6"
             tools:layout_editor_absoluteY="468dp" />
 
@@ -330,7 +330,7 @@
             android:textSize="20dp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/nuevo_pago_pag1_container_afiliados_complete_list"
-            app:layout_constraintTop_toBottomOf="@+id/nuevo_pago_pag1_text_nro_identificacion" />
+            app:layout_constraintTop_toBottomOf="@+id/inputNroIdentificacion" />
 
         <EditText
             android:id="@+id/input_nro_afiliado"
@@ -438,10 +438,10 @@
             android:background="@drawable/spinner_icono"
             android:elevation="1dp"
             android:scaleType="centerInside"
-            app:layout_constraintBottom_toBottomOf="@+id/nuevo_pago_pag1_spinner"
-            app:layout_constraintEnd_toEndOf="@+id/nuevo_pago_pag1_spinner"
-            app:layout_constraintStart_toStartOf="@+id/nuevo_pago_pag1_spinner"
-            app:layout_constraintTop_toTopOf="@+id/nuevo_pago_pag1_spinner" />
+            app:layout_constraintBottom_toBottomOf="@+id/np_pag1_tipoIdentif_spinner"
+            app:layout_constraintEnd_toEndOf="@+id/np_pag1_tipoIdentif_spinner"
+            app:layout_constraintStart_toStartOf="@+id/np_pag1_tipoIdentif_spinner"
+            app:layout_constraintTop_toTopOf="@+id/np_pag1_tipoIdentif_spinner" />
 
         <Button
             android:id="@+id/btn_buscar_icon"
