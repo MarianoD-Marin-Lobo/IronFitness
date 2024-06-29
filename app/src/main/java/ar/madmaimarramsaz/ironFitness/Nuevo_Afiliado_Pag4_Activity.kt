@@ -42,13 +42,15 @@ class Nuevo_Afiliado_Pag4_Activity : AppCompatActivity() {
         val fechaAfiliacion = intent.getStringExtra("fechaAfil") ?: ""
         val nombre = intent.getStringExtra("nombre") ?: ""
         val apellido = intent.getStringExtra("apellido") ?: ""
+
         val dni = intent.getStringExtra("dni") ?: ""
         val fechaNacimiento = intent.getStringExtra("fechaNacimiento") ?: ""
         val direccion = intent.getStringExtra("direccion") ?: ""
         val ciudad = intent.getStringExtra("ciudad") ?: ""
         val codigoPostal = intent.getStringExtra("codigoPostal") ?: ""
         val email = intent.getStringExtra("email") ?: ""
-
+        val tipoDoc = intent.getStringExtra("tipoDoc") ?: "Dni"
+        Log.d("NuevoAfiliado pagina 4", "Tipo de documento recibido: $tipoDoc")
         // Configuración del botón de guardar
         btnGuardar.setOnClickListener {
             val telefono1 = inputTelefono.text.toString()
@@ -58,6 +60,7 @@ class Nuevo_Afiliado_Pag4_Activity : AppCompatActivity() {
             val persona = Persona(
                 nombre = nombre,
                 apellido = apellido,
+                tipoDoc = tipoDoc,
                 dni = dni,
                 fechaNacimiento = fechaNacimiento,
                 direccion = direccion,
@@ -91,7 +94,7 @@ class Nuevo_Afiliado_Pag4_Activity : AppCompatActivity() {
                         )
 
                         // Insertar el afiliado en la base de datos
-                        val afiliadoId = afiliadoRepository.createAfiliado(afiliado)
+                        val afiliadoId = afiliadoRepository.createAfiliado(afiliado, personaCreada.id)
 
                         // Verificar si se insertó correctamente el afiliado
                         if (afiliadoId > 0) {
@@ -107,6 +110,7 @@ class Nuevo_Afiliado_Pag4_Activity : AppCompatActivity() {
                                 Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
                             startActivity(intent)
                             finish()
+                            Log.d("NuevoAfiliado", "Tipo de documento: $tipoDoc")
                         } else {
                             Toast.makeText(
                                 this,

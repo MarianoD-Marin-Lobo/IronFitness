@@ -2,6 +2,7 @@ package ar.madmaimarramsaz.ironFitness
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
@@ -32,6 +33,7 @@ class Nuevo_Afiliado_Pag3_Activity : AppCompatActivity() {
         val fechaAfil = intent.getStringExtra("fechaAfil") ?: ""
         val nombre = intent.getStringExtra("nombre") ?: ""
         val apellido = intent.getStringExtra("apellido") ?: ""
+        val tipoDoc = intent.getStringExtra("tipoDoc") ?: ""
         val dni = intent.getStringExtra("dni") ?: ""
         val fechaNacimiento = intent.getStringExtra("fechaNacimiento") ?: ""
 
@@ -55,7 +57,7 @@ class Nuevo_Afiliado_Pag3_Activity : AppCompatActivity() {
                 putExtra("dni", dni)
                 putExtra("fechaNacimiento", fechaNacimiento)
             }
-
+            Log.d("NuevoAfiliado pantalla 3", "Tipo de documento: $tipoDoc")
             startActivity(intent)
         }
 

@@ -8,8 +8,8 @@ class AfiliadoRepository(private val database: BaseDatos) {
         return database.getAfiliadoById(id)
     }
 
-    fun createAfiliado(afiliado: Afiliado): Long {
-        return database.insertAfiliado(afiliado)
+    fun createAfiliado(afiliado: Afiliado,personaId: Long): Long {
+        return database.insertAfiliado(afiliado, personaId)
     }
 
     fun getAllAfiliados(): List<Afiliado> {

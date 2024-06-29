@@ -148,6 +148,20 @@ class BaseDatos(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB_
         return id
     }
 
+    fun insertAfiliado(afiliado: Afiliado, personaId: Long): Long {
+        val db = this.writableDatabase
+        val contentValues = ContentValues().apply {
+            put(COLUMN_APTO_MEDICO, afiliado.aptoMedico)
+            put(COLUMN_ES_SOCIO, if (afiliado.esSocio) 1 else 0)
+            put(COLUMN_FECHA_AFILIACION, afiliado.fechaAfiliacion)
+            put(COLUMN_PERSONA_ID, personaId.toInt())  // Usar el ID de la persona proporcionado
+        }
+
+        val id = db.insert(TABLE_AFILIADOS, null, contentValues)
+        db.close()
+        return id
+    }
+
     fun getPersonaById(id: Int): Persona? {
         // Lógica para obtener una persona por su ID
 
@@ -163,28 +177,28 @@ class BaseDatos(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB_
         // Lógica para eliminar una persona de la base de datos
     }
 
-    fun insertAfiliado(afiliado: Afiliado): Long {
-        // Primero, insertar la persona asociada
-        val personaId = insertPersona(afiliado.persona)
-
-        if (personaId > 0) {
-            // Luego, insertar el afiliado con la referencia a la persona insertada
-            val db = this.writableDatabase
-            val contentValues = ContentValues().apply {
-                put(COLUMN_APTO_MEDICO, afiliado.aptoMedico)
-                put(COLUMN_ES_SOCIO, if (afiliado.esSocio) 1 else 0)
-                put(COLUMN_FECHA_AFILIACION, afiliado.fechaAfiliacion)
-                put(COLUMN_PERSONA_ID, personaId)  // Aquí se usa el ID de la persona insertada
-            }
-
-            val id = db.insert(TABLE_AFILIADOS, null, contentValues)
-            db.close()
-            return id
-        } else {
-            // Manejar el caso donde no se pudo insertar la persona
-            return -1
-        }
-    }
+//    fun insertAfiliado(afiliado: Afiliado): Long {
+//        // Primero, insertar la persona asociada
+//        val personaId = insertPersona(afiliado.persona)
+//
+//        if (personaId > 0) {
+//            // Luego, insertar el afiliado con la referencia a la persona insertada
+//            val db = this.writableDatabase
+//            val contentValues = ContentValues().apply {
+//                put(COLUMN_APTO_MEDICO, afiliado.aptoMedico)
+//                put(COLUMN_ES_SOCIO, if (afiliado.esSocio) 1 else 0)
+//                put(COLUMN_FECHA_AFILIACION, afiliado.fechaAfiliacion)
+//                put(COLUMN_PERSONA_ID, personaId)  // Aquí se usa el ID de la persona insertada
+//            }
+//
+//            val id = db.insert(TABLE_AFILIADOS, null, contentValues)
+//            db.close()
+//            return id
+//        } else {
+//            // Manejar el caso donde no se pudo insertar la persona
+//            return -1
+//        }
+//    }
 
     fun getAfiliadoById(id: Long): Afiliado? {
         val db = this.readableDatabase
