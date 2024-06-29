@@ -1,5 +1,10 @@
 R_DEF: Internal format may change without notice
 local
+array com_google_android_gms_fonts_certs
+array com_google_android_gms_fonts_certs_dev
+array com_google_android_gms_fonts_certs_prod
+array identification_types
+array preloaded_fonts
 color black
 color bordeGrisClaro
 color bordeGrisOscuro
@@ -133,6 +138,7 @@ drawable vector_3
 drawable vector_cruz
 drawable volver
 drawable volver_afiliado_button
+font roboto_thin
 id agregarAfiliado
 id alertMessage1
 id alertMessage2
@@ -174,6 +180,7 @@ id container_btn_confirmar
 id container_btn_credito
 id container_btn_efectivo
 id container_btn_siguiente
+id container_fecha_factura
 id container_importe_total
 id container_pago_cuota_mensual_socio_button
 id container_show_message

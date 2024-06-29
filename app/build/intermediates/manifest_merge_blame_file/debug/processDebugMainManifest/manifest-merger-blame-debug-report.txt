@@ -9,271 +9,271 @@
 9        android:targetSdkVersion="34" />
 10
 11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-11-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:4:5-80
-11-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:4:22-77
+11-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:4:5-80
+11-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:4:22-77
 12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-12-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:5:5-81
-12-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:5:22-78
+12-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:5:5-81
+12-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:5:22-78
 13
 14    <permission
-14-->[androidx.core:core:1.13.1] C:\Users\User\.gradle\caches\transforms-4\0254f7270d7bfa87f45efc67994ab11b\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+14-->[androidx.core:core:1.13.1] C:\Users\admin\.gradle\caches\transforms-4\0254f7270d7bfa87f45efc67994ab11b\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
 15        android:name="ar.madmaimarramsaz.ironFitness.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-15-->[androidx.core:core:1.13.1] C:\Users\User\.gradle\caches\transforms-4\0254f7270d7bfa87f45efc67994ab11b\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+15-->[androidx.core:core:1.13.1] C:\Users\admin\.gradle\caches\transforms-4\0254f7270d7bfa87f45efc67994ab11b\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
 16        android:protectionLevel="signature" />
-16-->[androidx.core:core:1.13.1] C:\Users\User\.gradle\caches\transforms-4\0254f7270d7bfa87f45efc67994ab11b\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+16-->[androidx.core:core:1.13.1] C:\Users\admin\.gradle\caches\transforms-4\0254f7270d7bfa87f45efc67994ab11b\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
 17
 18    <uses-permission android:name="ar.madmaimarramsaz.ironFitness.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-18-->[androidx.core:core:1.13.1] C:\Users\User\.gradle\caches\transforms-4\0254f7270d7bfa87f45efc67994ab11b\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
-18-->[androidx.core:core:1.13.1] C:\Users\User\.gradle\caches\transforms-4\0254f7270d7bfa87f45efc67994ab11b\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+18-->[androidx.core:core:1.13.1] C:\Users\admin\.gradle\caches\transforms-4\0254f7270d7bfa87f45efc67994ab11b\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+18-->[androidx.core:core:1.13.1] C:\Users\admin\.gradle\caches\transforms-4\0254f7270d7bfa87f45efc67994ab11b\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
 19
 20    <application
-20-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:7:5-98:19
+20-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:7:5-98:19
 21        android:allowBackup="true"
-21-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:8:9-35
+21-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:8:9-35
 22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-22-->[androidx.core:core:1.13.1] C:\Users\User\.gradle\caches\transforms-4\0254f7270d7bfa87f45efc67994ab11b\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+22-->[androidx.core:core:1.13.1] C:\Users\admin\.gradle\caches\transforms-4\0254f7270d7bfa87f45efc67994ab11b\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
 23        android:dataExtractionRules="@xml/data_extraction_rules"
-23-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:9:9-65
+23-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:9:9-65
 24        android:debuggable="true"
 25        android:extractNativeLibs="false"
 26        android:fullBackupContent="@xml/backup_rules"
-26-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:10:9-54
+26-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:10:9-54
 27        android:icon="@mipmap/ic_launcher"
-27-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:11:9-43
+27-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:11:9-43
 28        android:label="@string/app_name"
-28-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:12:9-41
+28-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:12:9-41
 29        android:roundIcon="@mipmap/ic_launcher_round"
-29-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:13:9-54
+29-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:13:9-54
 30        android:supportsRtl="true"
-30-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:14:9-35
+30-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:14:9-35
 31        android:testOnly="true"
 32        android:theme="@style/Theme.IronFitness" >
-32-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:15:9-49
+32-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:15:9-49
 33        <activity
-33-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:17:9-19:40
+33-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:17:9-19:40
 34            android:name="ar.madmaimarramsaz.ironFitness.Impresion_Comprobantes_Activity"
-34-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:18:13-60
+34-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:18:13-60
 35            android:exported="false" />
-35-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:19:13-37
+35-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:19:13-37
 36        <activity
-36-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:20:9-22:40
+36-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:20:9-22:40
 37            android:name="ar.madmaimarramsaz.ironFitness.Historial_Pagos_Activity"
-37-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:21:13-53
+37-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:21:13-53
 38            android:exported="false" />
-38-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:22:13-37
+38-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:22:13-37
 39        <activity
-39-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:23:9-25:40
+39-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:23:9-25:40
 40            android:name="ar.madmaimarramsaz.ironFitness.Nuevo_Pago_Descargando_Comprob_Activity"
-40-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:24:13-68
+40-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:24:13-68
 41            android:exported="false" />
-41-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:25:13-37
+41-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:25:13-37
 42        <activity
-42-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:26:9-28:40
+42-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:26:9-28:40
 43            android:name="ar.madmaimarramsaz.ironFitness.Nuevo_Pago_Pag4_Activity"
-43-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:27:13-53
+43-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:27:13-53
 44            android:exported="false" />
-44-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:28:13-37
+44-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:28:13-37
 45        <activity
-45-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:29:9-31:40
+45-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:29:9-31:40
 46            android:name="ar.madmaimarramsaz.ironFitness.Nuevo_Pago_Pag3_Activity"
-46-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:30:13-53
+46-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:30:13-53
 47            android:exported="false" />
-47-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:31:13-37
+47-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:31:13-37
 48        <activity
-48-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:32:9-34:40
+48-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:32:9-34:40
 49            android:name="ar.madmaimarramsaz.ironFitness.Nuevo_Pago_Pag2_Activity"
-49-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:33:13-53
+49-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:33:13-53
 50            android:exported="false" />
-50-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:34:13-37
+50-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:34:13-37
 51        <activity
-51-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:35:9-37:40
+51-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:35:9-37:40
 52            android:name="ar.madmaimarramsaz.ironFitness.Nuevo_Pago_Pag1_Activity"
-52-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:36:13-53
+52-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:36:13-53
 53            android:exported="false" />
-53-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:37:13-37
+53-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:37:13-37
 54        <activity
-54-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:38:9-40:40
+54-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:38:9-40:40
 55            android:name="ar.madmaimarramsaz.ironFitness.Menu_PagosActivity"
-55-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:39:13-47
+55-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:39:13-47
 56            android:exported="false" />
-56-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:40:13-37
+56-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:40:13-37
 57        <activity
-57-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:41:9-43:40
+57-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:41:9-43:40
 58            android:name="ar.madmaimarramsaz.ironFitness.HomeActivity"
-58-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:42:13-41
+58-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:42:13-41
 59            android:exported="false" />
-59-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:43:13-37
+59-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:43:13-37
 60        <activity
-60-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:44:9-46:40
+60-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:44:9-46:40
 61            android:name="ar.madmaimarramsaz.ironFitness.GestionAfiliadoActivity"
-61-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:45:13-52
+61-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:45:13-52
 62            android:exported="false" />
-62-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:46:13-37
+62-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:46:13-37
 63        <activity
-63-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:47:9-56:20
+63-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:47:9-56:20
 64            android:name="ar.madmaimarramsaz.ironFitness.LoginActivity"
-64-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:48:13-42
+64-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:48:13-42
 65            android:exported="true" >
-65-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:49:13-36
+65-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:49:13-36
 66            <intent-filter>
-66-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:50:13-54:29
+66-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:50:13-54:29
 67                <action android:name="android.intent.action.MAIN" />
-67-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:51:17-69
-67-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:51:25-66
+67-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:51:17-69
+67-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:51:25-66
 68
 69                <category android:name="android.intent.category.LAUNCHER" />
-69-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:53:17-77
-69-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:53:27-74
+69-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:53:17-77
+69-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:53:27-74
 70            </intent-filter>
 71        </activity>
 72        <activity
-72-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:57:9-59:40
+72-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:57:9-59:40
 73            android:name="ar.madmaimarramsaz.ironFitness.Ver_datos_afiliados_activity.Datos_Afiliado_Configuracion"
-73-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:58:13-86
+73-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:58:13-86
 74            android:exported="false" />
-74-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:59:13-37
+74-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:59:13-37
 75        <activity
-75-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:60:9-62:40
+75-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:60:9-62:40
 76            android:name="ar.madmaimarramsaz.ironFitness.Ver_datos_afiliados_activity.Datos_Afiliado_Editar"
-76-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:61:13-79
+76-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:61:13-79
 77            android:exported="false" />
-77-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:62:13-37
+77-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:62:13-37
 78        <activity
-78-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:63:9-65:40
+78-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:63:9-65:40
 79            android:name="ar.madmaimarramsaz.ironFitness.Ver_datos_afiliados_activity.Datos_Afiliado_Ver"
-79-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:64:13-76
+79-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:64:13-76
 80            android:exported="false" />
-80-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:65:13-37
+80-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:65:13-37
 81        <activity
-81-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:66:9-68:40
+81-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:66:9-68:40
 82            android:name="ar.madmaimarramsaz.ironFitness.Estados_Cuenta_Activity.EstadoCuenta3Activity"
-82-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:67:13-74
+82-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:67:13-74
 83            android:exported="false" />
-83-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:68:13-37
+83-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:68:13-37
 84        <activity
-84-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:69:9-71:40
+84-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:69:9-71:40
 85            android:name="ar.madmaimarramsaz.ironFitness.Estados_Cuenta_Activity.EstadoCuenta2Activity"
-85-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:70:13-74
+85-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:70:13-74
 86            android:exported="false" />
-86-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:71:13-37
+86-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:71:13-37
 87        <activity
-87-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:72:9-74:40
+87-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:72:9-74:40
 88            android:name="ar.madmaimarramsaz.ironFitness.Estados_Cuenta_Activity.EstadoCuenta1Activity"
-88-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:73:13-74
+88-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:73:13-74
 89            android:exported="false" />
-89-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:74:13-37
+89-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:74:13-37
 90        <activity
-90-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:75:9-77:40
+90-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:75:9-77:40
 91            android:name="ar.madmaimarramsaz.ironFitness.Afiliados_Carnet_Activity.Pantalla4Activity"
-91-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:76:13-72
+91-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:76:13-72
 92            android:exported="false" />
-92-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:77:13-37
+92-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:77:13-37
 93        <activity
-93-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:78:9-80:40
+93-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:78:9-80:40
 94            android:name="ar.madmaimarramsaz.ironFitness.Afiliados_Carnet_Activity.Pantalla3Activity"
-94-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:79:13-72
+94-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:79:13-72
 95            android:exported="false" />
-95-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:80:13-37
+95-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:80:13-37
 96        <activity
-96-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:81:9-83:40
+96-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:81:9-83:40
 97            android:name="ar.madmaimarramsaz.ironFitness.Afiliados_Carnet_Activity.Pantalla2Activity"
-97-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:82:13-72
+97-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:82:13-72
 98            android:exported="false" />
-98-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:83:13-37
+98-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:83:13-37
 99        <activity
-99-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:84:9-86:40
+99-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:84:9-86:40
 100            android:name="ar.madmaimarramsaz.ironFitness.Afiliados_Carnet_Activity.Pantalla1Activity"
-100-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:85:13-72
+100-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:85:13-72
 101            android:exported="false" />
-101-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:86:13-37
+101-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:86:13-37
 102        <activity
-102-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:89:9-90:39
+102-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:89:9-90:39
 103            android:name="ar.madmaimarramsaz.ironFitness.Nuevo_Afiliado_Pag1_Activity"
-103-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:89:19-63
+103-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:89:19-63
 104            android:exported="false" />
-104-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:90:13-37
+104-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:90:13-37
 105        <activity
-105-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:91:9-92:39
+105-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:91:9-92:39
 106            android:name="ar.madmaimarramsaz.ironFitness.Nuevo_Afiliado_Pag2_Activity"
-106-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:91:19-63
+106-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:91:19-63
 107            android:exported="false" />
-107-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:92:13-37
+107-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:92:13-37
 108        <activity
-108-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:93:9-94:39
+108-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:93:9-94:39
 109            android:name="ar.madmaimarramsaz.ironFitness.Nuevo_Afiliado_Pag3_Activity"
-109-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:93:19-63
+109-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:93:19-63
 110            android:exported="false" />
-110-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:94:13-37
+110-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:94:13-37
 111        <activity
-111-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:95:9-96:39
+111-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:95:9-96:39
 112            android:name="ar.madmaimarramsaz.ironFitness.Nuevo_Afiliado_Pag4_Activity"
-112-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:95:19-63
+112-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:95:19-63
 113            android:exported="false" />
-113-->C:\Users\User\Desktop\TecnicaturaSupEnDesarrolloDeSoftware\AnioDosCuatrimestreUno\Desarrollo-Mobile\AndroidProjects\IronFitness\app\src\main\AndroidManifest.xml:96:13-37
+113-->C:\Users\admin\Downloads\IronFitness\app\src\main\AndroidManifest.xml:96:13-37
 114
 115        <provider
-115-->[androidx.emoji2:emoji2:1.3.0] C:\Users\User\.gradle\caches\transforms-4\da2acb84a5876858670be0863b9ca140\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+115-->[androidx.emoji2:emoji2:1.3.0] C:\Users\admin\.gradle\caches\transforms-4\da2acb84a5876858670be0863b9ca140\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
 116            android:name="androidx.startup.InitializationProvider"
-116-->[androidx.emoji2:emoji2:1.3.0] C:\Users\User\.gradle\caches\transforms-4\da2acb84a5876858670be0863b9ca140\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+116-->[androidx.emoji2:emoji2:1.3.0] C:\Users\admin\.gradle\caches\transforms-4\da2acb84a5876858670be0863b9ca140\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
 117            android:authorities="ar.madmaimarramsaz.ironFitness.androidx-startup"
-117-->[androidx.emoji2:emoji2:1.3.0] C:\Users\User\.gradle\caches\transforms-4\da2acb84a5876858670be0863b9ca140\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+117-->[androidx.emoji2:emoji2:1.3.0] C:\Users\admin\.gradle\caches\transforms-4\da2acb84a5876858670be0863b9ca140\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
 118            android:exported="false" >
-118-->[androidx.emoji2:emoji2:1.3.0] C:\Users\User\.gradle\caches\transforms-4\da2acb84a5876858670be0863b9ca140\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+118-->[androidx.emoji2:emoji2:1.3.0] C:\Users\admin\.gradle\caches\transforms-4\da2acb84a5876858670be0863b9ca140\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
 119            <meta-data
-119-->[androidx.emoji2:emoji2:1.3.0] C:\Users\User\.gradle\caches\transforms-4\da2acb84a5876858670be0863b9ca140\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+119-->[androidx.emoji2:emoji2:1.3.0] C:\Users\admin\.gradle\caches\transforms-4\da2acb84a5876858670be0863b9ca140\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
 120                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-120-->[androidx.emoji2:emoji2:1.3.0] C:\Users\User\.gradle\caches\transforms-4\da2acb84a5876858670be0863b9ca140\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+120-->[androidx.emoji2:emoji2:1.3.0] C:\Users\admin\.gradle\caches\transforms-4\da2acb84a5876858670be0863b9ca140\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
 121                android:value="androidx.startup" />
-121-->[androidx.emoji2:emoji2:1.3.0] C:\Users\User\.gradle\caches\transforms-4\da2acb84a5876858670be0863b9ca140\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+121-->[androidx.emoji2:emoji2:1.3.0] C:\Users\admin\.gradle\caches\transforms-4\da2acb84a5876858670be0863b9ca140\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
 122            <meta-data
-122-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\User\.gradle\caches\transforms-4\54db6d6d7615dca44d084719bd0b7b73\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+122-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\admin\.gradle\caches\transforms-4\54db6d6d7615dca44d084719bd0b7b73\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
 123                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-123-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\User\.gradle\caches\transforms-4\54db6d6d7615dca44d084719bd0b7b73\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+123-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\admin\.gradle\caches\transforms-4\54db6d6d7615dca44d084719bd0b7b73\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
 124                android:value="androidx.startup" />
-124-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\User\.gradle\caches\transforms-4\54db6d6d7615dca44d084719bd0b7b73\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+124-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\admin\.gradle\caches\transforms-4\54db6d6d7615dca44d084719bd0b7b73\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
 125            <meta-data
-125-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+125-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\admin\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
 126                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-126-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+126-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\admin\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
 127                android:value="androidx.startup" />
-127-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+127-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\admin\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
 128        </provider>
 129
 130        <receiver
-130-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+130-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\admin\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
 131            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-131-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+131-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\admin\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
 132            android:directBootAware="false"
-132-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+132-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\admin\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
 133            android:enabled="true"
-133-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+133-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\admin\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
 134            android:exported="true"
-134-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+134-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\admin\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
 135            android:permission="android.permission.DUMP" >
-135-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+135-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\admin\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
 136            <intent-filter>
-136-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+136-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\admin\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
 137                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-137-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
-137-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+137-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\admin\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+137-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\admin\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
 138            </intent-filter>
 139            <intent-filter>
-139-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+139-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\admin\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
 140                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-140-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
-140-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+140-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\admin\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+140-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\admin\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
 141            </intent-filter>
 142            <intent-filter>
-142-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+142-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\admin\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
 143                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-143-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
-143-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+143-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\admin\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+143-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\admin\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
 144            </intent-filter>
 145            <intent-filter>
-145-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+145-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\admin\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
 146                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-146-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
-146-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\User\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+146-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\admin\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+146-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\admin\.gradle\caches\transforms-4\9c2365d5e0813b8332bff5a24d3cf4b6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
 147            </intent-filter>
 148        </receiver>
 149    </application>

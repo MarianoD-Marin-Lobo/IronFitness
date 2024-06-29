@@ -2,6 +2,7 @@ package ar.madmaimarramsaz.ironFitness
 
 import android.annotation.SuppressLint
 import android.content.ContentValues
+import android.content.ContentValues.TAG
 import android.content.Context
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
@@ -567,6 +568,7 @@ class BaseDatos(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB_
         }
     }
 
+
     fun updateRegistroPago(registroPago: Pago): Int {
         val db = this.writableDatabase
         val contentValues = ContentValues().apply {
@@ -584,14 +586,39 @@ class BaseDatos(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB_
         return db.update(TABLE_PAGOS, contentValues, "id = ?", arrayOf(registroPago.id.toString()))
     }
 
+    // obtener socios con cuotas que vencen en el dia de hoy
+    fun obtenerDatosComoLista(): List<List<String>> {
+        val datos: MutableList<List<String>> = mutableListOf()
+        val db = this.readableDatabase
+
+        val query = """
+        SELECT pa.$COLUMN_NRO_AFILIADO as nroAfiliado,
+               pa.$COLUMN_NOMBRES_APELLIDOS as "Nombre/s y Apellido/s",
+               pa.$COLUMN_NRO_IDENTIFICACION as nroIdentificacion
+        FROM $TABLE_PAGOS pa
+        WHERE date(pa.$COLUMN_FECHA_PAGO) <= date('now', '-30 days')
+        AND $COLUMN_ITEM_ACOBRA = "Cuota MENSUAL"
+    """.trimIndent()
+
+        val cursor: Cursor = db.rawQuery(query, null)
+
+        while (cursor.moveToNext()) {
+            val fila: MutableList<String> = mutableListOf()
+            fila.add(cursor.getString(cursor.getColumnIndex("nroAfiliado")))
+            fila.add(cursor.getString(cursor.getColumnIndex("Nombre/s y Apellido/s")))
+            fila.add(cursor.getString(cursor.getColumnIndex("nroIdentificacion")))
+            datos.add(fila)
+        }
+
+        cursor.close()
+        db.close()
+
+        return datos
+    }
+
     fun deleteRegistroPago(id: Int): Int {
         val db = this.writableDatabase
         return db.delete(TABLE_PAGOS, "id = ?", arrayOf(id.toString()))
-    }
-
-    
-    fun updateAfiliado(afiliado: Afiliado) {
-        // Lógica para actualizar un afiliado existente en la base de datos
     }
 
 
