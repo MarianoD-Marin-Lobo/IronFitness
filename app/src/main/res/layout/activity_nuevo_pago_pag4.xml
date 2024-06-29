@@ -243,26 +243,6 @@
             app:layout_constraintTop_toTopOf="@+id/btn_generar_PDF"
             app:srcCompat="@drawable/icono_descarga3" />
 
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tblLyt_detallePago"
-            android:layout_width="320dp"
-            android:layout_height="wrap_content"
-            android:translationZ="5dp"
-            app:layout_constraintStart_toStartOf="@+id/detalleNuevoPago_container"
-            app:layout_constraintTop_toTopOf="@+id/detalleNuevoPago_container">
-
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Monday" />
-
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tuesday" />
-
-        </com.google.android.material.tabs.TabLayout>
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

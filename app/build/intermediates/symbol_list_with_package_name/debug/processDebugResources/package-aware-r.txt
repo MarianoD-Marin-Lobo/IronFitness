@@ -3388,7 +3388,6 @@ id container_btn_confirmar
 id container_btn_credito
 id container_btn_efectivo
 id container_btn_siguiente
-id container_fecha_factura
 id container_importe_total
 id container_pago_cuota_mensual_socio_button
 id container_show_message
@@ -3849,7 +3848,6 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
-id tblLyt_detallePago
 id text
 id text2
 id textEnd

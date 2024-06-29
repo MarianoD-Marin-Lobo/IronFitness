@@ -13,7 +13,7 @@ import ar.madmaimarramsaz.ironFitness.Entidades.Pago
 import ar.madmaimarramsaz.ironFitness.Entidades.Persona
 
 const val DB_NAME = "BaseDatos"
-const val DB_VERSION = 1
+const val DB_VERSION = 2
 private const val TABLE_PERSONAS = "personas"
 private const val TABLE_AFILIADOS = "afiliados"
 private const val TABLE_PAGOS = "pagos"
@@ -40,6 +40,7 @@ private const val COLUMN_ES_SOCIO = "esSocio"
 private const val COLUMN_FECHA_AFILIACION = "fechaAfiliacion"
 private const val COLUMN_PERSONA_ID = "personaId"
 
+private const val COLUMN_PAGO_ID = "idPago"
 private const val COLUMN_NOMBRES_APELLIDOS = "nombresApellidos"
 private const val COLUMN_NRO_IDENTIFICACION = "nroIdentificacion"
 private const val COLUMN_TIPO_IDENTIFICACION = "tipoIdentificacion"
@@ -93,7 +94,7 @@ class BaseDatos(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB_
                 + "$COLUMN_NOMBRES_APELLIDOS TEXT,"
                 + "$COLUMN_NRO_IDENTIFICACION TEXT,"
                 + "$COLUMN_TIPO_IDENTIFICACION TEXT,"
-                + "$COLUMN_NRO_AFILIADO INTEGER,"
+                + "$COLUMN_NRO_AFILIADO TEXT,"
                 + "$COLUMN_ITEM_ACOBRA TEXT,"
                 + "$COLUMN_COMENTARIO_EQUIPAMIENTO TEXT,"
                 + "$COLUMN_FECHA_PAGO TEXT,"
@@ -122,6 +123,8 @@ class BaseDatos(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB_
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
         db?.execSQL("DROP TABLE IF EXISTS $TABLE_PERSONAS")
         db?.execSQL("DROP TABLE IF EXISTS $TABLE_AFILIADOS")
+        db?.execSQL("DROP TABLE IF EXISTS $TABLE_PAGOS")
+        db?.execSQL("Drop table if exists Administrador ")
         onCreate(db)
     }
     // Funcion de agregar administrador a la bd

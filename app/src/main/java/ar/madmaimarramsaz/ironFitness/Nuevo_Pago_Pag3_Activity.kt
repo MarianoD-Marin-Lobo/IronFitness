@@ -69,7 +69,6 @@ class Nuevo_Pago_Pag3_Activity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-
             val pago = Pago (
                 nombresApellidos = nombApell,
                 nroIdentificacion = nroIdentif,
@@ -88,9 +87,9 @@ class Nuevo_Pago_Pag3_Activity : AppCompatActivity() {
             if (pagoId > 0) {
                 Log.d("PagoRepository", "Pago registrado con ID: $pagoId")
                 Toast.makeText(this, "Pago registrado correctamente.", Toast.LENGTH_SHORT).show()
-                intent.putExtra("pagoId", pagoId)
-                val intent = Intent(this, Nuevo_Pago_Pag4_Activity::class.java)
+                val intent = Intent(this, Menu_PagosActivity::class.java)
                 startActivity(intent)
+
             } else {
                 Log.e("PagoRepository", "Error al insertar el pago")
                 Toast.makeText(this, "Error al registrar el pago. Inténtelo nuevamente.", Toast.LENGTH_SHORT).show()
@@ -157,7 +156,5 @@ class Nuevo_Pago_Pag3_Activity : AppCompatActivity() {
         val intent = Intent(this, Nuevo_Pago_Pag2_Activity::class.java)
         startActivity(intent)
     }
-
-
 
 }

@@ -31,7 +31,7 @@ class Nuevo_Pago_Pag1_Activity : AppCompatActivity() {
         nroAfiliado = findViewById(R.id.input_nro_afiliado)
         btnSiguiente = findViewById(R.id.container_btn_siguiente)
 
-        val items = arrayOf("TIPO Id.", "DNI", "Nº Afiliado")
+        val items = arrayOf("TIPO Id.", "DNI", "Pasaporte", "Carnet Conducir")
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, items)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinnerTipoIdentif.adapter = adapter

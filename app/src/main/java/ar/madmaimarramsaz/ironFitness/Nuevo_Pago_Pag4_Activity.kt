@@ -1,4 +1,4 @@
-package ar.madmaimarramsaz.ironFitness
+/*package ar.madmaimarramsaz.ironFitness
 
 import android.content.Context
 import android.content.Intent
@@ -170,10 +170,6 @@ class Nuevo_Pago_Pag4_Activity : AppCompatActivity() {
         tabla.addView(fila)
     }
 
-    private fun generarPDF(pago: Pago) {
-        // Usa una librería de generación de PDF como iTextPDF o PDFView para crear un PDF
-        // a partir de los detalles del pago y mostrarlo o guardarlo según sea necesario
-    }
 
 
 
@@ -191,4 +187,4 @@ class Nuevo_Pago_Pag4_Activity : AppCompatActivity() {
         val intent = Intent(this, GestionAfiliadoActivity::class.java)
         startActivity(intent)
     }
-}
+}*/

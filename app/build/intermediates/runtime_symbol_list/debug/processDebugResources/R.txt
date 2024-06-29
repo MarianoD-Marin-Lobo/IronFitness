@@ -3387,7 +3387,6 @@ int id container_btn_confirmar 0x7f08009f
 int id container_btn_credito 0x7f0800a0
 int id container_btn_efectivo 0x7f0800a1
 int id container_btn_siguiente 0x7f0800a2
-int id container_fecha_factura 0x7f0800a3
 int id container_importe_total 0x7f0800a4
 int id container_pago_cuota_mensual_socio_button 0x7f0800a5
 int id container_show_message 0x7f0800a6
@@ -3848,7 +3847,6 @@ int id tag_transition_group 0x7f08026c
 int id tag_unhandled_key_event_manager 0x7f08026d
 int id tag_unhandled_key_listeners 0x7f08026e
 int id tag_window_insets_animation_callback 0x7f08026f
-int id tblLyt_detallePago 0x7f080270
 int id text 0x7f080271
 int id text2 0x7f080272
 int id textEnd 0x7f080273
